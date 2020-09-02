@@ -6,7 +6,7 @@ public class PlayerMove : MonoBehaviour
 {
     Rigidbody2D myRigid;
     const float zeroF = 0.0f;
-    Vector2 distance;
+    [SerializeField] Vector2 distance = new Vector2();
     Vector2 direction;
     bool moving;
     float timer;
@@ -15,12 +15,12 @@ public class PlayerMove : MonoBehaviour
     Vector2 startPosition;
     [SerializeField] float timeToNextMove = 0.0f;
     bool needWait = false;
+    public delegate void GoingFoward(float fowardAxis);
+    public static event GoingFoward PlayerGoingFoward;
     void Start()//asAS
     {
         direction = Vector2.zero;
         startPosition = Vector2.zero;
-        distance.x = 1.0f;
-        distance.y = 1.0f;
         timer = 0.0f;
         moving = false;
         needWait = false;
@@ -41,6 +41,7 @@ public class PlayerMove : MonoBehaviour
             direction = Vector2.zero;
             direction.x = Input.GetAxisRaw("Horizontal");
             direction.y = Input.GetAxisRaw("Vertical");
+            PlayerGoingFoward?.Invoke(direction.y);
         }
         if (direction != Vector2.zero && !moving)
         {
