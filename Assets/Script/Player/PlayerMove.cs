@@ -15,7 +15,7 @@ public class PlayerMove : MonoBehaviour
     Vector2 startPosition;
     [SerializeField] float timeToNextMove = 0.0f;
     bool needWait = false;
-    public delegate void GoingFoward(float fowardAxis);
+    public delegate void GoingFoward(Vector2 Position, float Speed);
     public static event GoingFoward PlayerGoingFoward;
     void Start()//asAS
     {
@@ -40,8 +40,7 @@ public class PlayerMove : MonoBehaviour
         {
             direction = Vector2.zero;
             direction.x = Input.GetAxisRaw("Horizontal");
-            direction.y = Input.GetAxisRaw("Vertical");
-            PlayerGoingFoward?.Invoke(direction.y);
+            if(direction.x == zeroF) direction.y = Input.GetAxisRaw("Vertical");
         }
         if (direction != Vector2.zero && !moving)
         {
@@ -61,6 +60,7 @@ public class PlayerMove : MonoBehaviour
                 timer = zeroF;
                 needWait = true;
                 myRigid.MovePosition(Vector2.Lerp(startPosition, startPosition + (distance * direction), one));
+                PlayerGoingFoward?.Invoke(transform.position, speed);
                 StartCoroutine(waitToNextMove());
             }
         }
