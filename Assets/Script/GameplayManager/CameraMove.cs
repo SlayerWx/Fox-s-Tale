@@ -10,10 +10,13 @@ public class CameraMove : MonoBehaviour //asAS
     float speed = 0;
     float timer = 0;
     const float timerMax = 1.0f;
+    const float zerof = 0.0f;
     Vector3 startPos = new Vector3();
+    bool playerInPosition = false;
     void OnEnable()
     {
         PlayerMove.PlayerGoingFoward +=ResetCamPosition;
+        playerInPosition = false;
     }
     void OnDisable()
     {
@@ -21,28 +24,32 @@ public class CameraMove : MonoBehaviour //asAS
     }
     void ResetCamPosition(Vector2 NewPos,float Speed)
     {
-        startPos = myCm.position;
-        newPos = new Vector3(NewPos.x,NewPos.y,myCm.position.z);
-        speed = Speed;
-        /*if(cmMoving)
+        if (playerInPosition)
         {
-            StopCoroutine(MovingCm());
-        }*/
-        StartCoroutine(MovingCm());
+            startPos = myCm.position;
+            newPos = new Vector3(NewPos.x, NewPos.y, myCm.position.z);
+            speed = Speed;
+            if (cmMoving)
+            {
+                StopCoroutine(MovingCm());
+            }
+            StartCoroutine(MovingCm());
+        }
+        else if(NewPos.y >= myCm.position.y)
+        {
+            playerInPosition = true;
+        }
     }
     IEnumerator MovingCm()
     {
         cmMoving = true;
-        timer = 0.0f;
-        Debug.Log("Start");
+        timer = zerof;
         while (timer < timerMax)
         {
            myCm.position = Vector3.Lerp(startPos, newPos, timer);
             timer += Time.deltaTime * speed;
-            Debug.Log(timer + " " + speed);
             yield return null;
         }
         cmMoving = false;
-        Debug.Log("End");
     }
 }
