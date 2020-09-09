@@ -22,12 +22,12 @@ public class CameraMove : MonoBehaviour //asAS
     {
         PlayerMove.PlayerGoingFoward -=ResetCamPosition;
     }
-    void ResetCamPosition(Vector2 NewPos,float Speed)
+    void ResetCamPosition(Vector3 NewPos,float Speed)
     {
         if (playerInPosition)
         {
             startPos = myCm.position;
-            newPos = new Vector3(NewPos.x, NewPos.y, myCm.position.z);
+            newPos = new Vector3(NewPos.x, myCm.position.y, NewPos.z);
             speed = Speed;
             if (cmMoving)
             {
@@ -35,7 +35,7 @@ public class CameraMove : MonoBehaviour //asAS
             }
             StartCoroutine(MovingCm());
         }
-        else if(NewPos.y >= myCm.position.y)
+        else if(NewPos.z >= myCm.position.z)
         {
             playerInPosition = true;
         }

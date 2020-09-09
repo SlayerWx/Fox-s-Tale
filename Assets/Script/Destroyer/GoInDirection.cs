@@ -6,10 +6,10 @@ public class GoInDirection : MonoBehaviour
 {
     [SerializeField] Vector3 direction = new Vector3();
     [SerializeField] float speed = 0;
-    Rigidbody2D myRigid;
+    Rigidbody myRigid; 
     void Start()
     {
-        myRigid = GetComponent<Rigidbody2D>();
+        myRigid = GetComponent<Rigidbody>();
     }
     void FixedUpdate()
     {
