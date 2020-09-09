@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour //asAS
 {
-    [SerializeField] Transform myCm;
+    [SerializeField] Transform myCm = null;
     private bool cmMoving = false;
     Vector3 newPos = new Vector3();
     float speed = 0;
