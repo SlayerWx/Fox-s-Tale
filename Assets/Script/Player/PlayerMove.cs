@@ -72,6 +72,7 @@ public class PlayerMove : MonoBehaviour
             {
                 modifDistanceToDash = two;
                 canDash = false;
+                myRigid.useGravity = false;
             }
         }
         if (direction != Vector3.zero && !moving && alive)
@@ -100,7 +101,11 @@ public class PlayerMove : MonoBehaviour
                 ux = Vector3.Lerp(startPosition, startPosition + ux, one);
                 ux.y = transform.position.y;
                 myRigid.MovePosition(ux);
-                if(!canDash) modifDistanceToDash = one;
+                if (!canDash)
+                {
+                    modifDistanceToDash = one;
+                    myRigid.useGravity = true;
+                }
                 dashReady = false;
                 PlayerGoingFoward?.Invoke(transform.position, speed);
                 StartCoroutine(waitToNextMove());
