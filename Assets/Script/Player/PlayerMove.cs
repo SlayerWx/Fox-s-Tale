@@ -38,13 +38,13 @@ public class PlayerMove : MonoBehaviour
     }
     void InputMove()
     {
-        if (!moving)
+        if (!moving && alive)
         {
             direction = Vector3.zero;
             direction.x = Input.GetAxisRaw("Horizontal");
             if(direction.x == zeroF) direction.z = Input.GetAxisRaw("Vertical");
         }
-        if (direction != Vector3.zero && !moving)
+        if (direction != Vector3.zero && !moving && alive)
         {
             moving = true;
             startPosition = myRigid.position;
