@@ -34,6 +34,7 @@ public class PlayerMove : MonoBehaviour
     }
     void FixedUpdate()
     {
+        DropBodyCheck();
         Move();
     }
     void InputMove()
@@ -53,7 +54,7 @@ public class PlayerMove : MonoBehaviour
     }
     void Move()
     {
-        if(moving && !needWait)//asAS
+        if(moving && !needWait && alive)//asAS
         {
             Vector3 ux = new Vector3(distance.x * direction.x, distance.y * direction.y, distance.z * direction.z);
             ux = Vector3.Lerp(startPosition, startPosition + ux, timer);
@@ -73,23 +74,18 @@ public class PlayerMove : MonoBehaviour
             }
         } 
     }
+    void DropBodyCheck()
+    {
+        if(transform.position.y < zeroF)
+        {
+            alive = false;
+        }
+    }
     IEnumerator waitToNextMove()
     {
         yield return new WaitForSeconds(timeToNextMove);
         needWait = false;
         moving = false;
-    }
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        Debug.Log("!");
-        if(collision.gameObject.tag == "Safe")
-        {
-
-        }
-        if(collision.gameObject.tag == "NoSafe")
-        {
-
-        }
     }
     public void SetAlive(bool w)
     {
