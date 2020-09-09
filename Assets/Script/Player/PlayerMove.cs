@@ -18,6 +18,11 @@ public class PlayerMove : MonoBehaviour
     public delegate void GoingFoward(Vector3 Position, float Speed);
     public static event GoingFoward PlayerGoingFoward;
     bool alive;
+    SpriteRenderer myRender;
+    [SerializeField] Sprite left;
+    [SerializeField] Sprite up;
+    [SerializeField]Sprite right;
+    [SerializeField]Sprite down;
     void Start()//asAS
     {
         direction = Vector3.zero;
@@ -26,6 +31,7 @@ public class PlayerMove : MonoBehaviour
         moving = false;
         needWait = false;
         myRigid = GetComponent<Rigidbody>();
+        myRender = GetComponentInChildren<SpriteRenderer>();
         alive = true;
     }
     void Update()
@@ -44,6 +50,10 @@ public class PlayerMove : MonoBehaviour
             direction = Vector3.zero;
             direction.x = Input.GetAxisRaw("Horizontal");
             if(direction.x == zeroF) direction.z = Input.GetAxisRaw("Vertical");
+            if (direction.x < zeroF) myRender.sprite = left;
+            if (direction.x > zeroF) myRender.sprite = right;
+            if (direction.z > zeroF) myRender.sprite = up;
+            if (direction.z < zeroF) myRender.sprite = down;
         }
         if (direction != Vector3.zero && !moving && alive)
         {
