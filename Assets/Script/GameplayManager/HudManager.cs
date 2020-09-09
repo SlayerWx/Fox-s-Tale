@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class HudManager : MonoBehaviour //asAS
 {
-    [SerializeField] Text meters;
+    [SerializeField] Text meters = null;
     void OnEnable()
     {
         PlayerMove.PlayerGoingFoward += PlayerInMeters;

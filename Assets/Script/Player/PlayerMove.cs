@@ -11,6 +11,8 @@ public class PlayerMove : MonoBehaviour
     bool moving;
     float timer;
     const float one = 1.0f;
+    const float two = 2.0f;
+    float modifDistanceToDash = 1.0f;
     [SerializeField] float speed = 0.0f;
     Vector3 startPosition;
     [SerializeField] float timeToNextMove = 0.0f;
@@ -19,10 +21,15 @@ public class PlayerMove : MonoBehaviour
     public static event GoingFoward PlayerGoingFoward;
     bool alive;
     SpriteRenderer myRender;
-    [SerializeField] Sprite left;
-    [SerializeField] Sprite up;
-    [SerializeField]Sprite right;
-    [SerializeField]Sprite down;
+    [SerializeField] Sprite left = null;
+    [SerializeField] Sprite up = null;
+    [SerializeField] Sprite right = null;
+    [SerializeField] Sprite down = null;
+    [SerializeField] string dashButton = null;
+    [SerializeField] float waitToUseDashAgain = 0.0f;
+    bool canDash;
+    bool dashReady;
+    bool inCoolDownDash;
     void Start()//asAS
     {
         direction = Vector3.zero;
@@ -33,6 +40,9 @@ public class PlayerMove : MonoBehaviour
         myRigid = GetComponent<Rigidbody>();
         myRender = GetComponentInChildren<SpriteRenderer>();
         alive = true;
+        dashReady = false;
+        canDash = true;
+        inCoolDownDash = false;
     }
     void Update()
     {
@@ -45,6 +55,10 @@ public class PlayerMove : MonoBehaviour
     }
     void InputMove()
     {
+        if (Input.GetKeyDown(dashButton) && canDash)
+        {
+            dashReady = true;
+        }
         if (!moving && alive)
         {
             direction = Vector3.zero;
@@ -54,6 +68,11 @@ public class PlayerMove : MonoBehaviour
             if (direction.x > zeroF) myRender.sprite = right;
             if (direction.z > zeroF) myRender.sprite = up;
             if (direction.z < zeroF) myRender.sprite = down;
+            if (dashReady)
+            {
+                modifDistanceToDash = two;
+                canDash = false;
+            }
         }
         if (direction != Vector3.zero && !moving && alive)
         {
@@ -66,7 +85,8 @@ public class PlayerMove : MonoBehaviour
     {
         if(moving && !needWait && alive)//asAS
         {
-            Vector3 ux = new Vector3(distance.x * direction.x, distance.y * direction.y, distance.z * direction.z);
+            Vector3 ux = new Vector3((modifDistanceToDash * distance.x) * direction.x, distance.y * direction.y,
+                                      (modifDistanceToDash * distance.z) * direction.z);
             ux = Vector3.Lerp(startPosition, startPosition + ux, timer);
             ux.y = transform.position.y;
             myRigid.MovePosition(ux);
@@ -75,12 +95,16 @@ public class PlayerMove : MonoBehaviour
             {
                 timer = zeroF;
                 needWait = true;
-                ux = new Vector3(distance.x * direction.x, distance.y * direction.y, distance.z * direction.z);
+                ux = new Vector3((modifDistanceToDash * distance.x) * direction.x, distance.y * direction.y,
+                                 (modifDistanceToDash * distance.z) * direction.z);
                 ux = Vector3.Lerp(startPosition, startPosition + ux, one);
                 ux.y = transform.position.y;
                 myRigid.MovePosition(ux);
+                if(!canDash) modifDistanceToDash = one;
+                dashReady = false;
                 PlayerGoingFoward?.Invoke(transform.position, speed);
                 StartCoroutine(waitToNextMove());
+                if(!canDash && !inCoolDownDash) StartCoroutine(waitingToDashAgain());
             }
         } 
     }
@@ -96,6 +120,14 @@ public class PlayerMove : MonoBehaviour
         yield return new WaitForSeconds(timeToNextMove);
         needWait = false;
         moving = false;
+    }
+    IEnumerator waitingToDashAgain()
+    {
+        inCoolDownDash = true;
+        yield return new WaitForSeconds(waitToUseDashAgain);
+        canDash = true;
+        inCoolDownDash = false;
+        Debug.Log("Dash");
     }
     public void SetAlive(bool w)
     {
