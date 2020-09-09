@@ -17,4 +17,11 @@ public class HudManager : MonoBehaviour //asAS
     {
         meters.text = (int)pos.z + "m";
     }
+    private void Update()
+    {
+        if(Input.GetKeyDown("p"))
+        {
+            Application.Quit();
+        }
+    }
 }
