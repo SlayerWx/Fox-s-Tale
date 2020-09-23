@@ -15,7 +15,7 @@ public class HudManager : MonoBehaviour //asAS
     }
     void PlayerInMeters(Vector3 pos,float speed)
     {
-        meters.text = (int)pos.z + "m";
+        meters.text = (int)pos.y + "m";
     }
     private void Update()
     {

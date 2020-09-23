@@ -27,7 +27,7 @@ public class CameraMove : MonoBehaviour //asAS
         if (playerInPosition)
         {
             startPos = myCm.position;
-            newPos = new Vector3(NewPos.x, myCm.position.y, NewPos.z);
+            newPos = new Vector3(NewPos.x,NewPos.y ,myCm.position.z);
             speed = Speed;
             if (cmMoving)
             {
@@ -35,7 +35,7 @@ public class CameraMove : MonoBehaviour //asAS
             }
             StartCoroutine(MovingCm());
         }
-        else if(NewPos.z >= myCm.position.z)
+        else if(NewPos.y >= myCm.position.y)
         {
             playerInPosition = true;
         }

@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    Rigidbody myRigid;
+    Rigidbody2D myRigid;
     const float zeroF = 0.0f;
-    [SerializeField] Vector3 distance = new Vector3();
-    Vector3 direction;
+    [SerializeField] Vector2 distance = new Vector2();
+    Vector2 direction;
     bool moving;
     float timer;
     const float one = 1.0f;
     const float two = 2.0f;
     float modifDistanceToDash = 1.0f;
     [SerializeField] float speed = 0.0f;
-    Vector3 startPosition;
+    Vector2 startPosition;
     [SerializeField] float timeToNextMove = 0.0f;
     bool needWait = false;
     public delegate void GoingFoward(Vector3 Position, float Speed);
@@ -32,12 +32,12 @@ public class PlayerMove : MonoBehaviour
     bool inCoolDownDash;
     void Start()//asAS
     {
-        direction = Vector3.zero;
-        startPosition = Vector3.zero;
+        direction = Vector2.zero;
+        startPosition = Vector2.zero;
         timer = 0.0f;
         moving = false;
         needWait = false;
-        myRigid = GetComponent<Rigidbody>();
+        myRigid = GetComponent<Rigidbody2D>();
         myRender = GetComponentInChildren<SpriteRenderer>();
         alive = true;
         dashReady = false;
@@ -61,21 +61,20 @@ public class PlayerMove : MonoBehaviour
         }
         if (!moving && alive)
         {
-            direction = Vector3.zero;
+            direction = Vector2.zero;
             direction.x = Input.GetAxisRaw("Horizontal");
-            if(direction.x == zeroF) direction.z = Input.GetAxisRaw("Vertical");
+            if(direction.x == zeroF) direction.y = Input.GetAxisRaw("Vertical");
             if (direction.x < zeroF) myRender.sprite = left;
             if (direction.x > zeroF) myRender.sprite = right;
-            if (direction.z > zeroF) myRender.sprite = up;
-            if (direction.z < zeroF) myRender.sprite = down;
+            if (direction.y > zeroF) myRender.sprite = up;
+            if (direction.y < zeroF) myRender.sprite = down;
             if (dashReady)
             {
                 modifDistanceToDash = two;
                 canDash = false;
-                myRigid.useGravity = false;
             }
         }
-        if (direction != Vector3.zero && !moving && alive)
+        if (direction != Vector2.zero && !moving && alive)
         {
             moving = true;
             startPosition = myRigid.position;
@@ -86,25 +85,22 @@ public class PlayerMove : MonoBehaviour
     {
         if(moving && !needWait && alive)//asAS
         {
-            Vector3 ux = new Vector3((modifDistanceToDash * distance.x) * direction.x, distance.y * direction.y,
-                                      (modifDistanceToDash * distance.z) * direction.z);
-            ux = Vector3.Lerp(startPosition, startPosition + ux, timer);
-            ux.y = transform.position.y;
+            Vector2 ux = new Vector2((modifDistanceToDash * distance.x) * direction.x,
+                                      (modifDistanceToDash * distance.y) * direction.y);
+            ux = Vector2.Lerp(startPosition, startPosition + ux, timer);
             myRigid.MovePosition(ux);
             timer += Time.deltaTime * speed;
             if (timer >= one)
             {
                 timer = zeroF;
                 needWait = true;
-                ux = new Vector3((modifDistanceToDash * distance.x) * direction.x, distance.y * direction.y,
-                                 (modifDistanceToDash * distance.z) * direction.z);
-                ux = Vector3.Lerp(startPosition, startPosition + ux, one);
-                ux.y = transform.position.y;
+                ux = new Vector2((modifDistanceToDash * distance.x) * direction.x,
+                                 (modifDistanceToDash * distance.y) * direction.y);
+                ux = Vector2.Lerp(startPosition, startPosition + ux, one);
                 myRigid.MovePosition(ux);
                 if (!canDash)
                 {
                     modifDistanceToDash = one;
-                    myRigid.useGravity = true;
                 }
                 dashReady = false;
                 PlayerGoingFoward?.Invoke(transform.position, speed);
@@ -115,10 +111,10 @@ public class PlayerMove : MonoBehaviour
     }
     void DropBodyCheck()
     {
-        if(transform.position.y < zeroF)
+        /*if(transform.position.z < zeroF)
         {
             alive = false;
-        }
+        }*/
     }
     IEnumerator waitToNextMove()
     {

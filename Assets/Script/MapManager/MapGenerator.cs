@@ -11,15 +11,13 @@ public class MapGenerator : MonoBehaviour // asAS
     List<GameObject> map = null;
     const int zero = 0;
     const int one = 1;
-    [SerializeField] Vector3 correctRotation = new Vector3();
     void Start()
     {
         map = new List<GameObject>();
         for(int i = zero; i < maxMapGenerated;i++)
         {
-            Vector3 aux = new Vector3(transform.position.x, transform.position.y , transform.position.z + (betweenPrefab * i));
+            Vector3 aux = new Vector3(transform.position.x, transform.position.y + (betweenPrefab * i), transform.position.z);
             map.Add(Instantiate(mapPrefab[Random.Range(zero, mapPrefab.Length)],aux, Quaternion.identity,transform));
-            map[i].transform.localRotation = Quaternion.Euler(correctRotation);
         }
     }
     void OnEnable()
@@ -32,12 +30,11 @@ public class MapGenerator : MonoBehaviour // asAS
     }
     void GenerateMoreMap(Vector3 pos, float speed)
     {
-        if(pos.z > map[map.Count-one].transform.localPosition.z - preventDistansToViewed)
+        if(pos.y > map[map.Count-one].transform.localPosition.y - preventDistansToViewed)
         {
             Vector3 aux = map[map.Count-one].transform.position;
-            aux.z += betweenPrefab;
+            aux.y += betweenPrefab;
             map.Add(Instantiate(mapPrefab[Random.Range(zero, mapPrefab.Length)], aux, Quaternion.identity, transform));
-            map[map.Count-one].transform.localRotation = Quaternion.Euler(correctRotation);
         }
     }
 }

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class GoInDirection : MonoBehaviour
 {
-    [SerializeField] Vector3 direction = new Vector3();
+    [SerializeField] Vector2 direction = new Vector2();
     [SerializeField] float speed = 0;
-    Rigidbody myRigid; 
+    Rigidbody2D myRigid; 
     void Start()
     {
-        myRigid = GetComponent<Rigidbody>();
+        myRigid = GetComponent<Rigidbody2D>();
     }
     void FixedUpdate()
     {
