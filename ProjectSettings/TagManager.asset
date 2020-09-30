@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FloorContainer
   - Trap
+  - Floor
   layers:
   - Default
   - TransparentFX
