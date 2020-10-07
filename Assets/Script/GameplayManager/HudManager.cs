@@ -5,9 +5,12 @@ using UnityEngine.UI;
 public class HudManager : MonoBehaviour //asAS
 {
     [SerializeField] Text meters = null;
+    int zero = 0;
+    int maxMeters = 0;
     void OnEnable()
     {
         PlayerMove.PlayerGoingFoward += PlayerInMeters;
+        maxMeters = zero;
     }
     void OnDisable()
     {
@@ -15,7 +18,11 @@ public class HudManager : MonoBehaviour //asAS
     }
     void PlayerInMeters(Vector3 pos,float speed)
     {
-        meters.text = (int)pos.y + "m";
+        if(pos.y > maxMeters)
+        {
+            maxMeters = (int)pos.y;
+        }
+        meters.text = maxMeters + "m";
     }
     private void Update()
     {
