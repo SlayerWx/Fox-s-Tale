@@ -12,12 +12,13 @@ public class MapGenerator : MonoBehaviour // asAS
     const int one = 1;
     GameObject lastInst = null;
     MapData lastData = null;
+    float difX;
     void Start()
     {
         lastInst = null;
         lastData = null;
         map = new List<GameObject>();
-        float difX = 0;
+        difX = 0;
         for(int i = zero; i < maxMapGenerated;i++)
         {
             Vector3 aux = Vector3.zero;
@@ -25,7 +26,6 @@ public class MapGenerator : MonoBehaviour // asAS
                 aux = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             else
             {
-                
                 aux = new Vector3(transform.position.x, lastData.GetCoordsEnd().y, transform.position.z);
                 difX = lastData.GetCoordsEnd().x;
             }
@@ -56,9 +56,16 @@ public class MapGenerator : MonoBehaviour // asAS
     {
         if(pos.y > map[map.Count-one].transform.localPosition.y - preventDistansToViewed)
         {
-            Vector3 aux = map[map.Count-one].transform.position;
-          //  aux.y += betweenPrefab;
-            map.Add(Instantiate(mapPrefab[Random.Range(zero, mapPrefab.Length)], aux, Quaternion.identity, transform));
+            Vector3 aux = new Vector3(transform.position.x, lastData.GetCoordsEnd().y, transform.position.z);
+            difX = lastData.GetCoordsEnd().x;
+            lastInst = Instantiate(mapPrefab[Random.Range(zero, mapPrefab.Length)], aux, Quaternion.identity, transform);
+            lastData = lastInst.GetComponent<MapData>();
+            difX -= lastData.GetCoordsStart().x;
+            lastInst.transform.position = new Vector3(lastInst.transform.position.x + difX,
+                Mathf.Abs(lastInst.transform.position.y) + Mathf.Abs(lastData.GetCoordsLStart().y)
+                , transform.position.z);
+            map.Add(lastInst);
+
         }
     }
 }

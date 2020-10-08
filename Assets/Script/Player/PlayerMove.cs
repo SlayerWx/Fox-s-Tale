@@ -30,6 +30,7 @@ public class PlayerMove : MonoBehaviour
     bool canDash;
     bool dashReady;
     bool inCoolDownDash;
+    bool inFloor;
     void Start()//asAS
     {
         direction = Vector2.zero;
@@ -43,6 +44,15 @@ public class PlayerMove : MonoBehaviour
         dashReady = false;
         canDash = true;
         inCoolDownDash = false;
+        inFloor = true;
+    }
+    void OnEnable()
+    {
+        CheckPlayerInFloor.InFloor += CheckFloor;
+    }
+    void OnDisable()
+    {
+        CheckPlayerInFloor.InFloor -= CheckFloor;
     }
     void Update()
     {
@@ -50,7 +60,6 @@ public class PlayerMove : MonoBehaviour
     }
     void FixedUpdate()
     {
-        DropBodyCheck();
         Move();
     }
     void InputMove()
@@ -109,15 +118,10 @@ public class PlayerMove : MonoBehaviour
             }
         } 
     }
-    void DropBodyCheck()
-    {
-        /*if(transform.position.z < zeroF)
-        {
-            alive = false;
-        }*/
-    }
     IEnumerator waitToNextMove()
     {
+        if (!inFloor) alive = false;
+        else alive = true;
         yield return new WaitForSeconds(timeToNextMove);
         needWait = false;
         moving = false;
@@ -137,5 +141,10 @@ public class PlayerMove : MonoBehaviour
     public bool GetAlive()
     {
         return alive;
+    }
+    void CheckFloor(bool status)
+    {
+        inFloor = status;
+        Debug.Log(inFloor);
     }
 }
