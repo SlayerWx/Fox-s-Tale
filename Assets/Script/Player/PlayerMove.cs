@@ -19,6 +19,8 @@ public class PlayerMove : MonoBehaviour
     bool needWait = false;
     public delegate void GoingFoward(Vector3 Position, float Speed);
     public static event GoingFoward PlayerGoingFoward;
+    public delegate void PlayerDead();
+    public static event PlayerDead PlayerIsDead;
     bool alive;
     SpriteRenderer myRender;
     [SerializeField] Sprite left = null;
@@ -120,11 +122,20 @@ public class PlayerMove : MonoBehaviour
     }
     IEnumerator waitToNextMove()
     {
-        if (!inFloor) alive = false;
-        else alive = true;
+        
         yield return new WaitForSeconds(timeToNextMove);
-        needWait = false;
-        moving = false;
+        if (!inFloor)
+        {
+            alive = false;
+            PlayerIsDead?.Invoke();
+        }
+        else
+        {
+            alive = true;
+            needWait = false;
+            moving = false;
+        }
+        
     }
     IEnumerator waitingToDashAgain()
     {
