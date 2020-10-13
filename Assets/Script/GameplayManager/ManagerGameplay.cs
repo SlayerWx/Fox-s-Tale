@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDection : MonoBehaviour
+public class ManagerGameplay : MonoBehaviour
 {
     // asAS
     const float zerof = 0.0f;
@@ -18,11 +18,13 @@ public class PlayerDection : MonoBehaviour
     void OnEnable()
     {
         PlayerMove.PlayerIsDead += EndGame;
+        PlayerMove.PlayerPauseRequest += pause;
         Time.timeScale = onef;
     }
     void OnDisable()
     {
         PlayerMove.PlayerIsDead -= EndGame;
+        PlayerMove.PlayerPauseRequest -= pause;
     }
     void EndGame()
     {
@@ -30,7 +32,7 @@ public class PlayerDection : MonoBehaviour
     }
     IEnumerator InitDeadMenu()
     {
-        
+
         yield return new WaitForSeconds(TimeToDeadMenu);
         Time.timeScale = zerof;
         activeLayer(Layers.dead);
@@ -40,5 +42,18 @@ public class PlayerDection : MonoBehaviour
         deadLayer.SetActive(option == Layers.dead);
         pauseLayer.SetActive(option == Layers.pause);
         inGamePlayer.SetActive(option == Layers.inGame);
+    }
+    void pause()
+    {
+        if (pauseLayer.activeSelf)
+        {
+            Time.timeScale = onef;
+            activeLayer(Layers.inGame);
+        }
+        else
+        {
+            Time.timeScale = zerof;
+            activeLayer(Layers.pause);
+        }
     }
 }

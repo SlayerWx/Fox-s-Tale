@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ManagerScene : MonoBehaviour
 {
-    [SerializeField] string sceneName = "Menu";
+    [SerializeField] string sceneName = null;
     public void ChangeScene()
     {
         SceneManager.LoadScene(sceneName);

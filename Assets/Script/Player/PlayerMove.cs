@@ -21,6 +21,8 @@ public class PlayerMove : MonoBehaviour
     public static event GoingFoward PlayerGoingFoward;
     public delegate void PlayerDead();
     public static event PlayerDead PlayerIsDead;
+    public delegate void PlayerPause();
+    public static event PlayerPause PlayerPauseRequest;
     bool alive;
     SpriteRenderer myRender;
     [SerializeField] Sprite left = null;
@@ -28,6 +30,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] Sprite right = null;
     [SerializeField] Sprite down = null;
     [SerializeField] string dashButton = null;
+    [SerializeField] string pauseButton = null;
     [SerializeField] float waitToUseDashAgain = 0.0f;
     bool canDash;
     bool dashReady;
@@ -66,6 +69,10 @@ public class PlayerMove : MonoBehaviour
     }
     void InputMove()
     {
+        if(Input.GetKeyDown(pauseButton) && alive)
+        {
+            PlayerPauseRequest?.Invoke();
+        }
         if (Input.GetKeyDown(dashButton) && canDash)
         {
             dashReady = true;
