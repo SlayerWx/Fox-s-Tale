@@ -24,11 +24,5 @@ public class HudManager : MonoBehaviour //asAS
         }
         meters.text = maxMeters + "m";
     }
-    private void Update()
-    {
-        if(Input.GetKeyDown("p"))
-        {
-            Application.Quit();
-        }
-    }
+    
 }

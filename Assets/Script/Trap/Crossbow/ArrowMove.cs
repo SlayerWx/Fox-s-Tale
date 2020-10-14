@@ -36,7 +36,10 @@ public class ArrowMove : MonoBehaviour
         if(!toDead)
         {
             toDead = true;
-            Destroy(transform.gameObject, timerLife);
+            if (null != gameObject)
+            {
+                Destroy(transform.gameObject, timerLife);
+            }
         }
     }
 }
