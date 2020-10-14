@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ArrowMove : MonoBehaviour
 {
+    const float onef = 1.0f;
     bool readyToMove;
     [SerializeField] float timerLife = 0.0f;
     [SerializeField] float speed = 0.0f;
@@ -23,6 +24,10 @@ public class ArrowMove : MonoBehaviour
         if(readyToMove)
         {
             myRigid.velocity = (transform.TransformDirection(Vector2.right) * speed) * Time.deltaTime;
+            if (transform.position.y < onef)
+            {
+                Destroy(transform.gameObject);
+            }
         }
     }
     public void Ready()

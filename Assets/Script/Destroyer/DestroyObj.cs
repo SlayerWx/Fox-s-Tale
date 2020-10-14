@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class DestroyObj : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D collision)
+    [SerializeField] PlayerMove player;
+    void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.gameObject.tag != "Player")
         {
-            Destroy(collision.gameObject);
+            Destroy(collision.gameObject.GetComponent<Transform>().gameObject);
+        }
+        else
+        {
+            //player.SetAlive(false);
         }
     }
 }
