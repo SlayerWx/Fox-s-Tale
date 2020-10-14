@@ -1,0 +1,302 @@
+fileFormatVersion: 2
+guid: 715dc20d640d4474f93232e92e200174
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6663699629372292066
+    second: Anim. suelo roto_0
+  - first:
+      213: -8813052127514834365
+    second: Anim. suelo roto_1
+  - first:
+      213: -6621694133675886829
+    second: Anim. suelo roto_2
+  - first:
+      213: 8095269552436393039
+    second: Anim. suelo roto_3
+  - first:
+      213: 3456358758761069775
+    second: Anim. suelo roto_4
+  - first:
+      213: -4097853494218829950
+    second: Anim. suelo roto_5
+  - first:
+      213: -8695507478714763263
+    second: Anim. suelo roto_6
+  - first:
+      213: 895434254508402584
+    second: Anim. suelo roto_7
+  - first:
+      213: 4092233381680606222
+    second: Anim. suelo roto_8
+  - first:
+      213: -2812775905693485977
+    second: Anim. suelo roto_9
+  - first:
+      213: 6137551598331910527
+    second: Anim. suelo roto_10
+  - first:
+      213: -8500827860565820911
+    second: Anim. suelo roto_11
+  - first:
+      213: -1793869974141046405
+    second: Anim. suelo roto_12
+  - first:
+      213: 752787366465710550
+    second: Anim. suelo roto_13
+  - first:
+      213: 172418878530312598
+    second: Anim. suelo roto_14
+  - first:
+      213: -7058130570307217759
+    second: Anim. suelo roto_15
+  - first:
+      213: 2333308284001983577
+    second: Anim. suelo roto_16
+  - first:
+      213: 3450660839504411051
+    second: Anim. suelo roto_17
+  - first:
+      213: -2322168404560843773
+    second: Anim. suelo roto_18
+  - first:
+      213: 6567333234773094101
+    second: Anim. suelo roto_19
+  - first:
+      213: 7485785138423433289
+    second: Anim. suelo roto_20
+  - first:
+      213: 8954437221555825345
+    second: Anim. suelo roto_21
+  - first:
+      213: 2278569982974097945
+    second: Anim. suelo roto_22
+  - first:
+      213: 8167625021230778545
+    second: Anim. suelo roto_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim. suelo roto_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14cc5d2e78c583a0800000000000000
+      internalID: -6663699629372292066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim. suelo roto_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a4a7898cfb1b580800000000000000
+      internalID: -8813052127514834365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim. suelo roto_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317f5f6c4440b14a0800000000000000
+      internalID: -6621694133675886829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim. suelo roto_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44b10274cc285070800000000000000
+      internalID: 8095269552436393039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim. suelo roto_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc73408af377ff20800000000000000
+      internalID: 3456358758761069775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim. suelo roto_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f4e7755ff7127c0800000000000000
+      internalID: -4097853494218829950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
