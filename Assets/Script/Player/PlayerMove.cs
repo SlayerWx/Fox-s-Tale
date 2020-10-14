@@ -23,6 +23,8 @@ public class PlayerMove : MonoBehaviour
     public static event PlayerDead PlayerIsDead;
     public delegate void PlayerPause();
     public static event PlayerPause PlayerPauseRequest;
+    public delegate void DashState();
+    public static event DashState DashStateInfo;
     bool alive;
     SpriteRenderer myRender;
     [SerializeField] Sprite left = null;
@@ -75,7 +77,8 @@ public class PlayerMove : MonoBehaviour
         }
         if (Input.GetKeyDown(dashButton) && canDash)
         {
-            dashReady = true;
+            dashReady = true; 
+            DashStateInfo?.Invoke();
         }
         if (!moving && alive)
         {
@@ -90,6 +93,7 @@ public class PlayerMove : MonoBehaviour
             {
                 modifDistanceToDash = two;
                 canDash = false;
+                
             }
         }
         if (direction != Vector2.zero && !moving && alive)
@@ -150,7 +154,7 @@ public class PlayerMove : MonoBehaviour
         yield return new WaitForSeconds(waitToUseDashAgain);
         canDash = true;
         inCoolDownDash = false;
-        Debug.Log("Dash");
+        DashStateInfo?.Invoke();
     }
     public void SetAlive(bool w)
     {

@@ -24,7 +24,7 @@ public class ManagerGameplay : MonoBehaviour
     void OnDisable()
     {
         PlayerMove.PlayerIsDead -= EndGame;
-        PlayerMove.PlayerPauseRequest -= pause;
+        PlayerMove.PlayerPauseRequest -= pause; 
     }
     void EndGame()
     {

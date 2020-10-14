@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323338207511913854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.21, y: -0.31, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1323338208167773895}
@@ -185,7 +185,7 @@ MonoBehaviour:
   down: {fileID: -6781412095145881161, guid: cdee462b85c0857428e484e8483ca0c9, type: 3}
   dashButton: z
   pauseButton: p
-  waitToUseDashAgain: 2
+  waitToUseDashAgain: 3
 --- !u!114 &1323338208167773892
 MonoBehaviour:
   m_ObjectHideFlags: 0
