@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 8128579219158811707}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 8128579219169483115}
   m_Father: {fileID: 0}
@@ -63,11 +63,11 @@ MonoBehaviour:
   timeXFrame: 0.1
   interval: 0.6
   arrowPosAnim:
-  - {x: 0, y: 0.0150001, z: 0}
-  - {x: 0.11, y: 0.0150001, z: 0}
-  - {x: 0.38, y: 0.0150001, z: 0}
-  - {x: 0.53, y: 0.0150001, z: 0}
-  - {x: 0.65, y: 0.0150001, z: 0}
+  - {x: -0.61, y: 0.1, z: 0}
+  - {x: 0.05, y: 0.1, z: 0}
+  - {x: 0.76, y: 0.1, z: 0}
+  - {x: 1.32, y: 0.1, z: 0}
+  - {x: 1.94, y: 0.1, z: 0}
 --- !u!1 &8128579219169483108
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,7 +144,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.95, y: 1.09}
+  m_Size: {x: 3.3, y: 5.321986}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

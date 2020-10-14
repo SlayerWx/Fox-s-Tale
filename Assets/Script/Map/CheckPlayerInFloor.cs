@@ -8,7 +8,12 @@ public class CheckPlayerInFloor : MonoBehaviour//asAS
     public static event CPIF InFloor;
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Player")
+        /*if(col.gameObject.tag == "Player")
+        InFloor?.Invoke(true);*/
+    }
+    private void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Player")
         InFloor?.Invoke(true);
     }
     private void OnTriggerExit2D(Collider2D col)

@@ -154,6 +154,10 @@ public class PlayerMove : MonoBehaviour
     }
     public void SetAlive(bool w)
     {
+        if (!w)
+        {
+            PlayerIsDead?.Invoke();
+        }
         alive = w;
     }
     public bool GetAlive()
@@ -163,6 +167,5 @@ public class PlayerMove : MonoBehaviour
     void CheckFloor(bool status)
     {
         inFloor = status;
-        Debug.Log(inFloor);
     }
 }

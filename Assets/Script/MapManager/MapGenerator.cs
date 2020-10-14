@@ -38,6 +38,11 @@ public class MapGenerator : MonoBehaviour // asAS
                     Mathf.Abs(lastInst.transform.position.y) + Mathf.Abs(lastData.GetCoordsLStart().y)
                     , transform.position.z);
             }
+            else
+            {
+                lastInst.transform.position = new Vector3(lastInst.transform.position.x - lastData.GetCoordsLStart().x
+                    , lastInst.transform.position.y - lastData.GetCoordsLStart().y, lastInst.transform.position.z);
+            }
             
             map.Add(lastInst);
 

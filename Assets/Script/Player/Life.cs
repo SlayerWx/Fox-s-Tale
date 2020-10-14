@@ -5,7 +5,6 @@ using UnityEngine;
 public class Life : MonoBehaviour
 {
     PlayerMove move;
-    float deadTimeScale = 0.0f;
     void Start()
     {
         move = GetComponent<PlayerMove>();
@@ -15,7 +14,7 @@ public class Life : MonoBehaviour
         if(col.gameObject.tag == "Trap")
         {
             move.SetAlive(false);
-            Time.timeScale = deadTimeScale;
+            
         }
     }
 
