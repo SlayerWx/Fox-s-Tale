@@ -227,7 +227,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.7412163, y: 3.4446573}
+    - - {x: 0.7513616, y: 3.4997318}
       - {x: 0.7364055, y: 3.014595}
       - {x: -0.50780207, y: 3.0151732}
       - {x: -0.5164934, y: 1.9528354}
@@ -238,8 +238,8 @@ PolygonCollider2D:
       - {x: -1.761045, y: -0.4912694}
       - {x: -1.7627674, y: -2.7639573}
       - {x: -0.5143292, y: -2.7684934}
-      - {x: -0.5045386, y: -3.4417617}
-      - {x: 0.0057623144, y: -3.4427764}
+      - {x: -0.50073606, y: -3.4988003}
+      - {x: 0.0010090824, y: -3.4979136}
       - {x: 0.007307291, y: -2.235891}
       - {x: -1.2418792, y: -2.2401137}
       - {x: -1.2379749, y: -1.017419}
@@ -250,7 +250,7 @@ PolygonCollider2D:
       - {x: 0.010872111, y: 1.9484179}
       - {x: 0.011842594, y: 2.4768863}
       - {x: 1.266631, y: 2.4755185}
-      - {x: 1.2733172, y: 3.4380465}
+      - {x: 1.2675198, y: 3.5003676}
 --- !u!114 &6805934795777312475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,12 +328,12 @@ PrefabInstance:
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_Name
-      value: CrossbowTrap (10)
+      value: CrossbowTrap5
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219169483114, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
@@ -413,12 +413,12 @@ PrefabInstance:
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_Name
-      value: CrossbowTrap (9)
+      value: CrossbowTrap5
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219169483114, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
@@ -498,12 +498,12 @@ PrefabInstance:
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_Name
-      value: CrossbowTrap (8)
+      value: CrossbowTrap4
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219169483114, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
@@ -583,12 +583,12 @@ PrefabInstance:
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_Name
-      value: CrossbowTrap (4)
+      value: CrossbowTrap2
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219169483114, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
@@ -668,12 +668,12 @@ PrefabInstance:
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_Name
-      value: CrossbowTrap
+      value: CrossbowTrap1
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219169483114, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
@@ -753,12 +753,12 @@ PrefabInstance:
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_Name
-      value: CrossbowTrap (3)
+      value: CrossbowTrap2
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219169483114, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
@@ -838,12 +838,12 @@ PrefabInstance:
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_Name
-      value: CrossbowTrap (2)
+      value: CrossbowTrap2
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219169483114, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
@@ -923,12 +923,12 @@ PrefabInstance:
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_Name
-      value: CrossbowTrap (1)
+      value: CrossbowTrap1
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219169483114, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
@@ -1008,12 +1008,12 @@ PrefabInstance:
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_Name
-      value: CrossbowTrap (5)
+      value: CrossbowTrap3
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219169483114, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
@@ -1093,12 +1093,12 @@ PrefabInstance:
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_Name
-      value: CrossbowTrap (6)
+      value: CrossbowTrap3
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219169483114, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
@@ -1178,12 +1178,12 @@ PrefabInstance:
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_Name
-      value: CrossbowTrap (7)
+      value: CrossbowTrap4
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8128579219169483114, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
         type: 3}
