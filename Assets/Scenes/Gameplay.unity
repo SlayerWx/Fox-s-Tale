@@ -570,6 +570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCm: {fileID: 853727360}
   Player: {fileID: 1127850636}
+  destroyer: {fileID: 1938697725}
 --- !u!4 &354984822
 Transform:
   m_ObjectHideFlags: 0
@@ -1222,10 +1223,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1311,7 +1312,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.54901963, g: 0.7568628, b: 0.82745105, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1981,7 +1982,7 @@ MonoBehaviour:
   - {fileID: -5295673964901930672, guid: d96ef05ef3adb3341aa635bc290d866d, type: 3}
   - {fileID: -8847044692087600021, guid: d96ef05ef3adb3341aa635bc290d866d, type: 3}
   actualImage: {fileID: 1938697728}
-  time: 2
+  time: 0.6
 --- !u!114 &1938697727
 MonoBehaviour:
   m_ObjectHideFlags: 0
