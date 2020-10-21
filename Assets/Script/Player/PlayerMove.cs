@@ -172,4 +172,8 @@ public class PlayerMove : MonoBehaviour
     {
         inFloor = status;
     }
+    public bool GetDashing()
+    {
+        return dashReady;
+    }
 }

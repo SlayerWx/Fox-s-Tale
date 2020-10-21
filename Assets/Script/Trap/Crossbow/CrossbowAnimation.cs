@@ -14,6 +14,7 @@ public class CrossbowAnimation : MonoBehaviour
     [SerializeField] float interval = 0.0f;
     [SerializeField] Transform spawn = null;
     bool isOnAnim;
+    [SerializeField] bool on = true; 
     // asAS
     void Start()
     {
@@ -28,7 +29,7 @@ public class CrossbowAnimation : MonoBehaviour
     }
     void ShotAnim()
     {
-        if (!isOnAnim)
+        if (!isOnAnim && on)
         {
             if (null != myRender)
             {
