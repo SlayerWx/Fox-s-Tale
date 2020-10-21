@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class HudManager : MonoBehaviour //asAS
 {
     [SerializeField] Text meters = null;
+    [SerializeField] Text deadMeters = null;
     int zero = 0;
     int maxMeters = 0;
     void OnEnable()
@@ -23,6 +24,7 @@ public class HudManager : MonoBehaviour //asAS
             maxMeters = (int)pos.y;
         }
         meters.text = maxMeters + "m";
+        deadMeters.text = meters.text;
     }
     
 }

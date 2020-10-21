@@ -16,10 +16,6 @@ public class Life : MonoBehaviour
             move.SetAlive(false);
             
         }
-        if(col.gameObject.tag == "Destroyer")
-        {
-            move.SetAlive(false);
-        }
     }
     void OnTriggerStay2D(Collider2D col)
     {

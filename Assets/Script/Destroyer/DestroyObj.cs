@@ -13,7 +13,7 @@ public class DestroyObj : MonoBehaviour
         }
         else
         {
-            //player.SetAlive(false);
+            player.SetAlive(false);
         }
     }
 }
