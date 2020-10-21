@@ -1902,7 +1902,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1938697723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1921,7 +1921,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 9.95, y: 5.12}
-    newSize: {x: 0.2938411, y: 1.2879694}
+    newSize: {x: 0.42431352, y: 1.827224}
     adaptiveTilingThreshold: 0.5
     drawMode: 1
     adaptiveTiling: 0
@@ -1958,7 +1958,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938697722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.095, y: -10, z: 0}
+  m_LocalPosition: {x: 0, y: -12.88, z: 0}
   m_LocalScale: {x: 31.249998, y: 1.8749998, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2037,11 +2037,11 @@ SpriteRenderer:
   m_SortingOrder: 3
   m_Sprite: {fileID: -5295673964901930672, guid: d96ef05ef3adb3341aa635bc290d866d,
     type: 3}
-  m_Color: {r: 0.122641504, g: 0.10702207, b: 0.10702207, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 0.2938411, y: 1.2879694}
+  m_Size: {x: 0.42431352, y: 1.827224}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2256,7 +2256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 31.7, y: 33.1}
+  m_AnchoredPosition: {x: 31.699951, y: 33.099976}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2055419411
@@ -2374,6 +2374,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323338208167773893, guid: af20457df80945a4f94f0a66ad4df9bf,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1323338208167773893, guid: af20457df80945a4f94f0a66ad4df9bf,
+        type: 3}
+      propertyPath: timeToNextMove
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1323338208167773895, guid: af20457df80945a4f94f0a66ad4df9bf,
         type: 3}
