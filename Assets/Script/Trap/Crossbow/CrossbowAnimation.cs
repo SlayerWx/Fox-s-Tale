@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class CrossbowAnimation : MonoBehaviour
 {
-    [SerializeField] private Sprite[] anim = null;
+    [SerializeField] private Sprite[] animShot = null;
+    [SerializeField] private Sprite[] animReload = null;
     SpriteRenderer myRender;
     GameObject arrow = null;
     ArrowMove moveArrow = null;
     [SerializeField] GameObject prefArrow = null;
-    [SerializeField] float correctionArrowPosY = 0.0f;
     [SerializeField] float timeXFrame = 0.0f;
     [SerializeField] float interval = 0.0f;
-    [SerializeField] Vector3[] arrowPosAnim = null;
+    [SerializeField] Transform spawn = null;
     bool isOnAnim;
     // asAS
     void Start()
@@ -39,9 +39,7 @@ public class CrossbowAnimation : MonoBehaviour
     void SummonArrow()
     {
         arrow = Instantiate(prefArrow, transform.position, transform.rotation, transform);
-        arrow.transform.position = new Vector3(arrow.transform.position.x,
-                                            arrow.transform.position.y + correctionArrowPosY,
-                                            arrow.transform.position.z);
+        arrow.transform.position = spawn.position;
         moveArrow = arrow.GetComponent<ArrowMove>();
     }
     IEnumerator FrameSprite()
@@ -51,17 +49,19 @@ public class CrossbowAnimation : MonoBehaviour
             StopCoroutine(FrameSprite());
         }
         isOnAnim = true;
-        SummonArrow();
-        for (int i = 0; i < anim.Length && null != gameObject; i++)
+        for (int i = 0; i < animShot.Length && null != gameObject; i++)
         {
-            
-                myRender.sprite = anim[i];
-            if (i < arrowPosAnim.Length && null != gameObject) arrow.transform.localPosition = arrowPosAnim[i];
-            else if (null != gameObject) moveArrow.Ready();
+                myRender.sprite = animShot[i];
             yield return new WaitForSeconds(timeXFrame);
             
         }
-
+        SummonArrow();
+        moveArrow.Ready();
+        for(int i = 0; i < animReload.Length && null != gameObject;i++)
+        {
+            myRender.sprite = animReload[i];
+            yield return new WaitForSeconds(timeXFrame);
+        }
         yield return new WaitForSeconds(interval);
         isOnAnim = false;
     }

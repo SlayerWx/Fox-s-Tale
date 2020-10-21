@@ -14,7 +14,7 @@ public class ArrowMove : MonoBehaviour
     void Start()
     {
         myRigid = GetComponent<Rigidbody2D>();
-        readyToMove = false;
+        readyToMove = true;
         toDead = false;
     }
 
