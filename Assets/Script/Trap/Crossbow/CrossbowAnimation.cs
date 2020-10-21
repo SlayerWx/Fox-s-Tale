@@ -50,7 +50,7 @@ public class CrossbowAnimation : MonoBehaviour
             StopCoroutine(FrameSprite());
         }
         isOnAnim = true;
-        for (int i = 0; i < animShot.Length && null != gameObject; i++)
+        for (int i = 0; i < animShot.Length && myRender; i++)
         {
                 myRender.sprite = animShot[i];
             yield return new WaitForSeconds(timeXFrame);
@@ -58,7 +58,7 @@ public class CrossbowAnimation : MonoBehaviour
         }
         SummonArrow();
         moveArrow.Ready();
-        for(int i = 0; i < animReload.Length && null != gameObject;i++)
+        for(int i = 0; i < animReload.Length && myRender;i++)
         {
             myRender.sprite = animReload[i];
             yield return new WaitForSeconds(timeXFrame);

@@ -1749,16 +1749,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossbowTrap2
       objectReference: {fileID: 0}
-    - target: {fileID: 8128579219158811707, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8128579219169483114, guid: 2b0f7604a2373ea4dbb279cffe2bc133,
-        type: 3}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b0f7604a2373ea4dbb279cffe2bc133, type: 3}
 --- !u!4 &517529479141769815 stripped

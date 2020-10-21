@@ -65,6 +65,7 @@ MonoBehaviour:
   timeXFrame: 0.1
   interval: 0.6
   spawn: {fileID: 1242039577169668965}
+  on: 1
 --- !u!1 &8128579219169483108
 GameObject:
   m_ObjectHideFlags: 0
