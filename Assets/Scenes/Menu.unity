@@ -1821,7 +1821,7 @@ MonoBehaviour:
   speed:
   - 37
   - 30
-  - 20
+  - 100
 --- !u!1 &2084735982
 GameObject:
   m_ObjectHideFlags: 0
