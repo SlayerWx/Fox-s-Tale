@@ -9,18 +9,24 @@ public class DeteriorationFloor : MonoBehaviour
     [SerializeField] Sprite[] mySprite = null;
     [SerializeField] SpriteRenderer myRender = null;
     [SerializeField] PlayerMove plyer = null;
+    bool deteriorationOn;
     bool playerInside;
     void Start()
     {
         playerInside = false;
         myRender.sprite = mySprite[0];
         gameObject.tag = "Untagged";
+        deteriorationOn = false;
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Player" && gameObject.tag != "Trap")
+        if(col.gameObject.tag == "Player" && gameObject.tag != "Trap" && !deteriorationOn)
         {
+            deteriorationOn = true;
             StartCoroutine(deterioration());
+        }
+        if (col.gameObject.tag == "Player")
+        {
             playerInside = true;
         }
     }
