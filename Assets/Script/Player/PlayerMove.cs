@@ -91,7 +91,7 @@ public class PlayerMove : MonoBehaviour
             dashReady = true; 
             DashStateInfo?.Invoke();
         }
-        if (!moving && alive)
+        if (!moving && alive && Time.deltaTime != zeroF)
         {
             direction = Vector2.zero;
             direction.x = Input.GetAxisRaw("Horizontal");
@@ -143,9 +143,9 @@ public class PlayerMove : MonoBehaviour
             }
         } 
     }
-    void AnimSelector(bool AnimationIF,Direction dir,Sprite[] dirSprite)
+    void AnimSelector(bool animationIF,Direction dir,Sprite[] dirSprite)
     {
-        if (AnimationIF && myDirection != dir && animCourroutine != null)
+        if (animationIF && myDirection != dir && animCourroutine != null)
         {
             StopCoroutine(animCourroutine);
             myDirection = dir;
