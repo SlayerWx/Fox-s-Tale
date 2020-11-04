@@ -71,13 +71,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 7388399842426930641, guid: cdee462b85c0857428e484e8483ca0c9,
+  m_Sprite: {fileID: -5311732980910027673, guid: 57606528face0f8408b2446f200ee0bc,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.84, y: 1.26}
+  m_Size: {x: 0.88, y: 1.21}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -100,8 +100,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.79, y: 1.28}
-    newSize: {x: 0.84, y: 1.26}
+    oldSize: {x: 0.88, y: 1.21}
+    newSize: {x: 0.88, y: 1.21}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -178,11 +178,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: {x: 1, y: 1}
   speed: 3
+  timePerFrame: 0.2
   timeToNextMove: 0
-  left: {fileID: 7388399842426930641, guid: cdee462b85c0857428e484e8483ca0c9, type: 3}
-  up: {fileID: 6757282713640645180, guid: cdee462b85c0857428e484e8483ca0c9, type: 3}
-  right: {fileID: 4334783836991956000, guid: cdee462b85c0857428e484e8483ca0c9, type: 3}
-  down: {fileID: -6781412095145881161, guid: cdee462b85c0857428e484e8483ca0c9, type: 3}
+  left:
+  - {fileID: -1396681409173755346, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: -3243736981552181042, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: 863710926072388071, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: -8834491690480640699, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: -7894836290427725344, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  up:
+  - {fileID: -5311732980910027673, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: -9206881284621043198, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: -286806378737805064, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: -7133925393527524056, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: -7332379269757843274, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  right:
+  - {fileID: -8728855284746361987, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: -5224051798418519003, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: 5982795552941662681, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: -8129305111871217609, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: -8728855284746361987, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  down:
+  - {fileID: 3218937020649824068, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: -8033122885593089390, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: -3677280575052364288, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: 6526887352665322366, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - {fileID: -8114015348763080203, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
   dashButton: z
   pauseButton: p
   waitToUseDashAgain: 3

@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    enum Direction
+    {
+        Left,Right,Up,Down
+    };
+    Direction myDirection;
+    Coroutine animCourroutine;
     Rigidbody2D myRigid;
     const float zeroF = 0.0f;
     [SerializeField] Vector2 distance = new Vector2();
     Vector2 direction;
     bool moving;
     float timer;
+    const int oneI = 1;
+    const int zeroI = 0;
     const float one = 1.0f;
     const float two = 2.0f;
     float modifDistanceToDash = 1.0f;
     [SerializeField] float speed = 0.0f;
+    [SerializeField] float timePerFrame = 0.0f;
     Vector2 startPosition;
     [SerializeField] float timeToNextMove = 0.0f;
     bool needWait = false;
@@ -27,10 +36,10 @@ public class PlayerMove : MonoBehaviour
     public static event DashState DashStateInfo;
     bool alive;
     SpriteRenderer myRender;
-    [SerializeField] Sprite left = null;
-    [SerializeField] Sprite up = null;
-    [SerializeField] Sprite right = null;
-    [SerializeField] Sprite down = null;
+    [SerializeField] Sprite[] left = null;
+    [SerializeField] Sprite[] up = null;
+    [SerializeField] Sprite[] right = null;
+    [SerializeField] Sprite[] down = null;
     [SerializeField] string dashButton = null;
     [SerializeField] string pauseButton = null;
     [SerializeField] float waitToUseDashAgain = 0.0f;
@@ -85,10 +94,11 @@ public class PlayerMove : MonoBehaviour
             direction = Vector2.zero;
             direction.x = Input.GetAxisRaw("Horizontal");
             if(direction.x == zeroF) direction.y = Input.GetAxisRaw("Vertical");
-            if (direction.x < zeroF) myRender.sprite = left;
-            if (direction.x > zeroF) myRender.sprite = right;
-            if (direction.y > zeroF) myRender.sprite = up;
-            if (direction.y < zeroF) myRender.sprite = down;
+                AnimSelector(direction.x < zeroF, Direction.Left, left);
+                AnimSelector(direction.x > zeroF, Direction.Right, right);
+                AnimSelector(direction.y > zeroF, Direction.Up, up);
+                AnimSelector(direction.y < zeroF, Direction.Down, down);
+
             if (dashReady)
             {
                 modifDistanceToDash = two;
@@ -131,6 +141,15 @@ public class PlayerMove : MonoBehaviour
             }
         } 
     }
+    void AnimSelector(bool AnimationIF,Direction dir,Sprite[] dirSprite)
+    {
+        if (AnimationIF)
+        {
+            if (myDirection != dir && animCourroutine != null) StopCoroutine(animCourroutine);
+            myDirection = dir;
+            animCourroutine = StartCoroutine(Anim(dirSprite));
+        }
+    }
     IEnumerator waitToNextMove()
     {
         
@@ -155,6 +174,15 @@ public class PlayerMove : MonoBehaviour
         canDash = true;
         inCoolDownDash = false;
         DashStateInfo?.Invoke();
+    }
+    IEnumerator Anim(Sprite[] anim)
+    {
+        for (int i = zeroI; i < anim.Length; i++)
+        {
+            myRender.sprite = anim[i];
+            yield return new WaitForSeconds(timePerFrame);
+            if (anim.Length - one == i) i = zeroI;
+        }
     }
     public void SetAlive(bool w)
     {
