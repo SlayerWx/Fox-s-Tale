@@ -61,6 +61,8 @@ public class PlayerMove : MonoBehaviour
         canDash = true;
         inCoolDownDash = false;
         inFloor = true;
+        myDirection = Direction.Down;
+        animCourroutine = StartCoroutine(Anim(down));
     }
     void OnEnable()
     {
@@ -94,10 +96,10 @@ public class PlayerMove : MonoBehaviour
             direction = Vector2.zero;
             direction.x = Input.GetAxisRaw("Horizontal");
             if(direction.x == zeroF) direction.y = Input.GetAxisRaw("Vertical");
-                AnimSelector(direction.x < zeroF, Direction.Left, left);
-                AnimSelector(direction.x > zeroF, Direction.Right, right);
-                AnimSelector(direction.y > zeroF, Direction.Up, up);
-                AnimSelector(direction.y < zeroF, Direction.Down, down);
+            AnimSelector(direction.x < zeroF, Direction.Left, left);
+            AnimSelector(direction.x > zeroF, Direction.Right, right);
+            AnimSelector(direction.y > zeroF, Direction.Up, up);
+            AnimSelector(direction.y < zeroF, Direction.Down, down);
 
             if (dashReady)
             {
@@ -143,9 +145,9 @@ public class PlayerMove : MonoBehaviour
     }
     void AnimSelector(bool AnimationIF,Direction dir,Sprite[] dirSprite)
     {
-        if (AnimationIF)
+        if (AnimationIF && myDirection != dir && animCourroutine != null)
         {
-            if (myDirection != dir && animCourroutine != null) StopCoroutine(animCourroutine);
+            StopCoroutine(animCourroutine);
             myDirection = dir;
             animCourroutine = StartCoroutine(Anim(dirSprite));
         }
