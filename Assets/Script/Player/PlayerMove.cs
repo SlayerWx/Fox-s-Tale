@@ -228,7 +228,6 @@ public class PlayerMove : MonoBehaviour
     void CheckFloor(bool status)
     {
         inFloor = status;
-        inFloor = true;
     }
     public bool GetDashing()
     {
