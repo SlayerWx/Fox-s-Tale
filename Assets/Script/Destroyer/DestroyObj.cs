@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DestroyObj : MonoBehaviour
 {
-    [SerializeField] PlayerMove player;
+    [SerializeField] PlayerMove player = null;
     void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.gameObject.tag != "Player")

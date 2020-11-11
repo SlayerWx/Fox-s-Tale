@@ -162,7 +162,10 @@ public class PlayerMove : MonoBehaviour
                 if (!canDash)
                 {
                     modifDistanceToDash = one;
-                    DashStateInfo?.Invoke();
+                    if (dashReady)
+                    {
+                        DashStateInfo?.Invoke();
+                    }
                 }
                 dashReady = false;
                 PlayerGoingFoward?.Invoke(transform.position, speed);

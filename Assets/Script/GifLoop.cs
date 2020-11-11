@@ -12,22 +12,25 @@ public class GifLoop : MonoBehaviour
     bool whileControl;
     void OnEnable()
     {
-        if(isLoop) StartCoroutine(Loop());
+        if (isLoop)
+        {
+            StartCoroutine(Loop());
+        };
         whileControl = true;
     }
 
     IEnumerator Loop()
     {
         short i = zero;
+        whileControl = true;
         while (whileControl && zero != steps.Length)
         {
-            if(!(i < steps.Length) && isLoop) i = zero;
+            if (!(i < steps.Length) && isLoop) i = zero;
             mySprite.sprite = steps[i];
             yield return new WaitForSeconds(timeXFrame);
             i++;
             if (!isLoop && i >= steps.Length) whileControl = false;
         }
-        whileControl = true;
     }
     public void StartAnim()
     {

@@ -17,7 +17,7 @@ public class JumpingFish : MonoBehaviour
     [SerializeField] BoxCollider2D myCollider;
     [SerializeField] float timeXFrame;
     [SerializeField] float coldown;
-    [SerializeField] SpriteBoxCollider[] spriteAndColliderPoints;
+    [SerializeField] SpriteBoxCollider[] spriteAndColliderPoints = null;
     const int zero = 0;
     const int one = 1;
     void OnEnable()
@@ -29,9 +29,9 @@ public class JumpingFish : MonoBehaviour
     }
     IEnumerator Jump()
     {
-        while (true)
+        while (true && mySprite != null)
         {
-            for (short i = one; i < spriteAndColliderPoints.Length; i++)
+            for (short i = one; i < spriteAndColliderPoints.Length && mySprite != null; i++)
             {
                 mySprite.sprite = spriteAndColliderPoints[i].mySprite;
                 myCollider.offset = spriteAndColliderPoints[i].offset;

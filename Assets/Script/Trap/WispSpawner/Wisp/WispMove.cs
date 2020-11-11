@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WispMove : MonoBehaviour
 {
-    [SerializeField] float intervalXMove;
+    [SerializeField] float intervalXMove = 0;
     Vector3 newPos;
     [SerializeField] float minDistance;
     [SerializeField] float stopDistance;
