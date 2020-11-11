@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] Sprite[] mySprite = null;
-    [SerializeField] Image actualImage = null;
-    const int one = 1;
+    [SerializeField] Sprite[] mySpriteDash = null;
+    [SerializeField] Image actualDashImage = null;
+    int stepDash = 0;
     const int zero = 0;
     void OnEnable()
     {
         PlayerMove.DashStateInfo += ChangeDashButtonSprite;
+        stepDash = zero;
     }
     void OnDisable()
     {
@@ -19,13 +20,8 @@ public class UIManager : MonoBehaviour
     }
     void ChangeDashButtonSprite()
     {
-        if(mySprite[0] == actualImage.sprite)
-        {
-            actualImage.sprite = mySprite[1];
-        }
-        else
-        {
-            actualImage.sprite = mySprite[0];
-        }
+        stepDash++;
+        if (stepDash >= mySpriteDash.Length) stepDash = zero;
+        actualDashImage.sprite = mySpriteDash[stepDash];
     }
 }

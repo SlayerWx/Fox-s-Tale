@@ -1,0 +1,1703 @@
+fileFormatVersion: 2
+guid: a6e15418fa99c7e4fbd64e0b37609906
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2609728273161436932
+    second: Anim. Pez saltando_0
+  - first:
+      213: -8458566707014254603
+    second: Anim. Pez saltando_1
+  - first:
+      213: -7270014170606729172
+    second: Anim. Pez saltando_2
+  - first:
+      213: 3940843332278487264
+    second: Anim. Pez saltando_3
+  - first:
+      213: 2402511822868322668
+    second: Anim. Pez saltando_4
+  - first:
+      213: -5767610297566559181
+    second: Anim. Pez saltando_5
+  - first:
+      213: 1112657117484331380
+    second: Anim. Pez saltando_6
+  - first:
+      213: -7070876547093223253
+    second: Anim. Pez saltando_7
+  - first:
+      213: 6288393093680603744
+    second: Anim. Pez saltando_8
+  - first:
+      213: -3133103983310613877
+    second: Anim. Pez saltando_zero
+  - first:
+      213: -4532212215644186921
+    second: Anim. Pez saltando_10
+  - first:
+      213: -7446673990854929117
+    second: Anim. Pez saltando_11
+  - first:
+      213: -1100335062356844146
+    second: Anim. Pez saltando_12
+  - first:
+      213: 6827022752914992796
+    second: Anim. Pez saltando_13
+  - first:
+      213: -4293743135581830040
+    second: Anim. Pez saltando_14
+  - first:
+      213: 4002099314528553183
+    second: Anim. Pez saltando_15
+  - first:
+      213: -4777368842945973462
+    second: Anim. Pez saltando_16
+  - first:
+      213: -928758100629389913
+    second: Anim. Pez saltando_17
+  - first:
+      213: -1725732367085492424
+    second: Anim. Pez saltando_18
+  - first:
+      213: 6297481496537616979
+    second: Anim. Pez saltando_19
+  - first:
+      213: 8268919486516930918
+    second: Anim. Pez saltando_20
+  - first:
+      213: 5355286174754307533
+    second: Anim. Pez saltando_21
+  - first:
+      213: -1651219066923416439
+    second: Anim. Pez saltando_22
+  - first:
+      213: 2635733208376187140
+    second: Anim. Pez saltando_23
+  - first:
+      213: 7580910129256806651
+    second: Anim. Pez saltando_24
+  - first:
+      213: -14317312076694390
+    second: Anim. Pez saltando_25
+  - first:
+      213: -6310210953699587686
+    second: Anim. Pez saltando_26
+  - first:
+      213: 6624866138823600535
+    second: Anim. Pez saltando_27
+  - first:
+      213: -4547628140361201109
+    second: Anim. Pez saltando_28
+  - first:
+      213: -4748096911273087864
+    second: Anim. Pez saltando_29
+  - first:
+      213: 8715863593252556034
+    second: Anim. Pez saltando_30
+  - first:
+      213: 6793008747379538806
+    second: Anim. Pez saltando_31
+  - first:
+      213: -4877217058637065060
+    second: Anim. Pez saltando_32
+  - first:
+      213: -5438201556194030340
+    second: Anim. Pez saltando_33
+  - first:
+      213: -7063497665033118417
+    second: Anim. Pez saltando_34
+  - first:
+      213: -3002841576030164251
+    second: Anim. Pez saltando_35
+  - first:
+      213: 2143328743774367802
+    second: Anim. Pez saltando_36
+  - first:
+      213: -5484575841306428218
+    second: Anim. Pez saltando_37
+  - first:
+      213: -219399101139437707
+    second: Anim. Pez saltando_38
+  - first:
+      213: 2924600363967631025
+    second: Anim. Pez saltando_39
+  - first:
+      213: 1814478027163950252
+    second: Anim. Pez saltando_40
+  - first:
+      213: -3858917419703775397
+    second: Anim. Pez saltando_41
+  - first:
+      213: -464223604188416965
+    second: Anim. Pez saltando_42
+  - first:
+      213: 3884430279775023777
+    second: Anim. Pez saltando_43
+  - first:
+      213: 8379241976095501034
+    second: Anim. Pez saltando_44
+  - first:
+      213: -7298486701252154888
+    second: Anim. Pez saltando_45
+  - first:
+      213: -328769870819351917
+    second: Anim. Pez saltando_46
+  - first:
+      213: -897119712857473752
+    second: Anim. Pez saltando_47
+  - first:
+      213: 1065893492751065369
+    second: Anim. Pez saltando_48
+  - first:
+      213: -4400530733814075807
+    second: Anim. Pez saltando_49
+  - first:
+      213: -8615598966257524704
+    second: Anim. Pez saltando_50
+  - first:
+      213: 578453942735919194
+    second: Anim. Pez saltando_51
+  - first:
+      213: -3694189366919335714
+    second: Anim. Pez saltando_52
+  - first:
+      213: 8480536514813604963
+    second: Anim. Pez saltando_53
+  - first:
+      213: 6114452387533935320
+    second: Anim. Pez saltando_54
+  - first:
+      213: -7911078262983219144
+    second: Anim. Pez saltando_55
+  - first:
+      213: -334379295532266280
+    second: Anim. Pez saltando_56
+  - first:
+      213: -1387805360345411128
+    second: Anim. Pez saltando_57
+  - first:
+      213: 728755979530429656
+    second: Anim. Pez saltando_58
+  - first:
+      213: -4198575989337696850
+    second: Anim. Pez saltando_59
+  - first:
+      213: 7780617698418412152
+    second: Anim. Pez saltando_60
+  - first:
+      213: 119806179300463883
+    second: Anim. Pez saltando_61
+  - first:
+      213: 6723087897916680810
+    second: Anim. Pez saltando_62
+  - first:
+      213: -4163637234323462
+    second: Anim. Pez saltando_63
+  - first:
+      213: -2246328731764852401
+    second: Anim. Pez saltando_64
+  - first:
+      213: -8828069672294164855
+    second: Anim. Pez saltando_65
+  - first:
+      213: 4018199466260140192
+    second: Anim. Pez saltando_66
+  - first:
+      213: -7468110898732875613
+    second: Anim. Pez saltando_67
+  - first:
+      213: 152915061213113175
+    second: Anim. Pez saltando_68
+  - first:
+      213: 6382596336195876125
+    second: Anim. Pez saltando_69
+  - first:
+      213: -4527041618450908706
+    second: Anim. Pez saltando_70
+  - first:
+      213: -7434352271127894836
+    second: Anim. Pez saltando_71
+  - first:
+      213: 4651548571234125189
+    second: Anim. Pez saltando_72
+  - first:
+      213: 5892016236558615219
+    second: Anim. Pez saltando_73
+  - first:
+      213: -6194914709689047834
+    second: Anim. Pez saltando_74
+  - first:
+      213: -3477705924286660331
+    second: Anim. Pez saltando_75
+  - first:
+      213: -1293457662754885599
+    second: Anim. Pez saltando_76
+  - first:
+      213: 5201708693073031430
+    second: Anim. Pez saltando_77
+  - first:
+      213: -1107451823661447952
+    second: Anim. Pez saltando_78
+  - first:
+      213: 7158323827485872699
+    second: Anim. Pez saltando_79
+  - first:
+      213: 3905680963324684007
+    second: Anim. Pez saltando_80
+  - first:
+      213: 1310689316542542997
+    second: Anim. Pez saltando_81
+  - first:
+      213: 5506499394045666599
+    second: Anim. Pez saltando_82
+  - first:
+      213: -6497694125078915066
+    second: Anim. Pez saltando_83
+  - first:
+      213: 1377571856291511764
+    second: Anim. Pez saltando_84
+  - first:
+      213: -7033107299083581841
+    second: Anim. Pez saltando_85
+  - first:
+      213: -6123510876308422527
+    second: Anim. Pez saltando_86
+  - first:
+      213: -430008092151671245
+    second: Anim. Pez saltando_87
+  - first:
+      213: 4412433039249471732
+    second: Anim. Pez saltando_88
+  - first:
+      213: 3180319592876128762
+    second: Anim. Pez saltando_89
+  - first:
+      213: -5214223797195887383
+    second: Anim. Pez saltando_90
+  - first:
+      213: 1459502959593239721
+    second: Anim. Pez saltando_91
+  - first:
+      213: 6163296184565755624
+    second: Anim. Pez saltando_92
+  - first:
+      213: 42030271409222998
+    second: Anim. Pez saltando_93
+  - first:
+      213: -7831751895954717920
+    second: Anim. Pez saltando_94
+  - first:
+      213: 1374131974343857277
+    second: Anim. Pez saltando_95
+  - first:
+      213: -7908407053770842332
+    second: Anim. Pez saltando_96
+  - first:
+      213: -2141787310919286769
+    second: Anim. Pez saltando_97
+  - first:
+      213: 3283873253728626494
+    second: Anim. Pez saltando_98
+  - first:
+      213: -7779921435792422690
+    second: Anim. Pez saltando_99
+  - first:
+      213: 4613841412245260414
+    second: Anim. Pez saltando_100
+  - first:
+      213: 4384000511742979522
+    second: Anim. Pez saltando_101
+  - first:
+      213: 7763752559789467378
+    second: Anim. Pez saltando_102
+  - first:
+      213: -5094742585466437411
+    second: Anim. Pez saltando_103
+  - first:
+      213: 2826695213892374352
+    second: Anim. Pez saltando_104
+  - first:
+      213: 6088253602086130124
+    second: Anim. Pez saltando_105
+  - first:
+      213: 6911955240745285610
+    second: Anim. Pez saltando_106
+  - first:
+      213: 7510301131745863129
+    second: Anim. Pez saltando_107
+  - first:
+      213: -8872744499468047834
+    second: Anim. Pez saltando_108
+  - first:
+      213: -5211637930488354238
+    second: Anim. Pez saltando_109
+  - first:
+      213: 4977669257921737469
+    second: Anim. Pez saltando_110
+  - first:
+      213: 2838214885405312616
+    second: Anim. Pez saltando_111
+  - first:
+      213: 7858015962354925377
+    second: Anim. Pez saltando_112
+  - first:
+      213: 4005392101496577765
+    second: Anim. Pez saltando_113
+  - first:
+      213: 1297428767840659413
+    second: Anim. Pez saltando_114
+  - first:
+      213: 8530634045109000757
+    second: Anim. Pez saltando_115
+  - first:
+      213: 6258708080740888234
+    second: Anim. Pez saltando_116
+  - first:
+      213: 7861266453423265765
+    second: Anim. Pez saltando_117
+  - first:
+      213: -7494598682165158887
+    second: Anim. Pez saltando_118
+  - first:
+      213: -1538378717304994401
+    second: Anim. Pez saltando_119
+  - first:
+      213: 3211236764515344403
+    second: Anim. Pez saltando_120
+  - first:
+      213: -832852547554627573
+    second: Anim. Pez saltando_121
+  - first:
+      213: 5388040464609999487
+    second: Anim. Pez saltando_122
+  - first:
+      213: 8823811435163017808
+    second: Anim. Pez saltando_123
+  - first:
+      213: -6683790818981300004
+    second: Anim. Pez saltando_124
+  - first:
+      213: 3597440829781823712
+    second: Anim. Pez saltando_125
+  - first:
+      213: -393328546120744343
+    second: Anim. Pez saltando_126
+  - first:
+      213: 937627853716932336
+    second: Anim. Pez saltando_127
+  - first:
+      213: 6652554356722949441
+    second: Anim. Pez saltando_128
+  - first:
+      213: -8284069943557485037
+    second: Anim. Pez saltando_129
+  - first:
+      213: -4371360956426173726
+    second: Anim. Pez saltando_130
+  - first:
+      213: -2916949630425919381
+    second: Anim. Pez saltando_131
+  - first:
+      213: 5273289507442123918
+    second: Anim. Pez saltando_132
+  - first:
+      213: -4350068542674201217
+    second: Anim. Pez saltando_133
+  - first:
+      213: 104678488849726507
+    second: Anim. Pez saltando_134
+  - first:
+      213: -4947654620923756443
+    second: Anim. Pez saltando_135
+  - first:
+      213: 3824691874198051872
+    second: Anim. Pez saltando_136
+  - first:
+      213: -2754543564163915743
+    second: Anim. Pez saltando_137
+  - first:
+      213: 4606965519746093432
+    second: Anim. Pez saltando_138
+  - first:
+      213: -5775954256664927608
+    second: Anim. Pez saltando_139
+  - first:
+      213: -7195134227269123582
+    second: Anim. Pez saltando_140
+  - first:
+      213: 5041163708207054230
+    second: Anim. Pez saltando_141
+  - first:
+      213: 934966268046128745
+    second: Anim. Pez saltando_142
+  - first:
+      213: 2159842406325249668
+    second: Anim. Pez saltando_143
+  - first:
+      213: -3544935884290263319
+    second: Anim. Pez saltando_144
+  - first:
+      213: -6733274096515078120
+    second: Anim. Pez saltando_145
+  - first:
+      213: -6991437167580634687
+    second: Anim. Pez saltando_146
+  - first:
+      213: 7802284014842465861
+    second: Anim. Pez saltando_147
+  - first:
+      213: 2214349410027131494
+    second: Anim. Pez saltando_148
+  - first:
+      213: 7061641448165403749
+    second: Anim. Pez saltando_149
+  - first:
+      213: -5719774692672766608
+    second: Anim. Pez saltando_150
+  - first:
+      213: 4299207307681941499
+    second: Anim. Pez saltando_151
+  - first:
+      213: 5602280942673495574
+    second: Anim. Pez saltando_152
+  - first:
+      213: 828204188529929900
+    second: Anim. Pez saltando_153
+  - first:
+      213: -6519068892443365349
+    second: Anim. Pez saltando_154
+  - first:
+      213: -3391521063498530555
+    second: Anim. Pez saltando_155
+  - first:
+      213: -5146005163020521227
+    second: Anim. Pez saltando_156
+  - first:
+      213: -1997652643264605493
+    second: Anim. Pez saltando_157
+  - first:
+      213: -2623570108017047568
+    second: Anim. Pez saltando_158
+  - first:
+      213: 6933074018278263036
+    second: Anim. Pez saltando_159
+  - first:
+      213: 5954433474827074359
+    second: Anim. Pez saltando_160
+  - first:
+      213: -4461337416344818726
+    second: Anim. Pez saltando_161
+  - first:
+      213: -3609692974229607850
+    second: Anim. Pez saltando_162
+  - first:
+      213: 6756277826749964358
+    second: Anim. Pez saltando_163
+  - first:
+      213: 3860611081796961890
+    second: Anim. Pez saltando_164
+  - first:
+      213: -2722149107497543560
+    second: Anim. Pez saltando_165
+  - first:
+      213: 1103780651782856739
+    second: Anim. Pez saltando_166
+  - first:
+      213: -8064257612622094194
+    second: Anim. Pez saltando_167
+  - first:
+      213: -1629428591286195132
+    second: Anim. Pez saltando_168
+  - first:
+      213: 5462365968404143703
+    second: Anim. Pez saltando_169
+  - first:
+      213: 7662052066004872105
+    second: Anim. Pez saltando_170
+  - first:
+      213: 5768182954284279397
+    second: Anim. Pez saltando_171
+  - first:
+      213: 3505745932291210998
+    second: Anim. Pez saltando_172
+  - first:
+      213: 3177802270067046603
+    second: Anim. Pez saltando_173
+  - first:
+      213: 1387205855199922047
+    second: Anim. Pez saltando_174
+  - first:
+      213: -5437423323040657064
+    second: Anim. Pez saltando_175
+  - first:
+      213: 7371907701759309533
+    second: Anim. Pez saltando_176
+  - first:
+      213: 8363368092068991624
+    second: Anim. Pez saltando_177
+  - first:
+      213: -7060388358614225537
+    second: Anim. Pez saltando_178
+  - first:
+      213: -6766187468435570731
+    second: Anim. Pez saltando_179
+  - first:
+      213: 9117335844449267502
+    second: Anim. Pez saltando_180
+  - first:
+      213: 1148014228319509025
+    second: Anim. Pez saltando_181
+  - first:
+      213: -988135166650075427
+    second: Anim. Pez saltando_182
+  - first:
+      213: -3812592043532516216
+    second: Anim. Pez saltando_183
+  - first:
+      213: -2105035941993930518
+    second: Anim. Pez saltando_184
+  - first:
+      213: -6666549716151703331
+    second: Anim. Pez saltando_185
+  - first:
+      213: 7973946985432070907
+    second: Anim. Pez saltando_186
+  - first:
+      213: 8561325320034233113
+    second: Anim. Pez saltando_187
+  - first:
+      213: 493233478007180207
+    second: Anim. Pez saltando_188
+  - first:
+      213: -1332925203656545537
+    second: Anim. Pez saltando_189
+  - first:
+      213: -494079300597665191
+    second: Anim. Pez saltando_190
+  - first:
+      213: -1432471436590494932
+    second: Anim. Pez saltando_191
+  - first:
+      213: 2191395856893435618
+    second: Anim. Pez saltando_192
+  - first:
+      213: 7096046532756117000
+    second: Anim. Pez saltando_193
+  - first:
+      213: -4453219227085518629
+    second: Anim. Pez saltando_194
+  - first:
+      213: 8289291213247230013
+    second: Anim. Pez saltando_195
+  - first:
+      213: -2652831490871319739
+    second: Anim. Pez saltando_196
+  - first:
+      213: -3925047567160649137
+    second: Anim. Pez saltando_197
+  - first:
+      213: 6848361260144432821
+    second: Anim. Pez saltando_198
+  - first:
+      213: -5823686068498092292
+    second: Anim. Pez saltando_199
+  - first:
+      213: 5800677601782385355
+    second: Anim. Pez saltando_200
+  - first:
+      213: 8463651742548819109
+    second: Anim. Pez saltando_201
+  - first:
+      213: -5363668816879442414
+    second: Anim. Pez saltando_202
+  - first:
+      213: -6365960897743206642
+    second: Anim. Pez saltando_203
+  - first:
+      213: -9025939665796517286
+    second: Anim. Pez saltando_204
+  - first:
+      213: 7150403769302536311
+    second: Anim. Pez saltando_205
+  - first:
+      213: 148480718974759979
+    second: Anim. Pez saltando_206
+  - first:
+      213: -1552734176224662848
+    second: Anim. Pez saltando_207
+  - first:
+      213: 1010383058381745112
+    second: Anim. Pez saltando_208
+  - first:
+      213: -5515914362632510118
+    second: Anim. Pez saltando_209
+  - first:
+      213: -4894897917052423374
+    second: Anim. Pez saltando_210
+  - first:
+      213: 163037230886816895
+    second: Anim. Pez saltando_211
+  - first:
+      213: 921257440314455703
+    second: Anim. Pez saltando_212
+  - first:
+      213: -4198455872834897302
+    second: Anim. Pez saltando_213
+  - first:
+      213: -1658738321491116002
+    second: Anim. Pez saltando_214
+  - first:
+      213: -8598326654154885088
+    second: Anim. Pez saltando_215
+  - first:
+      213: -345079298897566713
+    second: Anim. Pez saltando_216
+  - first:
+      213: -638590811994700960
+    second: Anim. Pez saltando_217
+  - first:
+      213: -6116469690288199727
+    second: Anim. Pez saltando_218
+  - first:
+      213: -3091417143147818328
+    second: Anim. Pez saltando_219
+  - first:
+      213: -5344735244565529365
+    second: Anim. Pez saltando_220
+  - first:
+      213: 5773063733195306721
+    second: Anim. Pez saltando_221
+  - first:
+      213: -5116216888771724458
+    second: Anim. Pez saltando_222
+  - first:
+      213: -1641302721321051022
+    second: Anim. Pez saltando_223
+  - first:
+      213: -3268685392578249375
+    second: Anim. Pez saltando_224
+  - first:
+      213: -7648036293957875245
+    second: Anim. Pez saltando_225
+  - first:
+      213: -3865221708632561849
+    second: Anim. Pez saltando_226
+  - first:
+      213: 3965238559476154537
+    second: Anim. Pez saltando_227
+  - first:
+      213: -470696357538299727
+    second: Anim. Pez saltando_228
+  - first:
+      213: 1368711126759066854
+    second: Anim. Pez saltando_229
+  - first:
+      213: 3931195055185932914
+    second: Anim. Pez saltando_230
+  - first:
+      213: -2337297167969778252
+    second: Anim. Pez saltando_231
+  - first:
+      213: 6075961995674500195
+    second: Anim. Pez saltando_232
+  - first:
+      213: 6106581191498392516
+    second: Anim. Pez saltando_233
+  - first:
+      213: -1071698789254640106
+    second: Anim. Pez saltando_234
+  - first:
+      213: 7421000851499577292
+    second: Anim. Pez saltando_235
+  - first:
+      213: 2229513836104515510
+    second: Anim. Pez saltando_236
+  - first:
+      213: 4098643605083977292
+    second: Anim. Pez saltando_237
+  - first:
+      213: -7320996889646124355
+    second: Anim. Pez saltando_238
+  - first:
+      213: -3191432770586019495
+    second: Anim. Pez saltando_239
+  - first:
+      213: 2002854776315385206
+    second: Anim. Pez saltando_240
+  - first:
+      213: 5070816148268520972
+    second: Anim. Pez saltando_241
+  - first:
+      213: -6660537310126946184
+    second: Anim. Pez saltando_242
+  - first:
+      213: -5383207280098425501
+    second: Anim. Pez saltando_243
+  - first:
+      213: -1808312413269609406
+    second: Anim. Pez saltando_244
+  - first:
+      213: 1902108513797064842
+    second: Anim. Pez saltando_245
+  - first:
+      213: -2180700332936012703
+    second: Anim. Pez saltando_246
+  - first:
+      213: -6740633189442917211
+    second: Anim. Pez saltando_247
+  - first:
+      213: 6782151865249440451
+    second: Anim. Pez saltando_248
+  - first:
+      213: -2871473390570657758
+    second: Anim. Pez saltando_249
+  - first:
+      213: 8952015919159156581
+    second: Anim. Pez saltando_250
+  - first:
+      213: -4467557949351597046
+    second: Anim. Pez saltando_251
+  - first:
+      213: -5673866254141539529
+    second: Anim. Pez saltando_252
+  - first:
+      213: 7861648127760673524
+    second: Anim. Pez saltando_253
+  - first:
+      213: -7714750636299567192
+    second: Anim. Pez saltando_254
+  - first:
+      213: 3633308754547060046
+    second: Anim. Pez saltando_255
+  - first:
+      213: 1972129148746127387
+    second: Anim. Pez saltando_256
+  - first:
+      213: -513331030303184820
+    second: Anim. Pez saltando_257
+  - first:
+      213: -9163138175061752969
+    second: Anim. Pez saltando_258
+  - first:
+      213: -2702406095954387773
+    second: Anim. Pez saltando_259
+  - first:
+      213: 1470795009820428419
+    second: Anim. Pez saltando_260
+  - first:
+      213: -1441812674835989392
+    second: Anim. Pez saltando_261
+  - first:
+      213: 8926672333304556915
+    second: Anim. Pez saltando_262
+  - first:
+      213: -2467814609271960165
+    second: Anim. Pez saltando_263
+  - first:
+      213: 8766882244030107553
+    second: Anim. Pez saltando_264
+  - first:
+      213: 1589418471507825667
+    second: Anim. Pez saltando_265
+  - first:
+      213: -6661449762948630425
+    second: Anim. Pez saltando_266
+  - first:
+      213: -8208113094169913770
+    second: Anim. Pez saltando_267
+  - first:
+      213: 5677977294510655840
+    second: Anim. Pez saltando_268
+  - first:
+      213: 539827578521586027
+    second: Anim. Pez saltando_269
+  - first:
+      213: -759341066671526870
+    second: Anim. Pez saltando_270
+  - first:
+      213: 867867089677521458
+    second: Anim. Pez saltando_271
+  - first:
+      213: 3345242554190874485
+    second: Anim. Pez saltando_272
+  - first:
+      213: -4341546968046644724
+    second: Anim. Pez saltando_273
+  - first:
+      213: 6168134401548948760
+    second: Anim. Pez saltando_274
+  - first:
+      213: -7219522481989072118
+    second: Anim. Pez saltando_275
+  - first:
+      213: 8099399874966036795
+    second: Anim. Pez saltando_276
+  - first:
+      213: 8783466923734476351
+    second: Anim. Pez saltando_277
+  - first:
+      213: 754091748230005958
+    second: Anim. Pez saltando_278
+  - first:
+      213: 614553303469143843
+    second: Anim. Pez saltando_279
+  - first:
+      213: -142649168214239743
+    second: Anim. Pez saltando_280
+  - first:
+      213: -8514785896015482314
+    second: Anim. Pez saltando_281
+  - first:
+      213: 6591845014669063932
+    second: Anim. Pez saltando_282
+  - first:
+      213: -4601122304078292535
+    second: Anim. Pez saltando_283
+  - first:
+      213: -9054082451713057619
+    second: Anim. Pez saltando_284
+  - first:
+      213: -9156550503461899451
+    second: Anim. Pez saltando_285
+  - first:
+      213: -4247351517200335520
+    second: Anim. Pez saltando_286
+  - first:
+      213: -8766355027989598223
+    second: Anim. Pez saltando_287
+  - first:
+      213: -5966670798250353889
+    second: Anim. Pez saltando_288
+  - first:
+      213: -8242893981971558878
+    second: Anim. Pez saltando_289
+  - first:
+      213: -2098507699832439981
+    second: Anim. Pez saltando_290
+  - first:
+      213: 9188150702000618696
+    second: Anim. Pez saltando_291
+  - first:
+      213: 8373782684392667462
+    second: Anim. Pez saltando_292
+  - first:
+      213: -8476570996252739921
+    second: Anim. Pez saltando_293
+  - first:
+      213: 3239403362508327135
+    second: Anim. Pez saltando_294
+  - first:
+      213: 80695780399743367
+    second: Anim. Pez saltando_295
+  - first:
+      213: -4928196159971856592
+    second: Anim. Pez saltando_296
+  - first:
+      213: 5647629440628511668
+    second: Anim. Pez saltando_297
+  - first:
+      213: 3876644607269120014
+    second: Anim. Pez saltando_298
+  - first:
+      213: 1463834486057132038
+    second: Anim. Pez saltando_299
+  - first:
+      213: 8331448662748573462
+    second: Anim. Pez saltando_300
+  - first:
+      213: -4458214283693301540
+    second: Anim. Pez saltando_301
+  - first:
+      213: 8579893151669752230
+    second: Anim. Pez saltando_302
+  - first:
+      213: -6160509285857897077
+    second: Anim. Pez saltando_303
+  - first:
+      213: -5826452553507856814
+    second: Anim. Pez saltando_304
+  - first:
+      213: 6672126136150939002
+    second: Anim. Pez saltando_305
+  - first:
+      213: -6934436663573638288
+    second: Anim. Pez saltando_306
+  - first:
+      213: -3737015940261236523
+    second: Anim. Pez saltando_307
+  - first:
+      213: -4952756647540610097
+    second: Anim. Pez saltando_308
+  - first:
+      213: 4575108675003243740
+    second: Anim. Pez saltando_309
+  - first:
+      213: 7046323823973708831
+    second: Anim. Pez saltando_310
+  - first:
+      213: 7389318825600556329
+    second: Anim. Pez saltando_311
+  - first:
+      213: -6474630933916096393
+    second: Anim. Pez saltando_312
+  - first:
+      213: 4139889781301472149
+    second: Anim. Pez saltando_313
+  - first:
+      213: 4736958009891727522
+    second: Anim. Pez saltando_314
+  - first:
+      213: -7584077420629707011
+    second: Anim. Pez saltando_315
+  - first:
+      213: -3040922229502655974
+    second: Anim. Pez saltando_316
+  - first:
+      213: -983483884196439781
+    second: Anim. Pez saltando_317
+  - first:
+      213: -7476521184341064135
+    second: Anim. Pez saltando_318
+  - first:
+      213: 3674854837926678497
+    second: Anim. Pez saltando_319
+  - first:
+      213: -5803697012722685489
+    second: Anim. Pez saltando_320
+  - first:
+      213: 8359029381386855294
+    second: Anim. Pez saltando_321
+  - first:
+      213: 774032315266016736
+    second: Anim. Pez saltando_322
+  - first:
+      213: 7280757208825646606
+    second: Anim. Pez saltando_323
+  - first:
+      213: -6536776897516031488
+    second: Anim. Pez saltando_324
+  - first:
+      213: 8714793639034538725
+    second: Anim. Pez saltando_325
+  - first:
+      213: 1910180473718557122
+    second: Anim. Pez saltando_326
+  - first:
+      213: 3905236117157170927
+    second: Anim. Pez saltando_327
+  - first:
+      213: -341968525312718613
+    second: Anim. Pez saltando_328
+  - first:
+      213: 4591998935525638340
+    second: Anim. Pez saltando_329
+  - first:
+      213: 5502205712203090817
+    second: Anim. Pez saltando_330
+  - first:
+      213: -6806813534601461438
+    second: Anim. Pez saltando_331
+  - first:
+      213: 3925086824828809688
+    second: Anim. Pez saltando_332
+  - first:
+      213: -5383461310287946728
+    second: Anim. Pez saltando_333
+  - first:
+      213: 4933067438460551806
+    second: Anim. Pez saltando_334
+  - first:
+      213: -5386713000972404753
+    second: Anim. Pez saltando_335
+  - first:
+      213: -3432127410917529808
+    second: Anim. Pez saltando_336
+  - first:
+      213: 7683680105756657555
+    second: Anim. Pez saltando_337
+  - first:
+      213: 3059958479573356028
+    second: Anim. Pez saltando_338
+  - first:
+      213: -2410275796113524669
+    second: Anim. Pez saltando_339
+  - first:
+      213: -609817766182895536
+    second: Anim. Pez saltando_340
+  - first:
+      213: -2494293847427874432
+    second: Anim. Pez saltando_341
+  - first:
+      213: 1564991038502317340
+    second: Anim. Pez saltando_342
+  - first:
+      213: -7690009067486811106
+    second: Anim. Pez saltando_343
+  - first:
+      213: -8851350414922270948
+    second: Anim. Pez saltando_344
+  - first:
+      213: 5410421363183471669
+    second: Anim. Pez saltando_345
+  - first:
+      213: -4290309654161399766
+    second: Anim. Pez saltando_346
+  - first:
+      213: -6110093805487330319
+    second: Anim. Pez saltando_347
+  - first:
+      213: -2366314425159753863
+    second: Anim. Pez saltando_348
+  - first:
+      213: -643742714130006323
+    second: Anim. Pez saltando_349
+  - first:
+      213: -7819516553925969684
+    second: Anim. Pez saltando_350
+  - first:
+      213: -8766876209002601521
+    second: Anim. Pez saltando_351
+  - first:
+      213: -7819246142130113296
+    second: Anim. Pez saltando_352
+  - first:
+      213: 8874540523865678275
+    second: Anim. Pez saltando_353
+  - first:
+      213: -1138005127152320977
+    second: Anim. Pez saltando_354
+  - first:
+      213: 5101811384923026836
+    second: Anim. Pez saltando_355
+  - first:
+      213: 2201962041550009808
+    second: Anim. Pez saltando_356
+  - first:
+      213: 8519280540941812856
+    second: Anim. Pez saltando_357
+  - first:
+      213: -976732234974997639
+    second: Anim. Pez saltando_358
+  - first:
+      213: -5404394722744139437
+    second: Anim. Pez saltando_359
+  - first:
+      213: 1310616395261630865
+    second: Anim. Pez saltando_360
+  - first:
+      213: 1030620219918237449
+    second: Anim. Pez saltando_361
+  - first:
+      213: -2493988121322406369
+    second: Anim. Pez saltando_362
+  - first:
+      213: -89233353635854813
+    second: Anim. Pez saltando_363
+  - first:
+      213: 3284665321762037489
+    second: Anim. Pez saltando_364
+  - first:
+      213: -5901292514151506371
+    second: Anim. Pez saltando_365
+  - first:
+      213: -6755033769381682685
+    second: Anim. Pez saltando_366
+  - first:
+      213: -5076864057656059723
+    second: Anim. Pez saltando_367
+  - first:
+      213: 184848342122239478
+    second: Anim. Pez saltando_368
+  - first:
+      213: 7359363465744392846
+    second: Anim. Pez saltando_369
+  - first:
+      213: 3076340585393528553
+    second: Anim. Pez saltando_370
+  - first:
+      213: 7391174804837453677
+    second: Anim. Pez saltando_371
+  - first:
+      213: -1665415113042945904
+    second: Anim. Pez saltando_372
+  - first:
+      213: -7174102738360199153
+    second: Anim. Pez saltando_373
+  - first:
+      213: -6524398872796125887
+    second: Anim. Pez saltando_374
+  - first:
+      213: -4995231453446654502
+    second: Anim. Pez saltando_375
+  - first:
+      213: -2339704402232468058
+    second: Anim. Pez saltando_376
+  - first:
+      213: 5819433557234390683
+    second: Anim. Pez saltando_377
+  - first:
+      213: 5121939219960665991
+    second: Anim. Pez saltando_378
+  - first:
+      213: 5541700793011783526
+    second: Anim. Pez saltando_379
+  - first:
+      213: 6357945455956959591
+    second: Anim. Pez saltando_380
+  - first:
+      213: 7269464383420214111
+    second: Anim. Pez saltando_381
+  - first:
+      213: 48042266927536892
+    second: Anim. Pez saltando_382
+  - first:
+      213: 201119141864745993
+    second: Anim. Pez saltando_383
+  - first:
+      213: 3055783969156655603
+    second: Anim. Pez saltando_384
+  - first:
+      213: -5908397084734889388
+    second: Anim. Pez saltando_385
+  - first:
+      213: 7968022941729676108
+    second: Anim. Pez saltando_386
+  - first:
+      213: 8904929976657057954
+    second: Anim. Pez saltando_387
+  - first:
+      213: -5336149013487800388
+    second: Anim. Pez saltando_388
+  - first:
+      213: 8188347882400905241
+    second: Anim. Pez saltando_389
+  - first:
+      213: -3731527320263630025
+    second: Anim. Pez saltando_390
+  - first:
+      213: -7019822204362939369
+    second: Anim. Pez saltando_391
+  - first:
+      213: 2206948793851166857
+    second: Anim. Pez saltando_392
+  - first:
+      213: -3515754754121629672
+    second: Anim. Pez saltando_393
+  - first:
+      213: 6217417758512498361
+    second: Anim. Pez saltando_394
+  - first:
+      213: -538654412335722602
+    second: Anim. Pez saltando_395
+  - first:
+      213: -6380943994258567248
+    second: Anim. Pez saltando_396
+  - first:
+      213: 5155148077414951153
+    second: Anim. Pez saltando_397
+  - first:
+      213: -4765490497429282543
+    second: Anim. Pez saltando_398
+  - first:
+      213: 4789908012341769958
+    second: Anim. Pez saltando_399
+  - first:
+      213: -6300007748243774715
+    second: Anim. Pez saltando_400
+  - first:
+      213: 4312088628179471468
+    second: Anim. Pez saltando_401
+  - first:
+      213: -4352930001284382748
+    second: Anim. Pez saltando_402
+  - first:
+      213: -601971903769950054
+    second: Anim. Pez saltando_403
+  - first:
+      213: 2861310079736375864
+    second: Anim. Pez saltando_404
+  - first:
+      213: 4874287094865091526
+    second: Anim. Pez saltando_405
+  - first:
+      213: 1873200245639561639
+    second: Anim. Pez saltando_406
+  - first:
+      213: 8652304949167698357
+    second: Anim. Pez saltando_407
+  - first:
+      213: -6277192453097330701
+    second: Anim. Pez saltando_408
+  - first:
+      213: 4387188808941051933
+    second: Anim. Pez saltando_409
+  - first:
+      213: 6782037133134502272
+    second: Anim. Pez saltando_410
+  - first:
+      213: -5053900485475204833
+    second: Anim. Pez saltando_411
+  - first:
+      213: -4793261342240045935
+    second: Anim. Pez saltando_412
+  - first:
+      213: 1909499963853692112
+    second: Anim. Pez saltando_413
+  - first:
+      213: 4749297028204772666
+    second: Anim. Pez saltando_414
+  - first:
+      213: 770767916802567017
+    second: Anim. Pez saltando_415
+  - first:
+      213: 8772950353800867576
+    second: Anim. Pez saltando_416
+  - first:
+      213: -2932543696781059207
+    second: Anim. Pez saltando_417
+  - first:
+      213: -2252919291859424203
+    second: Anim. Pez saltando_418
+  - first:
+      213: 690754580232410600
+    second: Anim. Pez saltando_419
+  - first:
+      213: 6815246283884119872
+    second: Anim. Pez saltando_420
+  - first:
+      213: 4762698797934238436
+    second: Anim. Pez saltando_421
+  - first:
+      213: -6836882774727222788
+    second: Anim. Pez saltando_422
+  - first:
+      213: -8363886605729679357
+    second: Anim. Pez saltando_423
+  - first:
+      213: 8897330383311200149
+    second: Anim. Pez saltando_424
+  - first:
+      213: 8632746252640574355
+    second: Anim. Pez saltando_425
+  - first:
+      213: 5228404811460719073
+    second: Anim. Pez saltando_426
+  - first:
+      213: 7006308783049562191
+    second: Anim. Pez saltando_427
+  - first:
+      213: 8698056870174262231
+    second: Anim. Pez saltando_428
+  - first:
+      213: 2518808722121440886
+    second: Anim. Pez saltando_429
+  - first:
+      213: -4320854557135559036
+    second: Anim. Pez saltando_430
+  - first:
+      213: 5391399391952768349
+    second: Anim. Pez saltando_431
+  - first:
+      213: -2298504674263736359
+    second: Anim. Pez saltando_432
+  - first:
+      213: 9019634367285623127
+    second: Anim. Pez saltando_433
+  - first:
+      213: -3078312165415927753
+    second: Anim. Pez saltando_434
+  - first:
+      213: -3064794612412237429
+    second: Anim. Pez saltando_435
+  - first:
+      213: -1211261105726904783
+    second: Anim. Pez saltando_436
+  - first:
+      213: 7441480884219488478
+    second: Anim. Pez saltando_437
+  - first:
+      213: -9207404384217103765
+    second: Anim. Pez saltando_438
+  - first:
+      213: -631984421433711994
+    second: Anim. Pez saltando_439
+  - first:
+      213: -6640239132160101980
+    second: Anim. Pez saltando_440
+  - first:
+      213: -3369252062026415858
+    second: Anim. Pez saltando_441
+  - first:
+      213: -3615010415373450478
+    second: Anim. Pez saltando_442
+  - first:
+      213: 3482335055021012165
+    second: Anim. Pez saltando_443
+  - first:
+      213: 3229606132236798152
+    second: Anim. Pez saltando_444
+  - first:
+      213: 1617978601298328663
+    second: Anim. Pez saltando_445
+  - first:
+      213: 6522948313957022086
+    second: Anim. Pez saltando_446
+  - first:
+      213: -3513749196990848463
+    second: Anim. Pez saltando_447
+  - first:
+      213: -2403257977408188207
+    second: Anim. Pez saltando_448
+  - first:
+      213: 5911886578418660562
+    second: Anim. Pez saltando_449
+  - first:
+      213: 6928650983867415312
+    second: Anim. Pez saltando_450
+  - first:
+      213: -1626520128132772294
+    second: Anim. Pez saltando_451
+  - first:
+      213: -649579692118903757
+    second: Anim. Pez saltando_452
+  - first:
+      213: -1035216255870346900
+    second: Anim. Pez saltando_453
+  - first:
+      213: -3631606670466002255
+    second: Anim. Pez saltando_454
+  - first:
+      213: -4518661937669919372
+    second: Anim. Pez saltando_455
+  - first:
+      213: 1909966235176729052
+    second: Anim. Pez saltando_456
+  - first:
+      213: 5519384373859939198
+    second: Anim. Pez saltando_457
+  - first:
+      213: -4176331069692698428
+    second: Anim. Pez saltando_458
+  - first:
+      213: -3925405962915107707
+    second: Anim. Pez saltando_459
+  - first:
+      213: -4027360439480098617
+    second: Anim. Pez saltando_460
+  - first:
+      213: -8404998142824044284
+    second: Anim. Pez saltando_461
+  - first:
+      213: 6195204934034636254
+    second: Anim. Pez saltando_462
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim. Pez saltando_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 2560
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf04be566f168cbd0800000000000000
+      internalID: -2609728273161436932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim. Pez saltando_1
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2048
+        width: 2560
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff387735622d9a80800000000000000
+      internalID: -8458566707014254603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim. Pez saltando_2
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 2048
+        width: 2560
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c280ee841a8bb1b90800000000000000
+      internalID: -7270014170606729172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim. Pez saltando_3
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 2048
+        width: 2560
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e80de79120b0b630800000000000000
+      internalID: 3940843332278487264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim. Pez saltando_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 2560
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c691eba16cf675120800000000000000
+      internalID: 2402511822868322668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim. Pez saltando_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1024
+        width: 2560
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33409a21ef455ffa0800000000000000
+      internalID: -5767610297566559181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim. Pez saltando_6
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 1024
+        width: 2560
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471b674d0c3f07f00800000000000000
+      internalID: 1112657117484331380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim. Pez saltando_7
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 1024
+        width: 2560
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba82ed75e333fdd90800000000000000
+      internalID: -7070876547093223253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim. Pez saltando_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2560
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0622adc833cd44750800000000000000
+      internalID: 6288393093680603744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim. Pez saltando_zero
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 0
+        width: 2560
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82d86ee68af484d0800000000000000
+      internalID: -3133103983310613877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

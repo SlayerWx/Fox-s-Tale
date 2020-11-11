@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6602690598405049978
+--- !u!1 &404439112636239635
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7677464077081705347}
-  - component: {fileID: 7095170828300555052}
-  - component: {fileID: 5354804354197075045}
-  - component: {fileID: 7122600911083560794}
+  - component: {fileID: 5665387127278170354}
+  - component: {fileID: 565820008510666803}
+  - component: {fileID: 1831824873}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -19,27 +18,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7677464077081705347
+--- !u!4 &5665387127278170354
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6602690598405049978}
+  m_GameObject: {fileID: 404439112636239635}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7813, y: 0.7813, z: 0.7813}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 7585749061441994363}
+  m_Father: {fileID: 6560722312710852832}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7095170828300555052
+--- !u!212 &565820008510666803
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6602690598405049978}
+  m_GameObject: {fileID: 404439112636239635}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -71,68 +70,40 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: -6663699629372292066, guid: 715dc20d640d4474f93232e92e200174,
+  m_SortingOrder: 11
+  m_Sprite: {fileID: 6112105239758859114, guid: c9958d93c99dc674492e763577c0cea8,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.28, y: 1.28}
+  m_Size: {x: 0.74, y: 0.81}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5354804354197075045
+--- !u!114 &1831824873
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6602690598405049978}
+  m_GameObject: {fileID: 404439112636239635}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af654941682e88b4fa7e281bc4389712, type: 3}
+  m_Script: {fileID: 11500000, guid: e114cfe1f41bb6e4095576ede3d11211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0.4
-  mySprite:
-  - {fileID: -6663699629372292066, guid: 715dc20d640d4474f93232e92e200174, type: 3}
-  - {fileID: -8813052127514834365, guid: 715dc20d640d4474f93232e92e200174, type: 3}
-  - {fileID: -6621694133675886829, guid: 715dc20d640d4474f93232e92e200174, type: 3}
-  - {fileID: 8095269552436393039, guid: 715dc20d640d4474f93232e92e200174, type: 3}
-  - {fileID: 3456358758761069775, guid: 715dc20d640d4474f93232e92e200174, type: 3}
-  - {fileID: -4097853494218829950, guid: 715dc20d640d4474f93232e92e200174, type: 3}
-  myRender: {fileID: 7095170828300555052}
-  plyer: {fileID: 1323338208167773893, guid: af20457df80945a4f94f0a66ad4df9bf, type: 3}
---- !u!61 &7122600911083560794
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6602690598405049978}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
-    newSize: {x: 1.28, y: 1.28}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
-  m_EdgeRadius: 0
---- !u!1 &7585749061441994361
+  mySprite: {fileID: 565820008510666803}
+  timeXFrame: 0.5
+  steps:
+  - {fileID: 6112105239758859114, guid: c9958d93c99dc674492e763577c0cea8, type: 3}
+  - {fileID: 3877370220587163293, guid: c9958d93c99dc674492e763577c0cea8, type: 3}
+  - {fileID: 2287045560645132926, guid: c9958d93c99dc674492e763577c0cea8, type: 3}
+  - {fileID: 4602972147622207693, guid: c9958d93c99dc674492e763577c0cea8, type: 3}
+  isLoop: 1
+--- !u!1 &2612814213924869082
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,26 +111,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7585749061441994363}
+  - component: {fileID: 6560722312710852832}
+  - component: {fileID: 5570196407059621757}
   m_Layer: 0
-  m_Name: BrokenFloor
+  m_Name: Wisp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7585749061441994363
+--- !u!4 &6560722312710852832
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7585749061441994361}
+  m_GameObject: {fileID: 2612814213924869082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.09561536, y: -1.527637, z: -3.5876942}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7677464077081705347}
+  - {fileID: 5665387127278170354}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5570196407059621757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2612814213924869082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d666382843ecab4497d73f4f26bb7ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intervalXMove: 0.1
+  minDistance: 10
+  stopDistance: 1
+  mySpeed: 5

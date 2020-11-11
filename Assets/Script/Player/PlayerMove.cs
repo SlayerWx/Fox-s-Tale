@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    enum Direction
+    public enum Direction
     {
         Left,Right,Up,Down
     };
     Direction myDirection;
+    struct directionsBool
+    {
+        public bool Left, Right, Up, Down;
+    };
+    directionsBool dirBool;
     Coroutine animCourroutine;
     Rigidbody2D myRigid;
     const float zeroF = 0.0f;
@@ -47,6 +52,8 @@ public class PlayerMove : MonoBehaviour
     bool dashReady;
     bool inCoolDownDash;
     bool inFloor;
+    bool isSlippingOut;
+    
     void Start()//asAS
     {
         direction = Vector2.zero;
@@ -63,14 +70,24 @@ public class PlayerMove : MonoBehaviour
         inFloor = true;
         myDirection = Direction.Down;
         animCourroutine = StartCoroutine(Anim(down));
+        dirBool.Up = true;
+        dirBool.Down = true;
+        dirBool.Left = true;
+        dirBool.Right = true;
+        isSlippingOut = false;
+
     }
     void OnEnable()
     {
         CheckPlayerInFloor.InFloor += CheckFloor;
+        CollisionDetector.MyCollisionDetection += CollisionDetect;
+        ForcePlayerSlipper.PlayerSlipper += SlippingOut;
     }
     void OnDisable()
     {
         CheckPlayerInFloor.InFloor -= CheckFloor;
+        CollisionDetector.MyCollisionDetection -= CollisionDetect;
+        ForcePlayerSlipper.PlayerSlipper -= SlippingOut;
     }
     void Update()
     {
@@ -93,13 +110,23 @@ public class PlayerMove : MonoBehaviour
         }
         if (!moving && alive && Time.deltaTime != zeroF)
         {
-            direction = Vector2.zero;
-            direction.x = Input.GetAxisRaw("Horizontal");
-            if(direction.x == zeroF) direction.y = Input.GetAxisRaw("Vertical");
-            AnimSelector(direction.x < zeroF, Direction.Left, left);
-            AnimSelector(direction.x > zeroF, Direction.Right, right);
-            AnimSelector(direction.y > zeroF, Direction.Up, up);
-            AnimSelector(direction.y < zeroF, Direction.Down, down);
+            if (!isSlippingOut)
+            {
+                direction = Vector2.zero;
+                direction.x = Input.GetAxisRaw("Horizontal");
+                if (direction.x < zeroF && !dirBool.Left) direction.x = zeroF;
+                if (direction.x > zeroF && !dirBool.Right) direction.x = zeroF;
+                if (direction.x == zeroF)
+                {
+                    direction.y = Input.GetAxisRaw("Vertical");
+                    if (direction.y < zeroF && !dirBool.Down) direction.y = zeroF;
+                    if (direction.y > zeroF && !dirBool.Up) direction.y = zeroF;
+                }
+                AnimSelector(direction.x < zeroF, Direction.Left, left);
+                AnimSelector(direction.x > zeroF, Direction.Right, right);
+                AnimSelector(direction.y > zeroF, Direction.Up, up);
+                AnimSelector(direction.y < zeroF, Direction.Down, down);
+            }
 
             if (dashReady)
             {
@@ -117,7 +144,7 @@ public class PlayerMove : MonoBehaviour
     }
     void Move()
     {
-        if(moving && !needWait && alive)//asAS
+        if(moving && !needWait && alive)
         {
             Vector2 ux = new Vector2((modifDistanceToDash * distance.x) * direction.x,
                                       (modifDistanceToDash * distance.y) * direction.y);
@@ -135,6 +162,7 @@ public class PlayerMove : MonoBehaviour
                 if (!canDash)
                 {
                     modifDistanceToDash = one;
+                    DashStateInfo?.Invoke();
                 }
                 dashReady = false;
                 PlayerGoingFoward?.Invoke(transform.position, speed);
@@ -154,7 +182,6 @@ public class PlayerMove : MonoBehaviour
     }
     IEnumerator waitToNextMove()
     {
-        
         yield return new WaitForSeconds(timeToNextMove);
         if (!inFloor)
         {
@@ -201,9 +228,22 @@ public class PlayerMove : MonoBehaviour
     void CheckFloor(bool status)
     {
         inFloor = status;
+        inFloor = true;
     }
     public bool GetDashing()
     {
         return dashReady;
+    }
+    void CollisionDetect(bool inn, Direction dir)
+    {
+        if (Direction.Up == dir) dirBool.Up = !(inn);
+        if (Direction.Down == dir) dirBool.Down = !(inn);
+        if (Direction.Left == dir) dirBool.Left = !(inn);
+        if (Direction.Right == dir) dirBool.Right = !(inn);
+    }
+    void SlippingOut(bool inn)
+    {
+        isSlippingOut = inn;
+        if(isSlippingOut)dashReady = true;
     }
 }
