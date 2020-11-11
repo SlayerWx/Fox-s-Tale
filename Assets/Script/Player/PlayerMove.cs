@@ -9,11 +9,11 @@ public class PlayerMove : MonoBehaviour
         Left,Right,Up,Down
     };
     Direction myDirection;
-    struct directionsBool
+    struct DirectionsBool
     {
         public bool Left, Right, Up, Down;
     };
-    directionsBool dirBool;
+    DirectionsBool dirBool;
     Coroutine animCourroutine;
     Rigidbody2D myRigid;
     const float zeroF = 0.0f;
