@@ -24,13 +24,13 @@ This is a game (still in development) developed by students from <a href="https:
 - **Melina Contreras** - *Art*
 - **Thiago Mandias Louzan** - *Art*
 - **Lorenzo Damián Pivotto** - *Art*
-- **Florencia Micaela Apodaca** - *Audio*
-- **Juan Manuel Calabrese** - *Audio*
-- **Nicolas Carcagno** - *Audio*
-- **Matías Jara** - *Audio*
+- **Florencia Micaela Apodaca** - *Audio Designer*
+- **Nicolas Carcagno** - *Audio Designer*
+- **Juan Manuel Calabrese** - *Music Composer*
+- **Matías Jara** - *Music Composer*
 - **Gustavo Carrillo** - *Testing*
 - **Ernesto Marquez** - *Testing*
-- **Jose Rodriguez** - *Testing*
+- **José Rodriguez** - *Testing*
 - **Santiago Saied** - *Testing*
 
 
