@@ -55,6 +55,15 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+# wwise
+.backup
+.cache
+*.akd
+*.validationcache
+*.wsettings
+*.wem
+*.prof
+
 # Crashlytics generated file
 crashlytics-build.properties
 
