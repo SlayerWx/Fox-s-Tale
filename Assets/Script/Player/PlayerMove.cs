@@ -103,7 +103,7 @@ public class PlayerMove : MonoBehaviour
         {
             PlayerPauseRequest?.Invoke();
         }
-        if (Input.GetKeyDown(dashButton) && canDash)
+        if (Input.GetKeyDown(dashButton) && canDash && !moving)
         {
             dashReady = true; 
             DashStateInfo?.Invoke();
