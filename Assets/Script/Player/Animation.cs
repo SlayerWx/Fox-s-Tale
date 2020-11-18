@@ -38,25 +38,41 @@ public class Animation : MonoBehaviour
     private Direction direction;
     void OnEnable()
     {
-        PlayerMove.PlayerAnimationRequest += AnimRequest;
+        PlayerMove.PlayerAnimationRequestState += AnimRequestState;
+        PlayerMove.PlayerAnimationRequestDir += AnimRequestDir;
+        AnimRequestDir(Direction.Down);
+        AnimRequestState(State.Idle);
+        StartCoroutine(Animator());
         index = 0;
     }
     void OnDisable()
     {
-        PlayerMove.PlayerAnimationRequest -= AnimRequest;
+        PlayerMove.PlayerAnimationRequestState -= AnimRequestState;
+        PlayerMove.PlayerAnimationRequestDir -= AnimRequestDir;
     }
-    void AnimRequest(State myState,Direction myDir)
+    void AnimRequestState(State myState)
     {
-        state = myState;
-        direction = myDir;
-        index = 0;
+        if (state != myState)
+        {
+            index = 0;
+            state = myState;
+        }
+    }
+    void AnimRequestDir(Direction myDir)
+    {
+        if (direction != myDir)
+        {
+            index = 0;
+            direction = myDir;
+        }
     }
     IEnumerator Animator()
     {
-        for (; index < animations[(int)state].side[(int)direction].animation.Length; index++)
+        while (index < animations[(int)state].side[(int)direction].animation.Length)
         {
             mySprite.sprite = animations[(int)state].side[(int)direction].animation[index];
             yield return new WaitForSeconds(timeXFrame);
+            index++;
             if (index >= animations[(int)state].side[(int)direction].animation.Length) index = 0;
         }
     }

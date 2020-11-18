@@ -34,7 +34,7 @@ public class WispMove : MonoBehaviour
         while(true)
         {
             yield return new WaitForSeconds(intervalXMove);
-            if(newPos != Vector3.zero)
+            if(newPos != Vector3.zero && !StopTime.GetTimeStatus())
             {
                 if(minDistance > Vector3.Distance(transform.position,newPos) && stopDistance < Vector3.Distance(transform.position, newPos))
                 {

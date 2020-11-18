@@ -43,8 +43,10 @@ public class PlayerMove : MonoBehaviour
     public static event StopTimeState TimeState;
     public delegate void StopTimeStateFinish();
     public static event StopTimeStateFinish TimeStateFinish;
-    public delegate void AnimationSystem(Animation.State myState, Animation.Direction myDir);
-    public static event AnimationSystem PlayerAnimationRequest;
+    public delegate void AnimationSystemState(Animation.State myState);
+    public static event AnimationSystemState PlayerAnimationRequestState;
+    public delegate void AnimationSystemDir(Animation.Direction myDir);
+    public static event AnimationSystemDir PlayerAnimationRequestDir;
     bool alive;
     [SerializeField] string dashButton = null;
     [SerializeField] string pauseButton = null;
@@ -78,6 +80,8 @@ public class PlayerMove : MonoBehaviour
         dirBool.Right = true;
         isSlippingOut = false;
         refresingTimeStopTime = false;
+        PlayerAnimationRequestState?.Invoke(Animation.State.Idle);
+        PlayerAnimationRequestDir?.Invoke(Animation.Direction.Down);
 
     }
     void OnEnable()
@@ -85,6 +89,8 @@ public class PlayerMove : MonoBehaviour
         CheckPlayerInFloor.InFloor += CheckFloor;
         CollisionDetector.MyCollisionDetection += CollisionDetect;
         ForcePlayerSlipper.PlayerSlipper += SlippingOut;
+        PlayerAnimationRequestState?.Invoke(Animation.State.Idle);
+        PlayerAnimationRequestDir?.Invoke(Animation.Direction.Down);
     }
     void OnDisable()
     {
@@ -108,7 +114,7 @@ public class PlayerMove : MonoBehaviour
         }
         if (Input.GetKeyDown(dashButton) && canDash && !moving)
         {
-            dashReady = true; 
+            dashReady = true;
             DashStateInfo?.Invoke();
         }
         if(Input.GetKeyDown(StopTimeButton))
@@ -132,22 +138,31 @@ public class PlayerMove : MonoBehaviour
             {
                 direction = Vector2.zero;
 
+                PlayerAnimationRequestState?.Invoke(Animation.State.Idle);
 
-                if(Input.GetKey(KeyCode.DownArrow) && dirBool.Down)
+                if (Input.GetKey(KeyCode.DownArrow) && dirBool.Down)
                 {
                     direction.y = -one;
+                    PlayerAnimationRequestDir?.Invoke(Animation.Direction.Down);
+                    PlayerAnimationRequestState?.Invoke(Animation.State.Walk);
                 }
                 else if (Input.GetKey(KeyCode.UpArrow)&& dirBool.Up)
                 {
                     direction.y = one;
+                    PlayerAnimationRequestDir?.Invoke(Animation.Direction.Up);
+                    PlayerAnimationRequestState?.Invoke(Animation.State.Walk);
                 }
                 else if (Input.GetKey(KeyCode.LeftArrow)&& dirBool.Left)
                 {
                     direction.x = -one;
+                    PlayerAnimationRequestDir?.Invoke(Animation.Direction.Left);
+                    PlayerAnimationRequestState?.Invoke(Animation.State.Walk);
                 }
                 else if (Input.GetKey(KeyCode.RightArrow)&& dirBool.Right)
                 {
                     direction.x = one;
+                    PlayerAnimationRequestDir?.Invoke(Animation.Direction.Right);
+                    PlayerAnimationRequestState?.Invoke(Animation.State.Walk);
                 }
             }
 
@@ -155,7 +170,7 @@ public class PlayerMove : MonoBehaviour
             {
                 modifDistanceToDash = two;
                 canDash = false;
-                
+
             }
         }
         if (direction != Vector2.zero && !moving && alive)
@@ -171,6 +186,7 @@ public class PlayerMove : MonoBehaviour
         {
             Vector2 ux = new Vector2((modifDistanceToDash * distance.x) * direction.x,
                                       (modifDistanceToDash * distance.y) * direction.y);
+            if(modifDistanceToDash == two)PlayerAnimationRequestState?.Invoke(Animation.State.Dash);
             ux = Vector2.Lerp(startPosition, startPosition + ux, timer);
             myRigid.MovePosition(ux);
             timer += Time.deltaTime * speed;

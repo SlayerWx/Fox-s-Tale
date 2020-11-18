@@ -22,6 +22,10 @@ public class SpawnWisp : MonoBehaviour
                 yield return null;
             }
             yield return new WaitForSeconds(Interval);
+            while ((StopTime.GetTimeStatus()))
+            {
+                yield return null;
+            }
             if (count < countMax)
             {
                 Instantiate(Prefab, transform.position, Quaternion.identity, transform);

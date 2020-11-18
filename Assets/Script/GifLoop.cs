@@ -27,7 +27,7 @@ public class GifLoop : MonoBehaviour
         {
             if (!(i < steps.Length) && isLoop) i = zero;
             if(mySprite != null)mySprite.sprite = steps[i];
-            while ((StopTime.GetTimeStatus()) && gameObject.transform.tag !="Player" && gameObject.transform.tag != "Wisp")
+            while ((StopTime.GetTimeStatus()) && gameObject.transform.tag !="Player")
             {
                 yield return null;
             }
