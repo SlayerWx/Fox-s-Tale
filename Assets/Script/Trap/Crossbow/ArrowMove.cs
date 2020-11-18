@@ -6,16 +6,18 @@ public class ArrowMove : MonoBehaviour
 {
     const float onef = 1.0f;
     bool readyToMove;
-    [SerializeField] float timerLife = 0.0f;
+    [SerializeField] float distanceMaxToDead = 0.0f;
     [SerializeField] float speed = 0.0f;
     Rigidbody2D myRigid;
     bool toDead;
+    Vector2 mySartPosition;
     // asAS
     void Start()
     {
         myRigid = GetComponent<Rigidbody2D>();
         readyToMove = true;
         toDead = false;
+        mySartPosition = transform.position;
     }
 
     // asAS
@@ -24,7 +26,7 @@ public class ArrowMove : MonoBehaviour
         if(readyToMove && !StopTime.GetTimeStatus())
         {
             myRigid.velocity = (transform.TransformDirection(Vector2.right) * speed) * Time.deltaTime;
-            if (transform.position.y < onef)
+            if (transform.position.y < onef || Vector2.Distance(transform.position,mySartPosition) > distanceMaxToDead)
             {
                 Destroy(transform.gameObject);
             }
@@ -32,18 +34,6 @@ public class ArrowMove : MonoBehaviour
         else
         {
             myRigid.velocity = Vector2.zero;
-        }
-    }
-    public void Ready()
-    {
-        readyToMove = true;
-        if(!toDead)
-        {
-            toDead = true;
-            if (null != gameObject)
-            {
-                Destroy(transform.gameObject, timerLife);
-            }
         }
     }
 }

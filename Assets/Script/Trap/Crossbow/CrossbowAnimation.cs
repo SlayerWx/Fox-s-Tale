@@ -60,7 +60,6 @@ public class CrossbowAnimation : MonoBehaviour
             yield return new WaitForSeconds(timeXFrame);
         }
         SummonArrow();
-        moveArrow.Ready();
         for(int i = 0; i < animReload.Length && myRender;i++)
         {
             myRender.sprite = animReload[i];
