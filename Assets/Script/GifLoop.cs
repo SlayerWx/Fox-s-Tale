@@ -23,10 +23,10 @@ public class GifLoop : MonoBehaviour
     {
         short i = zero;
         whileControl = true;
-        while (whileControl && zero != steps.Length)
+        while (whileControl && zero != steps.Length && mySprite != null)
         {
             if (!(i < steps.Length) && isLoop) i = zero;
-            mySprite.sprite = steps[i];
+            if(mySprite != null)mySprite.sprite = steps[i];
             yield return new WaitForSeconds(timeXFrame);
             i++;
             if (!isLoop && i >= steps.Length) whileControl = false;
