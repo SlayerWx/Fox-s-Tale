@@ -27,6 +27,7 @@ public class WispMove : MonoBehaviour
     void OnDisable()
     {
         PlayerMove.PlayerGoingFoward -= SetNewFollowPosition;
+        SpawnWisp.count--;
     }
     IEnumerator Move()
     {

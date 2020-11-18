@@ -6,6 +6,8 @@ public class SpawnWisp : MonoBehaviour
 {
     [SerializeField] GameObject Prefab;
     [SerializeField] float Interval;
+    public static int count = 0;
+    const int countMax = 10;
     void OnEnable()
     {
         StartCoroutine(SpawnWispTimer());
@@ -16,7 +18,11 @@ public class SpawnWisp : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(Interval);
-            Instantiate(Prefab, transform.position, Quaternion.identity, transform);
+            if (count < countMax)
+            {
+                Instantiate(Prefab, transform.position, Quaternion.identity, transform);
+                count++;
+            }
         }
     }
 }
