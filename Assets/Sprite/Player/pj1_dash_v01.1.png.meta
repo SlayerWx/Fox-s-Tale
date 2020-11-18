@@ -1,67 +1,73 @@
 fileFormatVersion: 2
-guid: 57606528face0f8408b2446f200ee0bc
+guid: aca8ded19e18bec4a826e64f08be8458
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3218937020649824068
-    second: pj1_anim_idle_v01_0
+      213: -8406976397560653340
+    second: pj1_dash_v01.1_0
   - first:
-      213: -8033122885593089390
-    second: pj1_anim_idle_v01_1
+      213: 944139694155850756
+    second: pj1_dash_v01.1_10
   - first:
-      213: -3677280575052364288
-    second: pj1_anim_idle_v01_2
+      213: -1428512575691740948
+    second: pj1_dash_v01.1_9
   - first:
-      213: 6526887352665322366
-    second: pj1_anim_idle_v01_3
+      213: 3330123947063163633
+    second: pj1_dash_v01.1_14
   - first:
-      213: -1396681409173755346
-    second: pj1_anim_idle_v01_4
+      213: -6907315256104749709
+    second: pj1_dash_v01.1_10
   - first:
-      213: -3243736981552181042
-    second: pj1_anim_idle_v01_5
+      213: -3143313346959949002
+    second: pj1_dash_v01.1_11
   - first:
-      213: 863710926072388071
-    second: pj1_anim_idle_v01_6
+      213: -6566899063831086878
+    second: pj1_dash_v01.1_1
   - first:
-      213: -8834491690480640699
-    second: pj1_anim_idle_v01_7
+      213: 949138748840426551
+    second: pj1_dash_v01.1_11
   - first:
-      213: -7894836290427725344
-    second: pj1_anim_idle_v01_8
+      213: 5338817127407940813
+    second: pj1_dash_v01.1_14
   - first:
-      213: -8728855284746361987
-    second: pj1_anim_idle_v01_9
+      213: 2905667791849385333
+    second: pj1_dash_v01.1_15
   - first:
-      213: -5224051798418519003
-    second: pj1_anim_idle_v01_10
+      213: -3512326735641015400
+    second: pj1_dash_v01.1_9
   - first:
-      213: 2876532839361693126
-    second: pj1_anim_idle_v01_11
+      213: -989265057923647305
+    second: pj1_dash_v01.1_6
   - first:
-      213: 5982795552941662681
-    second: pj1_anim_idle_v01_12
+      213: 1631640812702958803
+    second: pj1_dash_v01.1_14
   - first:
-      213: -8129305111871217609
-    second: pj1_anim_idle_v01_13
+      213: 4101436434179657690
+    second: pj1_dash_v01.1_15
   - first:
-      213: -5311732980910027673
-    second: pj1_anim_idle_v01_14
+      213: 6875923456232068484
+    second: pj1_dash_v01.1_14
   - first:
-      213: -9206881284621043198
-    second: pj1_anim_idle_v01_15
+      213: -6322534228389265001
+    second: pj1_dash_v01.1_15
   - first:
-      213: -286806378737805064
-    second: pj1_anim_idle_v01_16
+      213: 1435156125402756900
+    second: pj1_dash_v01.1_14
   - first:
-      213: -7133925393527524056
-    second: pj1_anim_idle_v01_17
+      213: 56482364200931817
+    second: pj1_dash_v01.1_7
   - first:
-      213: -8114015348763080203
-    second: pj1_anim_idle_v01_18
+      213: -8736422088167198577
+    second: pj1_dash_v01.1_18
   - first:
-      213: -7332379269757843274
-    second: pj1_anim_idle_v01_19
+      213: 5472798932259486084
+    second: pj1_dash_v01.1_19
+  - first:
+      213: -7122760430066648963
+    second: pj1_dash_v01.1_20
+  - first:
+      213: 1502742510919701937
+    second: pj1_dash_v01.1_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -147,421 +153,337 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_0
+      name: pj1_dash_v01.1_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 420
-        width: 88
-        height: 127
+        x: 12
+        y: 390
+        width: 92
+        height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44fdf266a26fbac20800000000000000
-      internalID: 3218937020649824068
+      spriteID: 4e9dd4c228b645b80800000000000000
+      internalID: -8406976397560653340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_1
+      name: pj1_dash_v01.1_4
       rect:
         serializedVersion: 2
-        x: 93
-        y: 420
-        width: 87
-        height: 127
+        x: 144
+        y: 390
+        width: 78
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29ab92ffb4d948090800000000000000
-      internalID: -8033122885593089390
+      spriteID: 4046180bc024a1d00800000000000000
+      internalID: 944139694155850756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_2
+      name: pj1_dash_v01.1_1
       rect:
         serializedVersion: 2
-        x: 182
-        y: 420
-        width: 84
-        height: 127
+        x: 12
+        y: 266
+        width: 92
+        height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0064f80dccca7fcc0800000000000000
-      internalID: -3677280575052364288
+      spriteID: 2e8b0882810bdd4a0800000000000000
+      internalID: -6566899063831086878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_3
+      name: pj1_dash_v01.1_5
       rect:
         serializedVersion: 2
-        x: 268
-        y: 420
-        width: 88
-        height: 127
+        x: 145
+        y: 270
+        width: 78
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e733b906779249a50800000000000000
-      internalID: 6526887352665322366
+      spriteID: 73c313fc9a40c2d00800000000000000
+      internalID: 949138748840426551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_4
+      name: pj1_dash_v01.1_13
       rect:
         serializedVersion: 2
-        x: 358
-        y: 420
-        width: 84
-        height: 127
+        x: 415
+        y: 271
+        width: 180
+        height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2a6ec588adfd9ce0800000000000000
-      internalID: -1396681409173755346
+      spriteID: 57de9783671035820800000000000000
+      internalID: 2905667791849385333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_5
+      name: pj1_dash_v01.1_2
       rect:
         serializedVersion: 2
-        x: 15
-        y: 281
-        width: 83
-        height: 127
+        x: 12
+        y: 140
+        width: 92
+        height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec0d8cdb66eebf2d0800000000000000
-      internalID: -3243736981552181042
+      spriteID: 89b820b6175b14fc0800000000000000
+      internalID: -3512326735641015400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_6
+      name: pj1_dash_v01.1_6
       rect:
         serializedVersion: 2
-        x: 100
-        y: 281
-        width: 80
-        height: 127
+        x: 145
+        y: 150
+        width: 78
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e91b29d2848cfb00800000000000000
-      internalID: 863710926072388071
+      spriteID: 7b831c1dbac6542f0800000000000000
+      internalID: -989265057923647305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_7
+      name: pj1_dash_v01.1_3
       rect:
         serializedVersion: 2
-        x: 184
-        y: 281
-        width: 79
-        height: 127
+        x: 12
+        y: 7
+        width: 92
+        height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54dd2c95d94956580800000000000000
-      internalID: -8834491690480640699
+      spriteID: 4277bdb64e2bae310800000000000000
+      internalID: 1435156125402756900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_8
+      name: pj1_dash_v01.1_7
       rect:
         serializedVersion: 2
-        x: 266
-        y: 281
-        width: 80
-        height: 127
+        x: 144
+        y: 18
+        width: 78
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e95135f838ef6290800000000000000
-      internalID: -7894836290427725344
+      spriteID: 9e15546396aa8c000800000000000000
+      internalID: 56482364200931817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_9
+      name: pj1_dash_v01.1_9
       rect:
         serializedVersion: 2
-        x: 350
-        y: 281
-        width: 79
-        height: 127
+        x: 232
+        y: 271
+        width: 180
+        height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d73e6e0bd50ecd680800000000000000
-      internalID: -8728855284746361987
+      spriteID: ce827b88167ec2ce0800000000000000
+      internalID: -1428512575691740948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_10
+      name: pj1_dash_v01.1_8
       rect:
         serializedVersion: 2
-        x: 14
-        y: 142
-        width: 83
-        height: 127
+        x: 232
+        y: 390
+        width: 180
+        height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52c060b41907087b0800000000000000
-      internalID: -5224051798418519003
+      spriteID: 1fab8ba061af63e20800000000000000
+      internalID: 3330123947063163633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_11
+      name: pj1_dash_v01.1_10
       rect:
         serializedVersion: 2
-        x: 98
-        y: 142
-        width: 80
-        height: 127
+        x: 232
+        y: 150
+        width: 180
+        height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c546ea706f7be720800000000000000
-      internalID: 2876532839361693126
+      spriteID: 3757d300f594420a0800000000000000
+      internalID: -6907315256104749709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_12
+      name: pj1_dash_v01.1_11
       rect:
         serializedVersion: 2
-        x: 181
-        y: 142
-        width: 79
-        height: 127
+        x: 232
+        y: 18
+        width: 180
+        height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d1efd07bd8270350800000000000000
-      internalID: 5982795552941662681
+      spriteID: 63345b83a25b064d0800000000000000
+      internalID: -3143313346959949002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_13
+      name: pj1_dash_v01.1_12
       rect:
         serializedVersion: 2
-        x: 264
-        y: 142
-        width: 80
-        height: 127
+        x: 415
+        y: 390
+        width: 180
+        height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73026285218ee2f80800000000000000
-      internalID: -8129305111871217609
+      spriteID: dc4fbef14e9471a40800000000000000
+      internalID: 5338817127407940813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_14
+      name: pj1_dash_v01.1_14
       rect:
         serializedVersion: 2
-        x: 347
-        y: 142
-        width: 79
-        height: 127
+        x: 415
+        y: 150
+        width: 180
+        height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76c81232ffee846b0800000000000000
-      internalID: -5311732980910027673
+      spriteID: 3d48032aca0c4a610800000000000000
+      internalID: 1631640812702958803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj1_anim_idle_v01_15
+      name: pj1_dash_v01.1_15
       rect:
         serializedVersion: 2
-        x: 2
-        y: 8
-        width: 88
-        height: 121
+        x: 415
+        y: 18
+        width: 180
+        height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20a78f470469a3080800000000000000
-      internalID: -9206881284621043198
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pj1_anim_idle_v01_16
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 8
-        width: 88
-        height: 121
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f8540c3e1f050cf0800000000000000
-      internalID: -286806378737805064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pj1_anim_idle_v01_17
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 8
-        width: 84
-        height: 121
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82537a8d6a43ffc90800000000000000
-      internalID: -7133925393527524056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pj1_anim_idle_v01_18
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 8
-        width: 90
-        height: 121
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f9c8eab70a356f80800000000000000
-      internalID: -8114015348763080203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pj1_anim_idle_v01_19
-      rect:
-        serializedVersion: 2
-        x: 356
-        y: 8
-        width: 83
-        height: 121
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b845ab17e72e3a90800000000000000
-      internalID: -7332379269757843274
+      spriteID: adf8f10e4ba3be830800000000000000
+      internalID: 4101436434179657690
       vertices: []
       indices: 
       edges: []

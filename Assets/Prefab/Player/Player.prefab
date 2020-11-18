@@ -219,7 +219,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.88, y: 1.21}
+  m_Size: {x: 0.88, y: 1.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -243,7 +243,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.88, y: 1.27}
-    newSize: {x: 0.88, y: 1.21}
+    newSize: {x: 0.88, y: 1.27}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -262,6 +262,7 @@ GameObject:
   - component: {fileID: 1323338208167773895}
   - component: {fileID: 1323338208167773894}
   - component: {fileID: 1323338208167773893}
+  - component: {fileID: 7773057731534360069}
   - component: {fileID: 1323338208167773892}
   - component: {fileID: 1809062599}
   m_Layer: 0
@@ -325,38 +326,95 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: {x: 1, y: 1}
   speed: 3
-  timePerFrame: 0.2
   timeToNextMove: 0
   stopTimeRefreshTime: 12
   timeInStopTime: 10
-  left:
-  - {fileID: -1396681409173755346, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: -3243736981552181042, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: 863710926072388071, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: -8834491690480640699, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: -7894836290427725344, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  up:
-  - {fileID: -5311732980910027673, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: -9206881284621043198, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: -286806378737805064, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: -7133925393527524056, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: -7332379269757843274, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  right:
-  - {fileID: -8728855284746361987, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: -5224051798418519003, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: 5982795552941662681, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: -8129305111871217609, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: -8728855284746361987, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  down:
-  - {fileID: 3218937020649824068, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: -8033122885593089390, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: -3677280575052364288, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: 6526887352665322366, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
-  - {fileID: -8114015348763080203, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
   dashButton: z
   pauseButton: p
   StopTimeButton: x
   waitToUseDashAgain: 3
+--- !u!114 &7773057731534360069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323338208167773891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b193047be5ef514595cf0344fd6b5fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeXFrame: 0.2
+  mySprite: {fileID: 1323338207511913841}
+  animations:
+  - side:
+    - animation:
+      - {fileID: -3243736981552181042, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: 863710926072388071, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: -8834491690480640699, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: -7894836290427725344, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: -8728855284746361987, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+    - animation:
+      - {fileID: -5224051798418519003, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: 2876532839361693126, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: 5982795552941662681, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: -8129305111871217609, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: -5311732980910027673, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+    - animation:
+      - {fileID: -9206881284621043198, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: -286806378737805064, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: -7133925393527524056, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: -8114015348763080203, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: -7332379269757843274, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+    - animation:
+      - {fileID: 3218937020649824068, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: -8033122885593089390, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: -3677280575052364288, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: 6526887352665322366, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+      - {fileID: -1396681409173755346, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
+  - side:
+    - animation:
+      - {fileID: 1954655259996007751, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+      - {fileID: -8450660861438774868, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+      - {fileID: 5077632282041929807, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+      - {fileID: -290909779629970778, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+    - animation:
+      - {fileID: -6842939953611562361, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+      - {fileID: -5604947273359110528, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+      - {fileID: 679474188698403725, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+      - {fileID: -2447134460364336914, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+    - animation:
+      - {fileID: 1073183611514982967, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+      - {fileID: -7908777428650145303, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+      - {fileID: 2279060559606984353, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+      - {fileID: -7633223169457696888, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+    - animation:
+      - {fileID: -5713175624347804225, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+      - {fileID: 6612157952197782152, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+      - {fileID: 5000134716538901698, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+      - {fileID: 4745735333528853440, guid: 80e587338d7bdde48bc50c7ce28908dd, type: 3}
+  - side:
+    - animation:
+      - {fileID: 5338817127407940813, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+      - {fileID: -3512326735641015400, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+      - {fileID: 944139694155850756, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+      - {fileID: 949138748840426551, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+    - animation:
+      - {fileID: 1631640812702958803, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+      - {fileID: 4101436434179657690, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+      - {fileID: 6875923456232068484, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+      - {fileID: 2905667791849385333, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+    - animation:
+      - {fileID: -8406976397560653340, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+      - {fileID: -6566899063831086878, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+      - {fileID: -1428512575691740948, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+      - {fileID: 3330123947063163633, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+    - animation:
+      - {fileID: -6907315256104749709, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+      - {fileID: -3143313346959949002, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+      - {fileID: -989265057923647305, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+      - {fileID: 56482364200931817, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
 --- !u!114 &1323338208167773892
 MonoBehaviour:
   m_ObjectHideFlags: 0

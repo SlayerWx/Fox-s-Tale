@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    public enum PlayerState
-    {
-        Idle,Walk,Dash
-    };
-    PlayerState myState;
     public enum Direction
     {
         Left,Right,Up,Down
@@ -19,7 +14,6 @@ public class PlayerMove : MonoBehaviour
         public bool Left, Right, Up, Down;
     };
     DirectionsBool dirBool;
-    Coroutine animCourroutine;
     Rigidbody2D myRigid;
     [SerializeField] Vector2 distance = new Vector2();
     Vector2 direction;
@@ -32,7 +26,6 @@ public class PlayerMove : MonoBehaviour
     const float two = 2.0f;
     float modifDistanceToDash = 1.0f;
     [SerializeField] float speed = 0.0f;
-    [SerializeField] float timePerFrame = 0.0f;
     Vector2 startPosition;
     [SerializeField] float timeToNextMove = 0.0f;
     [SerializeField] float stopTimeRefreshTime = 0.0f;
@@ -50,12 +43,9 @@ public class PlayerMove : MonoBehaviour
     public static event StopTimeState TimeState;
     public delegate void StopTimeStateFinish();
     public static event StopTimeStateFinish TimeStateFinish;
+    public delegate void AnimationSystem(Animation.State myState, Animation.Direction myDir);
+    public static event AnimationSystem PlayerAnimationRequest;
     bool alive;
-    SpriteRenderer myRender;
-    [SerializeField] Sprite[] left = null;
-    [SerializeField] Sprite[] up = null;
-    [SerializeField] Sprite[] right = null;
-    [SerializeField] Sprite[] down = null;
     [SerializeField] string dashButton = null;
     [SerializeField] string pauseButton = null;
     [SerializeField] string StopTimeButton = null;
@@ -75,7 +65,6 @@ public class PlayerMove : MonoBehaviour
         moving = false;
         needWait = false;
         myRigid = GetComponent<Rigidbody2D>();
-        myRender = GetComponentInChildren<SpriteRenderer>();
         alive = true;
         dashReady = false;
         canDash = true;
@@ -83,14 +72,12 @@ public class PlayerMove : MonoBehaviour
         canStopTime = true;
         inFloor = true;
         myDirection = Direction.Down;
-        animCourroutine = StartCoroutine(Anim(down));
         dirBool.Up = true;
         dirBool.Down = true;
         dirBool.Left = true;
         dirBool.Right = true;
         isSlippingOut = false;
         refresingTimeStopTime = false;
-        myState = PlayerState.Idle;
 
     }
     void OnEnable()
@@ -162,10 +149,6 @@ public class PlayerMove : MonoBehaviour
                 {
                     direction.x = one;
                 }
-                AnimSelector(direction.x < zeroF,myState, Direction.Left, left);
-                AnimSelector(direction.x > zeroF,myState, Direction.Right, right);
-                AnimSelector(direction.y > zeroF,myState, Direction.Up, up);
-                AnimSelector(direction.y < zeroF,myState, Direction.Down, down);
             }
 
             if (dashReady)
@@ -214,15 +197,6 @@ public class PlayerMove : MonoBehaviour
             }
         } 
     }
-    void AnimSelector(bool animationIF, PlayerState theState,Direction dir,Sprite[] dirSprite)
-    {
-        if(animationIF && theState == PlayerState.Idle && myDirection != dir && animCourroutine != null)
-        {
-            StopCoroutine(animCourroutine);
-            myDirection = dir;
-            animCourroutine = StartCoroutine(Anim(dirSprite));
-        }
-    }
     IEnumerator waitToNextMove()
     {
         yield return new WaitForSeconds(timeToNextMove);
@@ -261,15 +235,6 @@ public class PlayerMove : MonoBehaviour
         canStopTime = true;
         TimeStateFinish?.Invoke();
         refresingTimeStopTime = false;
-    }
-    IEnumerator Anim(Sprite[] anim)
-    {
-        for (int i = zeroI; i < anim.Length; i++)
-        {
-            myRender.sprite = anim[i];
-            yield return new WaitForSeconds(timePerFrame);
-            if (anim.Length - one == i) i = zeroI;
-        }
     }
     public void SetAlive(bool w)
     {
