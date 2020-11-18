@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    public enum PlayerState
+    {
+        Idle,Walk,Dash
+    };
+    PlayerState myState;
     public enum Direction
     {
         Left,Right,Up,Down
@@ -16,13 +21,13 @@ public class PlayerMove : MonoBehaviour
     DirectionsBool dirBool;
     Coroutine animCourroutine;
     Rigidbody2D myRigid;
-    const float zeroF = 0.0f;
     [SerializeField] Vector2 distance = new Vector2();
     Vector2 direction;
     bool moving;
     float timer;
     const int oneI = 1;
     const int zeroI = 0;
+    const float zeroF = 0.0f;
     const float one = 1.0f;
     const float two = 2.0f;
     float modifDistanceToDash = 1.0f;
@@ -85,6 +90,7 @@ public class PlayerMove : MonoBehaviour
         dirBool.Right = true;
         isSlippingOut = false;
         refresingTimeStopTime = false;
+        myState = PlayerState.Idle;
 
     }
     void OnEnable()
@@ -138,19 +144,28 @@ public class PlayerMove : MonoBehaviour
             if (!isSlippingOut)
             {
                 direction = Vector2.zero;
-                direction.x = Input.GetAxisRaw("Horizontal");
-                if (direction.x < zeroF && !dirBool.Left) direction.x = zeroF;
-                if (direction.x > zeroF && !dirBool.Right) direction.x = zeroF;
-                if (direction.x == zeroF)
+
+
+                if(Input.GetKey(KeyCode.DownArrow) && dirBool.Down)
                 {
-                    direction.y = Input.GetAxisRaw("Vertical");
-                    if (direction.y < zeroF && !dirBool.Down) direction.y = zeroF;
-                    if (direction.y > zeroF && !dirBool.Up) direction.y = zeroF;
+                    direction.y = -one;
                 }
-                AnimSelector(direction.x < zeroF, Direction.Left, left);
-                AnimSelector(direction.x > zeroF, Direction.Right, right);
-                AnimSelector(direction.y > zeroF, Direction.Up, up);
-                AnimSelector(direction.y < zeroF, Direction.Down, down);
+                else if (Input.GetKey(KeyCode.UpArrow)&& dirBool.Up)
+                {
+                    direction.y = one;
+                }
+                else if (Input.GetKey(KeyCode.LeftArrow)&& dirBool.Left)
+                {
+                    direction.x = -one;
+                }
+                else if (Input.GetKey(KeyCode.RightArrow)&& dirBool.Right)
+                {
+                    direction.x = one;
+                }
+                AnimSelector(direction.x < zeroF,myState, Direction.Left, left);
+                AnimSelector(direction.x > zeroF,myState, Direction.Right, right);
+                AnimSelector(direction.y > zeroF,myState, Direction.Up, up);
+                AnimSelector(direction.y < zeroF,myState, Direction.Down, down);
             }
 
             if (dashReady)
@@ -199,9 +214,9 @@ public class PlayerMove : MonoBehaviour
             }
         } 
     }
-    void AnimSelector(bool animationIF,Direction dir,Sprite[] dirSprite)
+    void AnimSelector(bool animationIF, PlayerState theState,Direction dir,Sprite[] dirSprite)
     {
-        if (animationIF && myDirection != dir && animCourroutine != null)
+        if(animationIF && theState == PlayerState.Idle && myDirection != dir && animCourroutine != null)
         {
             StopCoroutine(animCourroutine);
             myDirection = dir;
