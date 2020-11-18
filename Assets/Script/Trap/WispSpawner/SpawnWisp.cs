@@ -17,6 +17,10 @@ public class SpawnWisp : MonoBehaviour
     {
         while (true)
         {
+            while ((StopTime.GetTimeStatus()))
+            {
+                yield return null;
+            }
             yield return new WaitForSeconds(Interval);
             if (count < countMax)
             {

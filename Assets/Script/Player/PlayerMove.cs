@@ -30,6 +30,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] float timePerFrame = 0.0f;
     Vector2 startPosition;
     [SerializeField] float timeToNextMove = 0.0f;
+    [SerializeField] float StopTimeRefreshTime;
     bool needWait = false;
     public delegate void GoingFoward(Vector3 Position, float Speed);
     public static event GoingFoward PlayerGoingFoward;
@@ -39,6 +40,8 @@ public class PlayerMove : MonoBehaviour
     public static event PlayerPause PlayerPauseRequest;
     public delegate void DashState();
     public static event DashState DashStateInfo;
+    public delegate void StopTimeState();
+    public static event StopTimeState TimeState;
     bool alive;
     SpriteRenderer myRender;
     [SerializeField] Sprite[] left = null;
@@ -47,6 +50,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] Sprite[] down = null;
     [SerializeField] string dashButton = null;
     [SerializeField] string pauseButton = null;
+    [SerializeField] string StopTimeButton = null;
+    bool canStopTime = true;
     [SerializeField] float waitToUseDashAgain = 0.0f;
     bool canDash;
     bool dashReady;
@@ -67,6 +72,7 @@ public class PlayerMove : MonoBehaviour
         dashReady = false;
         canDash = true;
         inCoolDownDash = false;
+        canStopTime = true;
         inFloor = true;
         myDirection = Direction.Down;
         animCourroutine = StartCoroutine(Anim(down));
@@ -107,6 +113,12 @@ public class PlayerMove : MonoBehaviour
         {
             dashReady = true; 
             DashStateInfo?.Invoke();
+        }
+        if(Input.GetKeyDown(StopTimeButton) && canStopTime)
+        {
+            canStopTime = false;
+            TimeState?.Invoke();
+            StartCoroutine(RefreshStopTime());
         }
         if (!moving && alive && Time.deltaTime != zeroF)
         {
@@ -206,6 +218,11 @@ public class PlayerMove : MonoBehaviour
         canDash = true;
         inCoolDownDash = false;
         DashStateInfo?.Invoke();
+    }
+    IEnumerator RefreshStopTime()
+    {
+        yield return new WaitForSeconds(StopTimeRefreshTime);
+        canStopTime = true;
     }
     IEnumerator Anim(Sprite[] anim)
     {

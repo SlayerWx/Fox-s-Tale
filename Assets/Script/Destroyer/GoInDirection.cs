@@ -17,7 +17,14 @@ public class GoInDirection : MonoBehaviour
     }
     private void Move()
     {
-        myRigid.velocity = direction.normalized * speed * Time.deltaTime;
+        if (!StopTime.GetTimeStatus())
+        {
+            myRigid.velocity = direction.normalized * speed * Time.deltaTime;
+        }
+        else
+        {
+            myRigid.velocity = Vector2.zero;
+        }
     }
 
 }

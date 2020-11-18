@@ -263,6 +263,7 @@ GameObject:
   - component: {fileID: 1323338208167773894}
   - component: {fileID: 1323338208167773893}
   - component: {fileID: 1323338208167773892}
+  - component: {fileID: 1809062599}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -326,6 +327,7 @@ MonoBehaviour:
   speed: 3
   timePerFrame: 0.2
   timeToNextMove: 0
+  StopTimeRefreshTime: 1
   left:
   - {fileID: -1396681409173755346, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
   - {fileID: -3243736981552181042, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
@@ -352,6 +354,7 @@ MonoBehaviour:
   - {fileID: -8114015348763080203, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
   dashButton: z
   pauseButton: p
+  StopTimeButton: x
   waitToUseDashAgain: 3
 --- !u!114 &1323338208167773892
 MonoBehaviour:
@@ -363,6 +366,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eced627107102b54f9df5bc46f671d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1809062599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323338208167773891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b782a04904c8c04b887c066c060a803, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3805182658968937359

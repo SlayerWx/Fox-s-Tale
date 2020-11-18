@@ -27,6 +27,10 @@ public class GifLoop : MonoBehaviour
         {
             if (!(i < steps.Length) && isLoop) i = zero;
             if(mySprite != null)mySprite.sprite = steps[i];
+            while ((StopTime.GetTimeStatus()) && gameObject.transform.tag !="Player")
+            {
+                yield return null;
+            }
             yield return new WaitForSeconds(timeXFrame);
             i++;
             if (!isLoop && i >= steps.Length) whileControl = false;

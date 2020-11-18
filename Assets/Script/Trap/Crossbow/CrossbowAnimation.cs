@@ -53,17 +53,30 @@ public class CrossbowAnimation : MonoBehaviour
         for (int i = 0; i < animShot.Length && myRender; i++)
         {
                 myRender.sprite = animShot[i];
+            while ((StopTime.GetTimeStatus()))
+            {
+                yield return null;
+            }
             yield return new WaitForSeconds(timeXFrame);
-            
         }
         SummonArrow();
         moveArrow.Ready();
         for(int i = 0; i < animReload.Length && myRender;i++)
         {
             myRender.sprite = animReload[i];
+            while ((StopTime.GetTimeStatus()))
+            {
+                yield return null;
+            }
             yield return new WaitForSeconds(timeXFrame);
+            
+        }
+        while ((StopTime.GetTimeStatus()))
+        {
+            yield return null;
         }
         yield return new WaitForSeconds(interval);
+
         isOnAnim = false;
     }
 }

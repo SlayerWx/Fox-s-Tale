@@ -21,7 +21,7 @@ public class ArrowMove : MonoBehaviour
     // asAS
     void FixedUpdate()
     {
-        if(readyToMove)
+        if(readyToMove && !StopTime.GetTimeStatus())
         {
             myRigid.velocity = (transform.TransformDirection(Vector2.right) * speed) * Time.deltaTime;
             if (transform.position.y < onef)

@@ -20,7 +20,7 @@ public class DeteriorationFloor : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Player" && gameObject.tag != "Trap" && !deteriorationOn)
+        if(col.gameObject.tag == "Player" && gameObject.tag != "Trap" && !deteriorationOn && !StopTime.GetTimeStatus())
         {
             deteriorationOn = true;
             StartCoroutine(deterioration());
@@ -42,7 +42,11 @@ public class DeteriorationFloor : MonoBehaviour
         for (int i = 1;i < mySprite.Length; i++)
         {
             yield return new WaitForSeconds(time);
-            myRender.sprite = mySprite[i];
+           while((StopTime.GetTimeStatus()))
+            {
+                yield return null;
+            }
+                myRender.sprite = mySprite[i];
         }
         gameObject.tag = "Trap";
         if (playerInside)
