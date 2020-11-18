@@ -9,6 +9,7 @@ TagManager:
   - Floor
   - Destroyer
   - Interactive
+  - Wisp
   layers:
   - Default
   - TransparentFX

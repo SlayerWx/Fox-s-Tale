@@ -29,6 +29,10 @@ public class ArrowMove : MonoBehaviour
                 Destroy(transform.gameObject);
             }
         }
+        else
+        {
+            myRigid.velocity = Vector2.zero;
+        }
     }
     public void Ready()
     {

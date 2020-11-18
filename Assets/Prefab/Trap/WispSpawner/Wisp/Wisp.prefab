@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1831824873}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Wisp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 5570196407059621757}
   m_Layer: 0
   m_Name: Wisp
-  m_TagString: Untagged
+  m_TagString: Wisp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
