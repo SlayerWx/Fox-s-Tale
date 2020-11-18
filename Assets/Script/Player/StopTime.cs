@@ -13,10 +13,9 @@ public class StopTime : MonoBehaviour
     {
         PlayerMove.TimeState -= StopTheTime;
     }
-    void StopTheTime()
+    void StopTheTime(bool w)
     {
-        timeStopped = !timeStopped;
-        Debug.Log(timeStopped);
+        timeStopped = w;
     }
     public static bool GetTimeStatus()
     {

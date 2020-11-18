@@ -30,7 +30,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] float timePerFrame = 0.0f;
     Vector2 startPosition;
     [SerializeField] float timeToNextMove = 0.0f;
-    [SerializeField] float StopTimeRefreshTime;
+    [SerializeField] float stopTimeRefreshTime = 0.0f;
+    [SerializeField] float timeInStopTime = 0.0f;
     bool needWait = false;
     public delegate void GoingFoward(Vector3 Position, float Speed);
     public static event GoingFoward PlayerGoingFoward;
@@ -40,8 +41,10 @@ public class PlayerMove : MonoBehaviour
     public static event PlayerPause PlayerPauseRequest;
     public delegate void DashState();
     public static event DashState DashStateInfo;
-    public delegate void StopTimeState();
+    public delegate void StopTimeState(bool w);
     public static event StopTimeState TimeState;
+    public delegate void StopTimeStateFinish();
+    public static event StopTimeStateFinish TimeStateFinish;
     bool alive;
     SpriteRenderer myRender;
     [SerializeField] Sprite[] left = null;
@@ -58,7 +61,7 @@ public class PlayerMove : MonoBehaviour
     bool inCoolDownDash;
     bool inFloor;
     bool isSlippingOut;
-    
+    bool refresingTimeStopTime = false;
     void Start()//asAS
     {
         direction = Vector2.zero;
@@ -81,6 +84,7 @@ public class PlayerMove : MonoBehaviour
         dirBool.Left = true;
         dirBool.Right = true;
         isSlippingOut = false;
+        refresingTimeStopTime = false;
 
     }
     void OnEnable()
@@ -114,11 +118,20 @@ public class PlayerMove : MonoBehaviour
             dashReady = true; 
             DashStateInfo?.Invoke();
         }
-        if(Input.GetKeyDown(StopTimeButton) && canStopTime)
+        if(Input.GetKeyDown(StopTimeButton))
         {
-            canStopTime = false;
-            TimeState?.Invoke();
-            StartCoroutine(RefreshStopTime());
+            if (canStopTime && !refresingTimeStopTime)
+            {
+                canStopTime = false;
+                TimeState?.Invoke(true);
+                StartCoroutine(TimingInStopTime());
+                TimeStateFinish?.Invoke();
+            }
+            else if(!refresingTimeStopTime)
+            {
+                TimeState?.Invoke(false);
+                StartCoroutine(RefreshStopTime());
+            }
         }
         if (!moving && alive && Time.deltaTime != zeroF)
         {
@@ -219,10 +232,20 @@ public class PlayerMove : MonoBehaviour
         inCoolDownDash = false;
         DashStateInfo?.Invoke();
     }
+    IEnumerator TimingInStopTime()
+    {
+        yield return new WaitForSeconds(timeInStopTime);
+        TimeState?.Invoke(false);
+        StartCoroutine(RefreshStopTime());
+    }
     IEnumerator RefreshStopTime()
     {
-        yield return new WaitForSeconds(StopTimeRefreshTime);
+        StopCoroutine(TimingInStopTime());
+        refresingTimeStopTime = true;
+        yield return new WaitForSeconds(stopTimeRefreshTime);
         canStopTime = true;
+        TimeStateFinish?.Invoke();
+        refresingTimeStopTime = false;
     }
     IEnumerator Anim(Sprite[] anim)
     {

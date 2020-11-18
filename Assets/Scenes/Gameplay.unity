@@ -677,6 +677,10 @@ MonoBehaviour:
   - {fileID: 6836303061237304205, guid: b81200ad87837aa46856378ad80c92ac, type: 3}
   - {fileID: -3489574982990885776, guid: b81200ad87837aa46856378ad80c92ac, type: 3}
   actualDashImage: {fileID: 582989775}
+  mySpriteTimeStop:
+  - {fileID: -7383684783556711738, guid: fda6db7b7c3fa8f44a86f1dc8e5d00ce, type: 3}
+  - {fileID: 5987578097974952355, guid: fda6db7b7c3fa8f44a86f1dc8e5d00ce, type: 3}
+  actualTimeStopImage: {fileID: 92948683}
 --- !u!1 &384368967
 GameObject:
   m_ObjectHideFlags: 0

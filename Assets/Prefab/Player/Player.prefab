@@ -327,7 +327,8 @@ MonoBehaviour:
   speed: 3
   timePerFrame: 0.2
   timeToNextMove: 0
-  StopTimeRefreshTime: 1
+  stopTimeRefreshTime: 12
+  timeInStopTime: 10
   left:
   - {fileID: -1396681409173755346, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
   - {fileID: -3243736981552181042, guid: 57606528face0f8408b2446f200ee0bc, type: 3}
