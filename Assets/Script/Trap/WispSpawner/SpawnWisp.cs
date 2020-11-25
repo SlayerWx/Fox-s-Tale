@@ -31,7 +31,10 @@ public class SpawnWisp : MonoBehaviour
             if (count < countMax)
             {
                 Instantiate(Prefab, transform.position, Quaternion.identity, transform);
-                AkSoundEngine.PostEvent("spawnWisps", transform.gameObject);
+                if (myRender.isVisible)
+                {
+                    AkSoundEngine.PostEvent("spawnWisps", transform.gameObject);
+                }
                 count++;
             }
         }

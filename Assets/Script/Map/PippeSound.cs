@@ -7,7 +7,6 @@ public class PippeSound : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AkSoundEngine.PostEvent("desague", transform.gameObject);
-        
+        //AkSoundEngine.PostEvent("desague", transform.gameObject);
     }
 }

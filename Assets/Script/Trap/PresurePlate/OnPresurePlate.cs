@@ -5,6 +5,7 @@ using UnityEngine;
 public class OnPresurePlate : MonoBehaviour
 {
     [SerializeField] GifLoop myGif;
+    [SerializeField] DoorActivator door;
     bool pressed;
     void OnEnable()
     {
@@ -12,9 +13,10 @@ public class OnPresurePlate : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player" && !StopTime.GetTimeStatus())
+        if(collision.tag == "Player" && !StopTime.GetTimeStatus() && !pressed)
         {
             myGif.StartAnim();
+            door.ButtonActivated();
             pressed = true;
         }
     }

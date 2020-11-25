@@ -1,52 +1,58 @@
 fileFormatVersion: 2
-guid: 1709a6c174e9f014b9d9073065acfa66
+guid: 95eaf74246ffef944948a04034065188
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6919732735812533775
-    second: door_r_0000_6x3_0
+      213: -5276419899231358546
+    second: game_tile_wall_0
   - first:
-      213: 6668653971829473061
-    second: door_r_0000_6x3_1
+      213: -588898622932269699
+    second: game_tile_wall_1
   - first:
-      213: -1801869113144072871
-    second: door_r_0000_6x3_2
+      213: -2632052068292091772
+    second: game_tile_wall_2
   - first:
-      213: -8177214945421687721
-    second: door_r_0000_6x3_3
+      213: -6617687666203751873
+    second: game_tile_wall_3
   - first:
-      213: -7726425526304342871
-    second: door_r_0000_6x3_4
+      213: -7813775686003241149
+    second: game_tile_wall_4
   - first:
-      213: -57968604191126773
-    second: door_r_0000_6x3_5
+      213: -9195105890916448291
+    second: game_tile_wall_5
   - first:
-      213: 28691462202729859
-    second: door_r_0000_6x3_6
+      213: 8429519155042091216
+    second: game_tile_wall_6
   - first:
-      213: -2339227763498719207
-    second: door_r_0000_6x3_7
+      213: -1624364134559423033
+    second: game_tile_wall_7
   - first:
-      213: -1518831020967503150
-    second: door_r_0000_6x3_8
+      213: -4190320090233163779
+    second: game_tile_wall_8
   - first:
-      213: -2897258021014140931
-    second: door_r_0000_6x3_9
+      213: 125358614924253557
+    second: game_tile_wall_9
   - first:
-      213: 37754678866340846
-    second: door_r_0000_6x3_10
+      213: -1496674641964707397
+    second: game_tile_wall_10
   - first:
-      213: -1612984462201216851
-    second: door_r_0000_6x3_11
+      213: -3464523803674215154
+    second: game_tile_wall_11
   - first:
-      213: -6704039290219577613
-    second: door_r_0000_6x3_12
+      213: -4891781041133153026
+    second: game_tile_wall_12
   - first:
-      213: -7460027515851904100
-    second: door_r_0000_6x3_13
+      213: 5117871496894904220
+    second: game_tile_wall_13
   - first:
-      213: -6933387733664156199
-    second: door_r_0000_6x3_14
+      213: 7891661353499530968
+    second: game_tile_wall_14
+  - first:
+      213: -5355207721361632417
+    second: game_tile_wall_15
+  - first:
+      213: -9150509421988799693
+    second: game_tile_wall_16
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -132,295 +138,295 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: door_r_0000_6x3_0
+      name: game_tile_wall_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 296
-        width: 168
-        height: 148
+        x: 96
+        y: 284
+        width: 32
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0e7fbac244d70060800000000000000
-      internalID: 6919732735812533775
+      spriteID: ea1338cae0466c6b0800000000000000
+      internalID: -5276419899231358546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_r_0000_6x3_1
+      name: game_tile_wall_1
       rect:
         serializedVersion: 2
-        x: 168
-        y: 296
-        width: 168
-        height: 148
+        x: 256
+        y: 256
+        width: 128
+        height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52fb4e09471db8c50800000000000000
-      internalID: 6668653971829473061
+      spriteID: d75c76392dfc3d7f0800000000000000
+      internalID: -588898622932269699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_r_0000_6x3_2
+      name: game_tile_wall_2
       rect:
         serializedVersion: 2
-        x: 336
-        y: 296
-        width: 168
-        height: 148
+        x: 512
+        y: 256
+        width: 128
+        height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 955ac4b96997ef6e0800000000000000
-      internalID: -1801869113144072871
+      spriteID: 4802e1fc692197bd0800000000000000
+      internalID: -2632052068292091772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_r_0000_6x3_3
+      name: game_tile_wall_3
       rect:
         serializedVersion: 2
-        x: 504
-        y: 296
-        width: 168
-        height: 148
+        x: 768
+        y: 256
+        width: 128
+        height: 78
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7540026f452b48e80800000000000000
-      internalID: -8177214945421687721
+      spriteID: f3a017d21204924a0800000000000000
+      internalID: -6617687666203751873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_r_0000_6x3_4
+      name: game_tile_wall_4
       rect:
         serializedVersion: 2
-        x: 672
-        y: 296
-        width: 168
-        height: 148
+        x: 1024
+        y: 256
+        width: 128
+        height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ac7e119be836c490800000000000000
-      internalID: -7726425526304342871
+      spriteID: 34f4139a964ef8390800000000000000
+      internalID: -7813775686003241149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_r_0000_6x3_5
+      name: game_tile_wall_5
       rect:
         serializedVersion: 2
-        x: 840
-        y: 296
-        width: 168
-        height: 148
+        x: 1280
+        y: 256
+        width: 128
+        height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0b00139cdd023ff0800000000000000
-      internalID: -57968604191126773
+      spriteID: dd7c2d3f8eb646080800000000000000
+      internalID: -9195105890916448291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_r_0000_6x3_6
+      name: game_tile_wall_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 148
-        width: 168
-        height: 148
+        x: 1536
+        y: 256
+        width: 129
+        height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3852eac9bbee56000800000000000000
-      internalID: 28691462202729859
+      spriteID: 0d082af820babf470800000000000000
+      internalID: 8429519155042091216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_r_0000_6x3_7
+      name: game_tile_wall_7
       rect:
         serializedVersion: 2
-        x: 168
-        y: 148
-        width: 168
-        height: 148
+        x: 1792
+        y: 283
+        width: 31
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9186deb2eb4698fd0800000000000000
-      internalID: -2339227763498719207
+      spriteID: 7c563b50d691579e0800000000000000
+      internalID: -1624364134559423033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_r_0000_6x3_8
+      name: game_tile_wall_8
       rect:
         serializedVersion: 2
-        x: 336
-        y: 148
-        width: 168
-        height: 148
+        x: 256
+        y: 1
+        width: 128
+        height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2da5369cb370ceae0800000000000000
-      internalID: -1518831020967503150
+      spriteID: dff2876441ef8d5c0800000000000000
+      internalID: -4190320090233163779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_r_0000_6x3_9
+      name: game_tile_wall_9
       rect:
         serializedVersion: 2
-        x: 504
-        y: 148
-        width: 168
-        height: 148
+        x: 512
+        y: 1
+        width: 128
+        height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df70dc22e2fdac7d0800000000000000
-      internalID: -2897258021014140931
+      spriteID: 57958100ffc5db100800000000000000
+      internalID: 125358614924253557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_r_0000_6x3_10
+      name: game_tile_wall_10
       rect:
         serializedVersion: 2
-        x: 672
-        y: 148
-        width: 168
-        height: 148
+        x: 768
+        y: 1
+        width: 128
+        height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eebef6e2ea1268000800000000000000
-      internalID: 37754678866340846
+      spriteID: bb1db55c75eba3be0800000000000000
+      internalID: -1496674641964707397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_r_0000_6x3_11
+      name: game_tile_wall_12
       rect:
         serializedVersion: 2
-        x: 840
-        y: 148
-        width: 168
-        height: 148
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da0a5467d278d99e0800000000000000
-      internalID: -1612984462201216851
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door_r_0000_6x3_12
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 1024
         y: 0
-        width: 168
-        height: 148
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe333af8c776f2a0800000000000000
-      internalID: -6704039290219577613
+      spriteID: ef494449f07ec1cb0800000000000000
+      internalID: -4891781041133153026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door_r_0000_6x3_13
+      name: game_tile_wall_13
       rect:
         serializedVersion: 2
-        x: 168
+        x: 1280
         y: 0
-        width: 168
-        height: 148
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9be10fcf78a87890800000000000000
-      internalID: -7460027515851904100
+      spriteID: c977482c205560740800000000000000
+      internalID: 5117871496894904220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game_tile_wall_14
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6940f6030d48d60800000000000000
+      internalID: 7891661353499530968
       vertices: []
       indices: 
       edges: []

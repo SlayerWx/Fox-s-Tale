@@ -31,6 +31,8 @@ public class JumpingFish : MonoBehaviour
     {
         while (true && mySprite != null)
         {
+            if (mySprite.isVisible)
+            {
                 for (short i = one; i < spriteAndColliderPoints.Length && mySprite != null; i++)
                 {
                     if (i == one)
@@ -56,7 +58,12 @@ public class JumpingFish : MonoBehaviour
                     yield return null;
                 }
                 yield return new WaitForSeconds(coldown);
+            }
+            else
+            {
+                yield return new WaitForSeconds(timeXFrame);
+            }
+
         }
-        
     }
 }
