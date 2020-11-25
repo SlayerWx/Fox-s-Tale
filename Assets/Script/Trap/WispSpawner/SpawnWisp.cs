@@ -8,9 +8,11 @@ public class SpawnWisp : MonoBehaviour
     [SerializeField] float Interval;
     public static int count = 0;
     const int countMax = 10;
+    SpriteRenderer myRender;
     void OnEnable()
     {
         StartCoroutine(SpawnWispTimer());
+        myRender = GetComponentInChildren<SpriteRenderer>();
     }
 
     IEnumerator SpawnWispTimer()
@@ -29,6 +31,7 @@ public class SpawnWisp : MonoBehaviour
             if (count < countMax)
             {
                 Instantiate(Prefab, transform.position, Quaternion.identity, transform);
+                AkSoundEngine.PostEvent("spawnWisps", transform.gameObject);
                 count++;
             }
         }

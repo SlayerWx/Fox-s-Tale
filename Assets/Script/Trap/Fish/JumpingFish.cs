@@ -31,25 +31,32 @@ public class JumpingFish : MonoBehaviour
     {
         while (true && mySprite != null)
         {
-            for (short i = one; i < spriteAndColliderPoints.Length && mySprite != null; i++)
-            {
-                mySprite.sprite = spriteAndColliderPoints[i].mySprite;
-                myCollider.offset = spriteAndColliderPoints[i].offset;
-                myCollider.size = spriteAndColliderPoints[i].size;
+                for (short i = one; i < spriteAndColliderPoints.Length && mySprite != null; i++)
+                {
+                    if (i == one)
+                    {
+
+                        AkSoundEngine.PostEvent("fishJump", transform.gameObject);
+
+                    }
+                    mySprite.sprite = spriteAndColliderPoints[i].mySprite;
+                    myCollider.offset = spriteAndColliderPoints[i].offset;
+                    myCollider.size = spriteAndColliderPoints[i].size;
+                    while ((StopTime.GetTimeStatus()))
+                    {
+                        yield return null;
+                    }
+                    yield return new WaitForSeconds(timeXFrame);
+                }
+                mySprite.sprite = spriteAndColliderPoints[zero].mySprite;
+                myCollider.offset = spriteAndColliderPoints[zero].offset;
+                myCollider.size = spriteAndColliderPoints[zero].size;
                 while ((StopTime.GetTimeStatus()))
                 {
                     yield return null;
                 }
-                yield return new WaitForSeconds(timeXFrame);
-            }
-            mySprite.sprite = spriteAndColliderPoints[zero].mySprite;
-            myCollider.offset = spriteAndColliderPoints[zero].offset;
-            myCollider.size = spriteAndColliderPoints[zero].size;
-            while ((StopTime.GetTimeStatus()))
-            {
-                yield return null;
-            }
-            yield return new WaitForSeconds(coldown);
+                yield return new WaitForSeconds(coldown);
         }
+        
     }
 }

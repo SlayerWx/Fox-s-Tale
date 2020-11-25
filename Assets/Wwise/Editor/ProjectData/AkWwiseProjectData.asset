@@ -20,7 +20,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 6a3343ef8d774745b782194c8afeb11e
     GuidInternal: 
-    m_lastTime: -8585964865138817905
+    m_lastTime: -8585957117717371227
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: bb18130e7f719b489c1ab9b0107b0873
     GuidInternal: 
-    m_lastTime: -8585964865141779983
+    m_lastTime: -8585953171043150369
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -41,6 +41,28 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus
+    - name: MUSICA
+      guid: e92ba5cc33f0044c98d3dc7de9f4b104
+      id: 1730564739
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: MUSICA
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\MUSICA
+    - name: SFX
+      guid: 40d4eb2fd321564d9f0f246f69228856
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: SFX
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\SFX
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -49,8 +71,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e87323a5eae31641b8278eac796ad56c
     GuidInternal: 
-    m_lastTime: -8585964865139545945
-    List: []
+    m_lastTime: -8585954437849252598
+    List:
+    - name: Main
+      guid: 2e4edd28c949e748ade2ce1ae5a90194
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -59,8 +90,356 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c95081c6be30ca43b805886e442d4bc7
     GuidInternal: 
-    m_lastTime: -8585964865141939541
-    List: []
+    m_lastTime: -8585953210153431710
+    List:
+    - name: arrowShot
+      guid: 2b8da8102b915b48b21dc328e2648363
+      id: 845452308
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: arrowShot
+        ObjectType: 3
+      Path: Default Work Unit\arrowShot
+      maxAttenuation: 0
+      maxDuration: 2772800
+      minDuration: 2374420
+    - name: brokenFloor
+      guid: 9717d250dd1eed4b8d03ed07ae357310
+      id: 2665995544
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: brokenFloor
+        ObjectType: 3
+      Path: Default Work Unit\brokenFloor
+      maxAttenuation: 0
+      maxDuration: 3098155
+      minDuration: 2775562
+    - name: clockIn
+      guid: d8b5d1554ec7344b9d482e001e30d1a8
+      id: 3732233112
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: clockIn
+        ObjectType: 3
+      Path: Default Work Unit\clockIn
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: clockOut
+      guid: b72792b073dcd249837e3132783add4c
+      id: 3250926143
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: clockOut
+        ObjectType: 3
+      Path: Default Work Unit\clockOut
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: dashAvailable
+      guid: 77ab422aaa8a4c45b15a7e1476aa97c7
+      id: 2598305070
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: dashAvailable
+        ObjectType: 3
+      Path: Default Work Unit\dashAvailable
+      maxAttenuation: 0
+      maxDuration: 553243
+      minDuration: 489546
+    - name: dashIn
+      guid: d2bbc1277450cd498bddd79ef5608942
+      id: 500575488
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: dashIn
+        ObjectType: 3
+      Path: Default Work Unit\dashIn
+      maxAttenuation: 0
+      maxDuration: 555737
+      minDuration: 372517
+    - name: dashJump
+      guid: a8e530af01a80b47a02da46d15ed5f61
+      id: 2902735605
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: dashJump
+        ObjectType: 3
+      Path: Default Work Unit\dashJump
+      maxAttenuation: 0
+      maxDuration: 690667
+      minDuration: 164667
+    - name: deadByArrows
+      guid: e751a2f589367e4e9bbb3a463baca0b9
+      id: 2119947522
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: deadByArrows
+        ObjectType: 3
+      Path: Default Work Unit\deadByArrows
+      maxAttenuation: 0
+      maxDuration: 2469594
+      minDuration: 200000
+    - name: deadByFall
+      guid: 77bc9c31bd09cc4abc667a32ddf18d23
+      id: 3380611355
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: deadByFall
+        ObjectType: 3
+      Path: Default Work Unit\deadByFall
+      maxAttenuation: 0
+      maxDuration: 2469594
+      minDuration: 1765537
+    - name: deadByFish
+      guid: d38db8f74c3afb4ea67566d14d745241
+      id: 3731661478
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: deadByFish
+        ObjectType: 3
+      Path: Default Work Unit\deadByFish
+      maxAttenuation: 0
+      maxDuration: 2469594
+      minDuration: 200000
+    - name: deadByPinches
+      guid: 0201418c2e632746b89f891d61271130
+      id: 1874851080
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: deadByPinches
+        ObjectType: 3
+      Path: Default Work Unit\deadByPinches
+      maxAttenuation: 0
+      maxDuration: 2469594
+      minDuration: 200000
+    - name: deadByShadow
+      guid: 3bb389b33d6f1242a74febc6d8e2e448
+      id: 3511500052
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: deadByShadow
+        ObjectType: 3
+      Path: Default Work Unit\deadByShadow
+      maxAttenuation: 0
+      maxDuration: 2469594
+      minDuration: 200000
+    - name: deadMenu
+      guid: f86d359f99f31f4bba8efd78962b0a7b
+      id: 1118120938
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: deadMenu
+        ObjectType: 3
+      Path: Default Work Unit\deadMenu
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: desague
+      guid: 27c4ef0514fcff439004dd2fd9387c66
+      id: 2020903617
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: desague
+        ObjectType: 3
+      Path: Default Work Unit\desague
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: fishJump
+      guid: ded035bbdba6b646b97f2b44213fe063
+      id: 1578009071
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: fishJump
+        ObjectType: 3
+      Path: Default Work Unit\fishJump
+      maxAttenuation: 0
+      maxDuration: 5417914
+      minDuration: 4054980
+    - name: gameStart
+      guid: 09cc5808bd78c449aa3e16ff885f2c2c
+      id: 4058101365
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: gameStart
+        ObjectType: 3
+      Path: Default Work Unit\gameStart
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: matchStart
+      guid: 6fae5fede3b4884299266da80906f60d
+      id: 4152065628
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: matchStart
+        ObjectType: 3
+      Path: Default Work Unit\matchStart
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: menuStart
+      guid: 2d0b50bd1906a74da89df90a7ff438fb
+      id: 1447920996
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: menuStart
+        ObjectType: 3
+      Path: Default Work Unit\menuStart
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: mouseClick
+      guid: 792d9a931852ce4181a9a5a156ede595
+      id: 4010314750
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: mouseClick
+        ObjectType: 3
+      Path: Default Work Unit\mouseClick
+      maxAttenuation: 0
+      maxDuration: 516322
+      minDuration: 486780
+    - name: pauseIn
+      guid: a4c2213067fea147b4183b0d32d911bb
+      id: 181417420
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: pauseIn
+        ObjectType: 3
+      Path: Default Work Unit\pauseIn
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: pauseOut
+      guid: b579a49da9543346ac91b910f5540da7
+      id: 3635785963
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: pauseOut
+        ObjectType: 3
+      Path: Default Work Unit\pauseOut
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: playFootstep
+      guid: 83cce447fcf6074a8d5676b25475bf1f
+      id: 1712852617
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: playFootstep
+        ObjectType: 3
+      Path: Default Work Unit\playFootstep
+      maxAttenuation: 0
+      maxDuration: 954018
+      minDuration: 402208
+    - name: score0
+      guid: 97ac49a7c4ec2b4e98b1ab83fbb5b7f8
+      id: 2283883555
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: score0
+        ObjectType: 3
+      Path: Default Work Unit\score0
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: score100
+      guid: 31d7d080f686f74da6b968441cfa978a
+      id: 2285156786
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: score100
+        ObjectType: 3
+      Path: Default Work Unit\score100
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: score250
+      guid: 91ebad2866324e4ab592837d9e9bec68
+      id: 87141506
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: score250
+        ObjectType: 3
+      Path: Default Work Unit\score250
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: score400
+      guid: d2b79f424d5ec247b46c35ce21694321
+      id: 104904959
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: score400
+        ObjectType: 3
+      Path: Default Work Unit\score400
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: shadow
+      guid: 665fefded237bb478932976484335035
+      id: 3140781661
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: shadow
+        ObjectType: 3
+      Path: Default Work Unit\shadow
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: slipperyFloor
+      guid: a579b5add8223f4bbe1bb89b9bd2be34
+      id: 2952340197
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: slipperyFloor
+        ObjectType: 3
+      Path: Default Work Unit\slipperyFloor
+      maxAttenuation: 0
+      maxDuration: 1509297
+      minDuration: 1021678
+    - name: spawnWisps
+      guid: 1ca32a0f5035894893428cde3d9170c7
+      id: 280766994
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: spawnWisps
+        ObjectType: 3
+      Path: Default Work Unit\spawnWisps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -69,8 +448,26 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d32a62430e0f6144a5a4e84aa9820dca
     GuidInternal: 
-    m_lastTime: -8585964865140254058
-    List: []
+    m_lastTime: -8585953189590620828
+    List:
+    - name: SHADOW_DISTANCE
+      guid: 5e721d54c63aed40ab76551ad597bb27
+      id: 3397146065
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SHADOW_DISTANCE
+        ObjectType: 13
+      Path: Default Work Unit\SHADOW_DISTANCE
+    - name: VOLUMEN
+      guid: d4d58ff07145d54caa55968881b82e59
+      id: 4043670295
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: VOLUMEN
+        ObjectType: 13
+      Path: Default Work Unit\VOLUMEN
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -79,8 +476,100 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 6f99fe1677318f45b7375ee31daf795f
     GuidInternal: 
-    m_lastTime: -8585964865138937573
-    List: []
+    m_lastTime: -8585953323829277056
+    List:
+    - name: GAME_MODES
+      guid: f8e8becef49cc64b8804e4298f9eaccb
+      id: 2891432982
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GAME_MODES
+        ObjectType: 9
+      Path: Default Work Unit\GAME_MODES
+      values:
+      - name: game_start
+        guid: 7a70301188d1a34b80cee70ab9b99694
+        id: 733168346
+        PathAndIcons:
+        - ElementName: game_start
+          ObjectType: 8
+      - name: in_dead_menu
+        guid: 443b1428f0315848b48ec4180353dadc
+        id: 4063988593
+        PathAndIcons:
+        - ElementName: in_dead_menu
+          ObjectType: 8
+      - name: in_game
+        guid: b34e7fbee91716419cfbb625036d8563
+        id: 2967546505
+        PathAndIcons:
+        - ElementName: in_game
+          ObjectType: 8
+      - name: in_menu
+        guid: ab2ce4437319f94dafbb55c6e8df5585
+        id: 1631528850
+        PathAndIcons:
+        - ElementName: in_menu
+          ObjectType: 8
+      - name: in_pause
+        guid: 56b510340b2d63439c4039910b7f758f
+        id: 2182592203
+        PathAndIcons:
+        - ElementName: in_pause
+          ObjectType: 8
+      - name: None
+        guid: 8aa66b943a2e8f47bda22618d39ce895
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: SCORES
+      guid: 75a65abbb82f2545933aca13fceafb41
+      id: 2283883616
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SCORES
+        ObjectType: 9
+      Path: Default Work Unit\SCORES
+      values:
+      - name: None
+        guid: fda768961612454caa1ee5213a1be126
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: score0
+        guid: 853c28bde391594b80cbe42b2d45c03d
+        id: 2283883555
+        PathAndIcons:
+        - ElementName: score0
+          ObjectType: 8
+      - name: score100
+        guid: dbe39cec9d8d8147a83d3e349067decc
+        id: 2285156786
+        PathAndIcons:
+        - ElementName: score100
+          ObjectType: 8
+      - name: score250
+        guid: 3760cb46af3fca4093187542ef80985d
+        id: 87141506
+        PathAndIcons:
+        - ElementName: score250
+          ObjectType: 8
+      - name: score400
+        guid: 2fae20cd49187743bba6fe7c60b9e19c
+        id: 104904959
+        PathAndIcons:
+        - ElementName: score400
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -89,8 +578,51 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: fdb508ca1ad46e418b2b3f02ac219f87
     GuidInternal: 
-    m_lastTime: -8585964865139087175
-    List: []
+    m_lastTime: -8585954437849226541
+    List:
+    - name: deadBy
+      guid: 40235ea33b1ce347b8960d6d68501718
+      id: 3119544328
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: deadBy
+        ObjectType: 11
+      Path: Default Work Unit\deadBy
+      values:
+      - name: arrows
+        guid: 8777d8c7265eb5448b4e5597d24a7bc4
+        id: 1257608559
+        PathAndIcons:
+        - ElementName: arrows
+          ObjectType: 10
+      - name: fall
+        guid: d7fafdd4e236284ea60b69d081fbac58
+        id: 2512384458
+        PathAndIcons:
+        - ElementName: fall
+          ObjectType: 10
+      - name: fish
+        guid: 9029a626f628234b9317b4657efcbca4
+        id: 2695658327
+        PathAndIcons:
+        - ElementName: fish
+          ObjectType: 10
+      - name: pinches
+        guid: dfa01738b73fd9468b483ffe12f26a9b
+        id: 548708371
+        PathAndIcons:
+        - ElementName: pinches
+          ObjectType: 10
+      - name: shadow
+        guid: d16daa3c821726419715be32eafe6d80
+        id: 3140781661
+        PathAndIcons:
+        - ElementName: shadow
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -99,8 +631,13 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 23b89417c52b544a8a8f054216a57cfb
     GuidInternal: 
-    m_lastTime: -8585964865139685579
+    m_lastTime: -8585957117717381228
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /RunInADungeon_WwiseProject
+  - /RunInADungeon_WwiseProject/Events
+  - /RunInADungeon_WwiseProject/SoundBanks
+  - /RunInADungeon_WwiseProject/States
+  - /RunInADungeon_WwiseProject/Switches
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

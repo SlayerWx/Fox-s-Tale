@@ -60,7 +60,12 @@ public class CrossbowAnimation : MonoBehaviour
             yield return new WaitForSeconds(timeXFrame);
         }
         SummonArrow();
-        for(int i = 0; i < animReload.Length && myRender;i++)
+
+        if (myRender.isVisible)
+        {
+            AkSoundEngine.PostEvent("arrowShot", transform.gameObject);
+        }
+        for (int i = 0; i < animReload.Length && myRender;i++)
         {
             myRender.sprite = animReload[i];
             while ((StopTime.GetTimeStatus()))

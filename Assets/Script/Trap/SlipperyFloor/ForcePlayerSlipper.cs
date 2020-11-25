@@ -13,6 +13,7 @@ public class ForcePlayerSlipper : MonoBehaviour
         {
             myGif.StartAnim();
             PlayerSlipper?.Invoke(true);
+            AkSoundEngine.PostEvent("slipperyFloor", transform.gameObject);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

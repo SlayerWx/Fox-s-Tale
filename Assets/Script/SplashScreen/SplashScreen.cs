@@ -10,6 +10,9 @@ public class SplashScreen : MonoBehaviour
     [SerializeField] float time = 0;
     void Start()
     {
+        //AkSoundEngine.SetRTPCValue("sfxVolume", 5.0f);
+        //AkSoundEngine.SetRTPCValue("musicVolume", 0.0f);
+        AkSoundEngine.PostEvent("gameStart", transform.gameObject);
         StartCoroutine(Timer());
     }
     IEnumerator Timer()

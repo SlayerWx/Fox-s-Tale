@@ -190,6 +190,10 @@ public class PlayerMove : MonoBehaviour
             ux = Vector2.Lerp(startPosition, startPosition + ux, timer);
             myRigid.MovePosition(ux);
             timer += Time.deltaTime * speed;
+            if (canDash && !isSlippingOut)
+            {
+                AkSoundEngine.PostEvent("playFootstep", transform.gameObject);
+            }
             if (timer >= one)
             {
                 timer = zeroF;
@@ -219,6 +223,7 @@ public class PlayerMove : MonoBehaviour
         if (!inFloor)
         {
             alive = false;
+            AkSoundEngine.PostEvent("playFootstep", transform.gameObject);
             PlayerIsDead?.Invoke();
         }
         else

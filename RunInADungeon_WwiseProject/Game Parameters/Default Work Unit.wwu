@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{43622AD3-0F0E-4461-A5A4-E84AA9820DCA}" SchemaVersion="97">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{43622AD3-0F0E-4461-A5A4-E84AA9820DCA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{43622AD3-0F0E-4461-A5A4-E84AA9820DCA}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="SHADOW_DISTANCE" ID="{541D725E-3AC6-40ED-AB76-551AD597BB27}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="VOLUMEN" ID="{F08FD5D4-4571-4CD5-AA55-968881B82E59}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

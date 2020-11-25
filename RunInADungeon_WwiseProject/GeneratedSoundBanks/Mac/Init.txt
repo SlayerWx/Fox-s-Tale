@@ -1,4 +1,26 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2283883616	SCORES			\Default Work Unit\SCORES	
+	2891432982	GAME_MODES			\Default Work Unit\GAME_MODES	
+
+State	ID	Name	State Group			Notes
+	87141506	score250	SCORES			
+	104904959	score400	SCORES			
+	748895195	None	SCORES			
+	2283883555	score0	SCORES			
+	2285156786	score100	SCORES			
+	733168346	game_start	GAME_MODES			
+	748895195	None	GAME_MODES			
+	1631528850	in_menu	GAME_MODES			
+	2182592203	in_pause	GAME_MODES			
+	2967546505	in_game	GAME_MODES			
+	4063988593	in_dead_menu	GAME_MODES			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	4043670295	VOLUMEN			\Default Work Unit\VOLUMEN	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1730564739	MUSICA			\Default Work Unit\Master Audio Bus\MUSICA	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes

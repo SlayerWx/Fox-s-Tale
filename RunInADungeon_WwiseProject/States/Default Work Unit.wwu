@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{16FE996F-3177-458F-B737-5EE31DAF795F}" SchemaVersion="97">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{16FE996F-3177-458F-B737-5EE31DAF795F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{16FE996F-3177-458F-B737-5EE31DAF795F}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="GAME_MODES" ID="{CEBEE8F8-9CF4-4BC6-8804-E4298F9EACCB}">
+					<ChildrenList>
+						<State Name="None" ID="{946BA68A-2E3A-478F-BDA2-2618D39CE895}"/>
+						<State Name="game_start" ID="{1130707A-D188-4BA3-80CE-E70AB9B99694}"/>
+						<State Name="in_menu" ID="{43E42CAB-1973-4DF9-AFBB-55C6E8DF5585}"/>
+						<State Name="in_game" ID="{BE7F4EB3-17E9-4116-9CFB-B625036D8563}"/>
+						<State Name="in_dead_menu" ID="{28143B44-31F0-4858-B48E-C4180353DADC}"/>
+						<State Name="in_pause" ID="{3410B556-2D0B-4363-9C40-39910B7F758F}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="SCORES" ID="{BB5AA675-2FB8-4525-933A-CA13FCEAFB41}">
+					<ChildrenList>
+						<State Name="None" ID="{9668A7FD-1216-4C45-AA1E-E5213A1BE126}"/>
+						<State Name="score0" ID="{BD283C85-91E3-4B59-80CB-E42B2D45C03D}"/>
+						<State Name="score100" ID="{EC9CE3DB-8D9D-4781-A83D-3E349067DECC}"/>
+						<State Name="score250" ID="{46CB6037-3FAF-40CA-9318-7542EF80985D}"/>
+						<State Name="score400" ID="{CD20AE2F-1849-4377-BBA6-FE7C60B9E19C}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

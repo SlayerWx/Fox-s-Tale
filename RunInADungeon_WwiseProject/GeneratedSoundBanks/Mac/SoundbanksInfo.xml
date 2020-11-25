@@ -1,20 +1,730 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\maxi_\Desktop\Programacion\segundo_anio\desarrollo3\RunInADungeon\RunInADungeon_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\maxi_\Desktop\Programacion\segundo_anio\desarrollo3\RunInADungeon\RunInADungeon_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\maxi_\Desktop\Programacion\segundo_anio\desarrollo3\RunInADungeon\RunInADungeon_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Matías\Documents\GitHub\Fox-s-Tale-Audio_Team\RunInADungeon_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Matías\Documents\GitHub\Fox-s-Tale-Audio_Team\RunInADungeon_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Matías\Documents\GitHub\Fox-s-Tale-Audio_Team\RunInADungeon_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\maxi_\Desktop\Programacion\segundo_anio\desarrollo3\RunInADungeon\RunInADungeon_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Matías\Documents\GitHub\Fox-s-Tale-Audio_Team\RunInADungeon_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2953616821">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3411756697">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="4043670295" Name="VOLUMEN" ObjectPath="\Game Parameters\Default Work Unit\VOLUMEN"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="3870112859">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="845452308" Name="arrowShot" ObjectPath="\Events\Default Work Unit\arrowShot" DurationType="OneShot" DurationMin="2.374420" DurationMax="2.772800">
+					<IncludedMemoryFiles>
+						<File Id="137674193" Language="SFX">
+							<ShortName>BALLESTA\BALLESTA _CARGA_01.wav</ShortName>
+							<Path>SFX\BALLESTA\BALLESTA _CARGA_01_10C4C929.wem</Path>
+						</File>
+						<File Id="178819039" Language="SFX">
+							<ShortName>BALLESTA\BALLESTA _FLYBY_01.wav</ShortName>
+							<Path>SFX\BALLESTA\BALLESTA _FLYBY_01_10C4C929.wem</Path>
+						</File>
+						<File Id="471273047" Language="SFX">
+							<ShortName>BALLESTA\BALLESTA _FLYBY_02.wav</ShortName>
+							<Path>SFX\BALLESTA\BALLESTA _FLYBY_02_10C4C929.wem</Path>
+						</File>
+						<File Id="584968668" Language="SFX">
+							<ShortName>BALLESTA\BALLESTA _CARGA_02.wav</ShortName>
+							<Path>SFX\BALLESTA\BALLESTA _CARGA_02_10C4C929.wem</Path>
+						</File>
+						<File Id="721173991" Language="SFX">
+							<ShortName>BALLESTA\BALLESTA _SHOT_02.wav</ShortName>
+							<Path>SFX\BALLESTA\BALLESTA _SHOT_02_10C4C929.wem</Path>
+						</File>
+						<File Id="808386526" Language="SFX">
+							<ShortName>BALLESTA\BALLESTA _SHOT_01.wav</ShortName>
+							<Path>SFX\BALLESTA\BALLESTA _SHOT_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2665995544" Name="brokenFloor" ObjectPath="\Events\Default Work Unit\brokenFloor" DurationType="OneShot" DurationMin="2.775562" DurationMax="3.098155">
+					<IncludedMemoryFiles>
+						<File Id="25029383" Language="SFX">
+							<ShortName>BROKEN_FLOOR_1.wav</ShortName>
+							<Path>SFX\BROKEN_FLOOR_1_E1668025.wem</Path>
+						</File>
+						<File Id="166218744" Language="SFX">
+							<ShortName>BROKEN_FLOOR_2.wav</ShortName>
+							<Path>SFX\BROKEN_FLOOR_2_3642397F.wem</Path>
+						</File>
+						<File Id="483978473" Language="SFX">
+							<ShortName>BROKEN_FLOOR_2.wav</ShortName>
+							<Path>SFX\BROKEN_FLOOR_2_5B62378C.wem</Path>
+						</File>
+						<File Id="559718463" Language="SFX">
+							<ShortName>BROKEN_FLOOR_1.wav</ShortName>
+							<Path>SFX\BROKEN_FLOOR_1_90C37818.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3732233112" Name="clockIn" ObjectPath="\Events\Default Work Unit\clockIn" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="158429563" Language="SFX">
+							<ShortName>CLOCK\CLOCK_FREEZE_01.wav</ShortName>
+							<Path>SFX\CLOCK\CLOCK_FREEZE_01_9FC40D4C.wem</Path>
+						</File>
+						<File Id="190628387" Language="SFX">
+							<ShortName>CLOCK\CLOCK_GLASS_BRAKE_02.wav</ShortName>
+							<Path>SFX\CLOCK\CLOCK_GLASS_BRAKE_02_10C4C929.wem</Path>
+						</File>
+						<File Id="588499185" Language="SFX">
+							<ShortName>CLOCK\CLOCK_FREEZE_02.wav</ShortName>
+							<Path>SFX\CLOCK\CLOCK_FREEZE_02_EDC39C9F.wem</Path>
+						</File>
+						<File Id="730320244" Language="SFX">
+							<ShortName>CLOCK\CLOCK_GLASS_BRAKE_01.wav</ShortName>
+							<Path>SFX\CLOCK\CLOCK_GLASS_BRAKE_01_10C4C929.wem</Path>
+						</File>
+						<File Id="779764807" Language="SFX">
+							<ShortName>CLOCK\CLOCK_TICTAC.wav</ShortName>
+							<Path>SFX\CLOCK\CLOCK_TICTAC_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3250926143" Name="clockOut" ObjectPath="\Events\Default Work Unit\clockOut" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2598305070" Name="dashAvailable" ObjectPath="\Events\Default Work Unit\dashAvailable" DurationType="OneShot" DurationMin="0.489546" DurationMax="0.553243">
+					<IncludedMemoryFiles>
+						<File Id="659812404" Language="SFX">
+							<ShortName>DASH_AVAILABLE_02.wav</ShortName>
+							<Path>SFX\DASH_AVAILABLE_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1006797924" Language="SFX">
+							<ShortName>DASH_AVAILABLE_01.wav</ShortName>
+							<Path>SFX\DASH_AVAILABLE_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="500575488" Name="dashIn" ObjectPath="\Events\Default Work Unit\dashIn" DurationType="OneShot" DurationMin="0.372517" DurationMax="0.555737">
+					<IncludedMemoryFiles>
+						<File Id="38787973" Language="SFX">
+							<ShortName>DASH_SELECT_01.wav</ShortName>
+							<Path>SFX\DASH_SELECT_01_10C4C929.wem</Path>
+						</File>
+						<File Id="329624317" Language="SFX">
+							<ShortName>DASH_SELECT_02.wav</ShortName>
+							<Path>SFX\DASH_SELECT_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2902735605" Name="dashJump" ObjectPath="\Events\Default Work Unit\dashJump" DurationType="OneShot" DurationMin="0.164667" DurationMax="0.690667">
+					<IncludedMemoryFiles>
+						<File Id="119759360" Language="SFX">
+							<ShortName>WALLAS\ACTION_VOICES\WALLAS_EFFORTS_01.wav</ShortName>
+							<Path>SFX\WALLAS\ACTION_VOICES\WALLAS_EFFORTS_01_10C4C929.wem</Path>
+						</File>
+						<File Id="488735159" Language="SFX">
+							<ShortName>WALLAS\ACTION_VOICES\WALLAS_EFFORTS_04.wav</ShortName>
+							<Path>SFX\WALLAS\ACTION_VOICES\WALLAS_EFFORTS_04_10C4C929.wem</Path>
+						</File>
+						<File Id="556446147" Language="SFX">
+							<ShortName>WALLAS\ACTION_VOICES\WALLAS_EFFORTS_03.wav</ShortName>
+							<Path>SFX\WALLAS\ACTION_VOICES\WALLAS_EFFORTS_03_10C4C929.wem</Path>
+						</File>
+						<File Id="685926077" Language="SFX">
+							<ShortName>WALLAS\ACTION_VOICES\WALLAS_EFFORTS_02.wav</ShortName>
+							<Path>SFX\WALLAS\ACTION_VOICES\WALLAS_EFFORTS_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2119947522" Name="deadByArrows" ObjectPath="\Events\Default Work Unit\deadByArrows" DurationType="OneShot" DurationMin="0.200000" DurationMax="2.469594">
+					<IncludedMemoryFiles>
+						<File Id="177866702" Language="SFX">
+							<ShortName>DEADS\BALLESTA _IMPACT_KILL_01.wav</ShortName>
+							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="301668589" Language="SFX">
+							<ShortName>DEAD_BY_FALL.wav</ShortName>
+							<Path>SFX\DEAD_BY_FALL_10C4C929.wem</Path>
+						</File>
+						<File Id="339757196" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_01.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="370613104" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_03.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_03_10C4C929.wem</Path>
+						</File>
+						<File Id="466359606" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_04.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_04_10C4C929.wem</Path>
+						</File>
+						<File Id="920605758" Language="SFX">
+							<ShortName>DEADS\BALLESTA _IMPACT_KILL_02.wav</ShortName>
+							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1028994639" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_02.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{C7D87787-5E26-44B5-8B4E-5597D24A7BC4}">
+							<Media>
+								<File Id="177866702"/>
+								<File Id="920605758"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{26A62990-28F6-4B23-9317-B4657EFCBCA4}">
+							<Media>
+								<File Id="339757196"/>
+								<File Id="1028994639"/>
+								<File Id="370613104"/>
+								<File Id="466359606"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D4FDFAD7-36E2-4E28-A60B-69D081FBAC58}">
+							<Media>
+								<File Id="301668589"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="1257608559" Name="arrows" ObjectPath="\Switches\Default Work Unit\deadBy\arrows"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="3380611355" Name="deadByFall" ObjectPath="\Events\Default Work Unit\deadByFall" DurationType="OneShot" DurationMin="1.765537" DurationMax="2.469594">
+					<IncludedMemoryFiles>
+						<File Id="177866702" Language="SFX">
+							<ShortName>DEADS\BALLESTA _IMPACT_KILL_01.wav</ShortName>
+							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="301668589" Language="SFX">
+							<ShortName>DEAD_BY_FALL.wav</ShortName>
+							<Path>SFX\DEAD_BY_FALL_10C4C929.wem</Path>
+						</File>
+						<File Id="339757196" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_01.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="370613104" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_03.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_03_10C4C929.wem</Path>
+						</File>
+						<File Id="466359606" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_04.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_04_10C4C929.wem</Path>
+						</File>
+						<File Id="920605758" Language="SFX">
+							<ShortName>DEADS\BALLESTA _IMPACT_KILL_02.wav</ShortName>
+							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1028994639" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_02.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{C7D87787-5E26-44B5-8B4E-5597D24A7BC4}">
+							<Media>
+								<File Id="177866702"/>
+								<File Id="920605758"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{26A62990-28F6-4B23-9317-B4657EFCBCA4}">
+							<Media>
+								<File Id="339757196"/>
+								<File Id="1028994639"/>
+								<File Id="370613104"/>
+								<File Id="466359606"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D4FDFAD7-36E2-4E28-A60B-69D081FBAC58}">
+							<Media>
+								<File Id="301668589"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="2512384458" Name="fall" ObjectPath="\Switches\Default Work Unit\deadBy\fall"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="3731661478" Name="deadByFish" ObjectPath="\Events\Default Work Unit\deadByFish" DurationType="OneShot" DurationMin="0.200000" DurationMax="2.469594">
+					<IncludedMemoryFiles>
+						<File Id="177866702" Language="SFX">
+							<ShortName>DEADS\BALLESTA _IMPACT_KILL_01.wav</ShortName>
+							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="301668589" Language="SFX">
+							<ShortName>DEAD_BY_FALL.wav</ShortName>
+							<Path>SFX\DEAD_BY_FALL_10C4C929.wem</Path>
+						</File>
+						<File Id="339757196" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_01.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="370613104" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_03.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_03_10C4C929.wem</Path>
+						</File>
+						<File Id="466359606" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_04.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_04_10C4C929.wem</Path>
+						</File>
+						<File Id="920605758" Language="SFX">
+							<ShortName>DEADS\BALLESTA _IMPACT_KILL_02.wav</ShortName>
+							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1028994639" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_02.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{C7D87787-5E26-44B5-8B4E-5597D24A7BC4}">
+							<Media>
+								<File Id="177866702"/>
+								<File Id="920605758"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{26A62990-28F6-4B23-9317-B4657EFCBCA4}">
+							<Media>
+								<File Id="339757196"/>
+								<File Id="1028994639"/>
+								<File Id="370613104"/>
+								<File Id="466359606"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D4FDFAD7-36E2-4E28-A60B-69D081FBAC58}">
+							<Media>
+								<File Id="301668589"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="2695658327" Name="fish" ObjectPath="\Switches\Default Work Unit\deadBy\fish"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="1874851080" Name="deadByPinches" ObjectPath="\Events\Default Work Unit\deadByPinches" DurationType="OneShot" DurationMin="0.200000" DurationMax="2.469594">
+					<IncludedMemoryFiles>
+						<File Id="177866702" Language="SFX">
+							<ShortName>DEADS\BALLESTA _IMPACT_KILL_01.wav</ShortName>
+							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="301668589" Language="SFX">
+							<ShortName>DEAD_BY_FALL.wav</ShortName>
+							<Path>SFX\DEAD_BY_FALL_10C4C929.wem</Path>
+						</File>
+						<File Id="339757196" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_01.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="370613104" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_03.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_03_10C4C929.wem</Path>
+						</File>
+						<File Id="466359606" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_04.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_04_10C4C929.wem</Path>
+						</File>
+						<File Id="920605758" Language="SFX">
+							<ShortName>DEADS\BALLESTA _IMPACT_KILL_02.wav</ShortName>
+							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1028994639" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_02.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{C7D87787-5E26-44B5-8B4E-5597D24A7BC4}">
+							<Media>
+								<File Id="177866702"/>
+								<File Id="920605758"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{26A62990-28F6-4B23-9317-B4657EFCBCA4}">
+							<Media>
+								<File Id="339757196"/>
+								<File Id="1028994639"/>
+								<File Id="370613104"/>
+								<File Id="466359606"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D4FDFAD7-36E2-4E28-A60B-69D081FBAC58}">
+							<Media>
+								<File Id="301668589"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="548708371" Name="pinches" ObjectPath="\Switches\Default Work Unit\deadBy\pinches"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="3511500052" Name="deadByShadow" ObjectPath="\Events\Default Work Unit\deadByShadow" DurationType="OneShot" DurationMin="0.200000" DurationMax="2.469594">
+					<IncludedMemoryFiles>
+						<File Id="177866702" Language="SFX">
+							<ShortName>DEADS\BALLESTA _IMPACT_KILL_01.wav</ShortName>
+							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="301668589" Language="SFX">
+							<ShortName>DEAD_BY_FALL.wav</ShortName>
+							<Path>SFX\DEAD_BY_FALL_10C4C929.wem</Path>
+						</File>
+						<File Id="339757196" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_01.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="370613104" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_03.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_03_10C4C929.wem</Path>
+						</File>
+						<File Id="466359606" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_04.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_04_10C4C929.wem</Path>
+						</File>
+						<File Id="920605758" Language="SFX">
+							<ShortName>DEADS\BALLESTA _IMPACT_KILL_02.wav</ShortName>
+							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1028994639" Language="SFX">
+							<ShortName>DEADS\FISH_IMPACT_KILL_02.wav</ShortName>
+							<Path>SFX\DEADS\FISH_IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{C7D87787-5E26-44B5-8B4E-5597D24A7BC4}">
+							<Media>
+								<File Id="177866702"/>
+								<File Id="920605758"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{26A62990-28F6-4B23-9317-B4657EFCBCA4}">
+							<Media>
+								<File Id="339757196"/>
+								<File Id="1028994639"/>
+								<File Id="370613104"/>
+								<File Id="466359606"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D4FDFAD7-36E2-4E28-A60B-69D081FBAC58}">
+							<Media>
+								<File Id="301668589"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="3140781661" Name="shadow" ObjectPath="\Switches\Default Work Unit\deadBy\shadow"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="1118120938" Name="deadMenu" ObjectPath="\Events\Default Work Unit\deadMenu" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="4063988593" Name="in_dead_menu" ObjectPath="\States\Default Work Unit\GAME_MODES\in_dead_menu"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2020903617" Name="desague" ObjectPath="\Events\Default Work Unit\desague" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="900525283" Language="SFX">
+							<ShortName>DESAGUE_2.wav</ShortName>
+							<Path>SFX\DESAGUE_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1578009071" Name="fishJump" ObjectPath="\Events\Default Work Unit\fishJump" DurationType="OneShot" DurationMin="4.054980" DurationMax="5.417914">
+					<IncludedMemoryFiles>
+						<File Id="136862767" Language="SFX">
+							<ShortName>FISH\FISH_LAND_02.wav</ShortName>
+							<Path>SFX\FISH\FISH_LAND_02_10C4C929.wem</Path>
+						</File>
+						<File Id="503820123" Language="SFX">
+							<ShortName>FISH\FISH_LAND_01.wav</ShortName>
+							<Path>SFX\FISH\FISH_LAND_01_10C4C929.wem</Path>
+						</File>
+						<File Id="675430678" Language="SFX">
+							<ShortName>FISH\FISH_TAKE_OFF_01.wav</ShortName>
+							<Path>SFX\FISH\FISH_TAKE_OFF_01_F10DD98A.wem</Path>
+						</File>
+						<File Id="702849122" Language="SFX">
+							<ShortName>FISH\FISH_ON_AIR.wav</ShortName>
+							<Path>SFX\FISH\FISH_ON_AIR_10C4C929.wem</Path>
+						</File>
+						<File Id="755242477" Language="SFX">
+							<ShortName>FISH\FISH_TAKE_OFF_02.wav</ShortName>
+							<Path>SFX\FISH\FISH_TAKE_OFF_02_5A45932D.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4058101365" Name="gameStart" ObjectPath="\Events\Default Work Unit\gameStart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="733168346" Name="game_start" ObjectPath="\States\Default Work Unit\GAME_MODES\game_start"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="4152065628" Name="matchStart" ObjectPath="\Events\Default Work Unit\matchStart" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="23077692" Language="SFX">
+							<ShortName>Gameplay A stem 3.wav</ShortName>
+							<Path>SFX\Gameplay A stem 3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="52198081" Language="SFX">
+							<ShortName>Gameplay A stem 1.wav</ShortName>
+							<Path>SFX\Gameplay A stem 1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="120000595" Language="SFX">
+							<ShortName>Gameplay A stem 4.wav</ShortName>
+							<Path>SFX\Gameplay A stem 4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="398690319" Language="SFX">
+							<ShortName>Gameplay B stem 1.wav</ShortName>
+							<Path>SFX\Gameplay B stem 1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="678572888" Language="SFX">
+							<ShortName>Gameplay B stem 2.wav</ShortName>
+							<Path>SFX\Gameplay B stem 2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="721076073" Language="SFX">
+							<ShortName>Gameplay B stem 4.wav</ShortName>
+							<Path>SFX\Gameplay B stem 4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="760224464" Language="SFX">
+							<ShortName>Gameplay A stem 2.wav</ShortName>
+							<Path>SFX\Gameplay A stem 2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="823510307" Language="SFX">
+							<ShortName>Gameplay B stem 3.wav</ShortName>
+							<Path>SFX\Gameplay B stem 3_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="2283883555" Name="score0" ObjectPath="\States\Default Work Unit\SCORES\score0"/>
+						<ActionSetStateEntry Id="2967546505" Name="in_game" ObjectPath="\States\Default Work Unit\GAME_MODES\in_game"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1447920996" Name="menuStart" ObjectPath="\Events\Default Work Unit\menuStart" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="10833723" Language="SFX">
+							<ShortName>RIVER_AMB.wav</ShortName>
+							<Path>SFX\RIVER_AMB_7A1626D2.wem</Path>
+						</File>
+						<File Id="121353557" Language="SFX">
+							<ShortName>RIVER_AMB.wav</ShortName>
+							<Path>SFX\RIVER_AMB_97079D80.wem</Path>
+						</File>
+						<File Id="180841446" Language="SFX">
+							<ShortName>PETALS_AMB.wav</ShortName>
+							<Path>SFX\PETALS_AMB_76DFE35D.wem</Path>
+						</File>
+						<File Id="225900510" Language="SFX">
+							<ShortName>PETALS_AMB.wav</ShortName>
+							<Path>SFX\PETALS_AMB_E85842F7.wem</Path>
+						</File>
+						<File Id="447676862" Language="SFX">
+							<ShortName>PETALS_AMB.wav</ShortName>
+							<Path>SFX\PETALS_AMB_0C4D1172.wem</Path>
+						</File>
+						<File Id="449341775" Language="SFX">
+							<ShortName>WIND_AMB.wav</ShortName>
+							<Path>SFX\WIND_AMB_93174F4B.wem</Path>
+						</File>
+						<File Id="588948257" Language="SFX">
+							<ShortName>RIVER_AMB.wav</ShortName>
+							<Path>SFX\RIVER_AMB_38293384.wem</Path>
+						</File>
+						<File Id="592087630" Language="SFX">
+							<ShortName>PETALS_AMB.wav</ShortName>
+							<Path>SFX\PETALS_AMB_FABD0CAB.wem</Path>
+						</File>
+						<File Id="801162954" Language="SFX">
+							<ShortName>WIND_AMB.wav</ShortName>
+							<Path>SFX\WIND_AMB_200AED60.wem</Path>
+						</File>
+						<File Id="889243385" Language="SFX">
+							<ShortName>WIND_AMB.wav</ShortName>
+							<Path>SFX\WIND_AMB_739BBBC5.wem</Path>
+						</File>
+						<File Id="898981675" Language="SFX">
+							<ShortName>RIVER_AMB.wav</ShortName>
+							<Path>SFX\RIVER_AMB_ED6E9C1C.wem</Path>
+						</File>
+						<File Id="1052993168" Language="SFX">
+							<ShortName>WIND_AMB.wav</ShortName>
+							<Path>SFX\WIND_AMB_310E7930.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="1631528850" Name="in_menu" ObjectPath="\States\Default Work Unit\GAME_MODES\in_menu"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="4010314750" Name="mouseClick" ObjectPath="\Events\Default Work Unit\mouseClick" DurationType="OneShot" DurationMin="0.486780" DurationMax="0.516322">
+					<IncludedMemoryFiles>
+						<File Id="342659880" Language="SFX">
+							<ShortName>MOUSE_CLICK_2.wav</ShortName>
+							<Path>SFX\MOUSE_CLICK_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="181417420" Name="pauseIn" ObjectPath="\Events\Default Work Unit\pauseIn" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2182592203" Name="in_pause" ObjectPath="\States\Default Work Unit\GAME_MODES\in_pause"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3635785963" Name="pauseOut" ObjectPath="\Events\Default Work Unit\pauseOut" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2967546505" Name="in_game" ObjectPath="\States\Default Work Unit\GAME_MODES\in_game"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1712852617" Name="playFootstep" ObjectPath="\Events\Default Work Unit\playFootstep" DurationType="OneShot" DurationMin="0.402208" DurationMax="0.954018">
+					<IncludedMemoryFiles>
+						<File Id="15832022" Language="SFX">
+							<ShortName>FOOTSTEPS\FS_CONCRETE_04.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\FS_CONCRETE_04_5162CB3B.wem</Path>
+						</File>
+						<File Id="273405237" Language="SFX">
+							<ShortName>FOOTSTEPS\FS_CONCRETE_03.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\FS_CONCRETE_03_5EB8F437.wem</Path>
+						</File>
+						<File Id="365982042" Language="SFX">
+							<ShortName>FOOTSTEPS\FS_CONCRETE_02.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\FS_CONCRETE_02_94FE58B3.wem</Path>
+						</File>
+						<File Id="403408763" Language="SFX">
+							<ShortName>FOOTSTEPS\FS_CONCRETE_01.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\FS_CONCRETE_01_EA848793.wem</Path>
+						</File>
+						<File Id="552755692" Language="SFX">
+							<ShortName>FOOTSTEPS\FS_CONCRETE_02.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\FS_CONCRETE_02_FED1683E.wem</Path>
+						</File>
+						<File Id="814903189" Language="SFX">
+							<ShortName>FOOTSTEPS\FS_CONCRETE_01.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\FS_CONCRETE_01_29652D84.wem</Path>
+						</File>
+						<File Id="848342822" Language="SFX">
+							<ShortName>FOOTSTEPS\FS_CONCRETE_03.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\FS_CONCRETE_03_ABC1E5C4.wem</Path>
+						</File>
+						<File Id="943174428" Language="SFX">
+							<ShortName>FOOTSTEPS\FS_CONCRETE_04.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\FS_CONCRETE_04_BABDA316.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2283883555" Name="score0" ObjectPath="\Events\Default Work Unit\score0" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2283883555" Name="score0" ObjectPath="\States\Default Work Unit\SCORES\score0"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2285156786" Name="score100" ObjectPath="\Events\Default Work Unit\score100" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2285156786" Name="score100" ObjectPath="\States\Default Work Unit\SCORES\score100"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="87141506" Name="score250" ObjectPath="\Events\Default Work Unit\score250" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="87141506" Name="score250" ObjectPath="\States\Default Work Unit\SCORES\score250"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="104904959" Name="score400" ObjectPath="\Events\Default Work Unit\score400" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="104904959" Name="score400" ObjectPath="\States\Default Work Unit\SCORES\score400"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3140781661" Name="shadow" ObjectPath="\Events\Default Work Unit\shadow" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2952340197" Name="slipperyFloor" ObjectPath="\Events\Default Work Unit\slipperyFloor" DurationType="OneShot" DurationMin="1.021678" DurationMax="1.509297">
+					<IncludedMemoryFiles>
+						<File Id="24531831" Language="SFX">
+							<ShortName>SLIPPERY_FLOOR_3.wav</ShortName>
+							<Path>SFX\SLIPPERY_FLOOR_3_10C4C929.wem</Path>
+						</File>
+						<File Id="298812681" Language="SFX">
+							<ShortName>SLIPPERY_FLOOR_1.wav</ShortName>
+							<Path>SFX\SLIPPERY_FLOOR_1_10C4C929.wem</Path>
+						</File>
+						<File Id="794214575" Language="SFX">
+							<ShortName>SLIPPERY_FLOOR_2.wav</ShortName>
+							<Path>SFX\SLIPPERY_FLOOR_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="280766994" Name="spawnWisps" ObjectPath="\Events\Default Work Unit\spawnWisps" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="540369" Language="SFX">
+							<ShortName>SPAWN_SWIPS_FIRE_2.wav</ShortName>
+							<Path>SFX\SPAWN_SWIPS_FIRE_2_10C4C929.wem</Path>
+						</File>
+						<File Id="317353257" Language="SFX">
+							<ShortName>SPAWN_SWIPS_VOICES.wav</ShortName>
+							<Path>SFX\SPAWN_SWIPS_VOICES_10C4C929.wem</Path>
+						</File>
+						<File Id="657423833" Language="SFX">
+							<ShortName>SPAWN_SWIPS_FIRE_1.wav</ShortName>
+							<Path>SFX\SPAWN_SWIPS_FIRE_1_B59F016C.wem</Path>
+						</File>
+						<File Id="1014469233" Language="SFX">
+							<ShortName>SPAWN_SWIPS_FIRE_1.wav</ShortName>
+							<Path>SFX\SPAWN_SWIPS_FIRE_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="87141506" Name="score250" ObjectPath="\States\Default Work Unit\SCORES\score250">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="104904959" Name="score400" ObjectPath="\States\Default Work Unit\SCORES\score400">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="733168346" Name="game_start" ObjectPath="\States\Default Work Unit\GAME_MODES\game_start">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1631528850" Name="in_menu" ObjectPath="\States\Default Work Unit\GAME_MODES\in_menu">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2182592203" Name="in_pause" ObjectPath="\States\Default Work Unit\GAME_MODES\in_pause">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2283883555" Name="score0" ObjectPath="\States\Default Work Unit\SCORES\score0">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2285156786" Name="score100" ObjectPath="\States\Default Work Unit\SCORES\score100">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2967546505" Name="in_game" ObjectPath="\States\Default Work Unit\GAME_MODES\in_game">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="4063988593" Name="in_dead_menu" ObjectPath="\States\Default Work Unit\GAME_MODES\in_dead_menu">
+					<States/>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="548708371" Name="pinches" ObjectPath="\Switches\Default Work Unit\deadBy\pinches">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="1257608559" Name="arrows" ObjectPath="\Switches\Default Work Unit\deadBy\arrows">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="2512384458" Name="fall" ObjectPath="\Switches\Default Work Unit\deadBy\fall">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="2695658327" Name="fish" ObjectPath="\Switches\Default Work Unit\deadBy\fish">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="3119544328" Name="deadBy" ObjectPath="\Switches\Default Work Unit\deadBy">
+					<Switches>
+						<Switch Id="2695658327" Name="fish" ObjectPath="\Switches\Default Work Unit\deadBy\fish"/>
+						<Switch Id="2512384458" Name="fall" ObjectPath="\Switches\Default Work Unit\deadBy\fall"/>
+						<Switch Id="1257608559" Name="arrows" ObjectPath="\Switches\Default Work Unit\deadBy\arrows"/>
+						<Switch Id="3140781661" Name="shadow" ObjectPath="\Switches\Default Work Unit\deadBy\shadow"/>
+						<Switch Id="548708371" Name="pinches" ObjectPath="\Switches\Default Work Unit\deadBy\pinches"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3140781661" Name="shadow" ObjectPath="\Switches\Default Work Unit\deadBy\shadow">
+					<Switches/>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

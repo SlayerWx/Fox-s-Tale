@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CA08B5FD-D41A-416E-8B2B-3F02AC219F87}" SchemaVersion="97">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{CA08B5FD-D41A-416E-8B2B-3F02AC219F87}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CA08B5FD-D41A-416E-8B2B-3F02AC219F87}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="deadBy" ID="{A35E2340-1C3B-47E3-B896-0D6D68501718}">
+					<ChildrenList>
+						<Switch Name="fish" ID="{26A62990-28F6-4B23-9317-B4657EFCBCA4}"/>
+						<Switch Name="fall" ID="{D4FDFAD7-36E2-4E28-A60B-69D081FBAC58}"/>
+						<Switch Name="arrows" ID="{C7D87787-5E26-44B5-8B4E-5597D24A7BC4}"/>
+						<Switch Name="shadow" ID="{3CAA6DD1-1782-4126-9715-BE32EAFE6D80}"/>
+						<Switch Name="pinches" ID="{3817A0DF-3FB7-46D9-8B48-3FFE12F26A9B}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

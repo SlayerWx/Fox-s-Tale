@@ -23,6 +23,7 @@ public class DeteriorationFloor : MonoBehaviour
         if(col.gameObject.tag == "Player" && gameObject.tag != "Trap" && !deteriorationOn && !StopTime.GetTimeStatus())
         {
             deteriorationOn = true;
+            AkSoundEngine.PostEvent("brokenFloor", transform.gameObject);
             StartCoroutine(deterioration());
         }
         if (col.gameObject.tag == "Player")

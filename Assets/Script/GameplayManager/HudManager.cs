@@ -12,6 +12,7 @@ public class HudManager : MonoBehaviour //asAS
     {
         PlayerMove.PlayerGoingFoward += PlayerInMeters;
         maxMeters = zero;
+        AkSoundEngine.PostEvent("matchStart", transform.gameObject);
     }
     void OnDisable()
     {
