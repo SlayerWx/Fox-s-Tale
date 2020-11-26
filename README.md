@@ -1,5 +1,5 @@
 <p align="center">
-<img src="logo.png" alt="Fox's Tale"/>
+<img src="logo.jpg" alt="Fox's Tale"/>
 </p>
 
 # Fox's Tale
