@@ -33,6 +33,19 @@ This is a game (still in development) developed by students from <a href="https:
 - **José Rodriguez** - *Testing*
 - **Santiago Saied** - *Testing*
 
+## Extra Assets
+- **Muizz (muizzkasim@gmail.com)** - *Font ArcadeAlternative*
+
+## Tools
+- **Unity**
+- **Kitra**
+- **Tiled**
+- **Adobe Photoshop**
+- **Piskel**
+- **Visual Studio**
+- **Wwise**
+- **Reaper**
+- **Pro Tools**
 
 This game was also possible thanks to the support of these professors:
 
