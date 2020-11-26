@@ -14,6 +14,7 @@ public class DestroyObj : MonoBehaviour
         else
         {
             player.SetAlive(false);
+            AkSoundEngine.PostEvent("deadByShadow",transform.gameObject);
         }
     }
 }

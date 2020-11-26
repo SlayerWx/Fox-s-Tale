@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 390195840269708244}
   - component: {fileID: 390195840269708251}
+  - component: {fileID: 7247865214447143522}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Trap
@@ -89,6 +90,20 @@ MonoBehaviour:
       type: 3}
     offset: {x: 9.261809, y: -1.911693}
     size: {x: 3.594332, y: 2.010813}
+--- !u!114 &7247865214447143522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390195840269708245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf67287ed9184249a7b2cf230f3e2f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: deadByFish
+  targetTag: Player
 --- !u!1 &390195841224229142
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{B775D287-00DC-462B-B6BA-29FE17F17E8A}" ShortID="141913250">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SWITCH_MUSICAS" ID="{E6E51737-363F-4905-BB77-4CE973A7F2F2}" WorkUnitID="{4D93F495-C86C-4676-84CD-0B1828EE9F2D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="menuStart" ID="{BD500B2D-0619-4DA7-A89D-F90A7FF438FB}">
@@ -51,20 +58,13 @@
 				</Event>
 				<Event Name="matchStart" ID="{ED5FAE6F-B4E3-4288-9926-6DA80906F60D}">
 					<ChildrenList>
-						<Action Name="" ID="{BE470D13-E891-4245-AB06-D8425815B936}" ShortID="214902672">
+						<Action Name="" ID="{CB7464FA-6BCA-4610-869D-6B37F866EE2F}" ShortID="703647681">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="ActionType" Type="int16" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="in_game" ID="{BE7F4EB3-17E9-4116-9CFB-B625036D8563}" WorkUnitID="{16FE996F-3177-458F-B737-5EE31DAF795F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{5AC7B2F6-8A37-436D-9FC4-E2CCA2436E20}" ShortID="268675420">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="IN_GAME" ID="{3C11D02E-F144-4526-B793-148043344237}" WorkUnitID="{4D93F495-C86C-4676-84CD-0B1828EE9F2D}"/>
+									<ObjectRef Name="MENU_AMB" ID="{70DEBD07-990E-458E-A86B-D4456FC74E71}" WorkUnitID="{14960962-60C8-4E4F-8D6E-AC87BE5F5D61}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -75,6 +75,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="score0" ID="{BD283C85-91E3-4B59-80CB-E42B2D45C03D}" WorkUnitID="{16FE996F-3177-458F-B737-5EE31DAF795F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{50817E4E-146B-4162-BA62-33D2A8B5B18C}" ShortID="611155610">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="in_match" ID="{BE7F4EB3-17E9-4116-9CFB-B625036D8563}" WorkUnitID="{16FE996F-3177-458F-B737-5EE31DAF795F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -272,7 +282,17 @@
 				</Event>
 				<Event Name="deadMenu" ID="{9F356DF8-F399-4B1F-BA8E-FD78962B0A7B}">
 					<ChildrenList>
-						<Action Name="" ID="{38FEC15C-C5D0-4EA0-86E3-090CC8833641}" ShortID="740931089">
+						<Action Name="" ID="{B8ADC35E-CBD5-44BD-9D9C-4655ABDBF1FD}" ShortID="248720936">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EF311CEA-B686-4736-98B8-A8CC8A0D824A}" ShortID="221610352">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
 							</PropertyList>
@@ -328,7 +348,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="in_game" ID="{BE7F4EB3-17E9-4116-9CFB-B625036D8563}" WorkUnitID="{16FE996F-3177-458F-B737-5EE31DAF795F}"/>
+									<ObjectRef Name="in_match" ID="{BE7F4EB3-17E9-4116-9CFB-B625036D8563}" WorkUnitID="{16FE996F-3177-458F-B737-5EE31DAF795F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -421,6 +441,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="score250" ID="{46CB6037-3FAF-40CA-9318-7542EF80985D}" WorkUnitID="{16FE996F-3177-458F-B737-5EE31DAF795F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="New_Event" ID="{E1612CF6-5206-4C6F-A888-9A76FC7407E8}">
+					<ChildrenList>
+						<Action Name="" ID="{C54BD27A-AFDE-485F-8A5C-E30E56F30192}" ShortID="46341086">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MUSICA" ID="{CCA52BE9-F033-4C04-98D3-DC7DE9F4B104}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

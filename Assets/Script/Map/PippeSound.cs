@@ -4,9 +4,25 @@ using UnityEngine;
 
 public class PippeSound : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static bool isPlaying;
+    [SerializeField] SpriteRenderer myRender;
+    [SerializeField] float soundLenght = 4.0f;
     void Start()
     {
-        //AkSoundEngine.PostEvent("desague", transform.gameObject);
+        isPlaying = false;
+    }
+    void FixedUpdate()
+    {
+        if (myRender.isVisible && !isPlaying)
+        {
+            AkSoundEngine.PostEvent("desague", transform.gameObject);
+            isPlaying = true;
+            StartCoroutine(Reset());
+        }
+    }
+    IEnumerator Reset()
+    {
+        yield return new WaitForSeconds(soundLenght);
+        isPlaying = false;
     }
 }

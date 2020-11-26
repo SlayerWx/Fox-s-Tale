@@ -125,3 +125,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75bf003038df10248820da32b4fc973a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myRender: {fileID: 5158569413259989911}
+  soundLenght: 4

@@ -42,6 +42,10 @@ public class ManagerGameplay : MonoBehaviour
         deadLayer.SetActive(option == Layers.dead);
         pauseLayer.SetActive(option == Layers.pause);
         inGamePlayer.SetActive(option == Layers.inGame);
+        if(Layers.dead == option)
+        {
+            AkSoundEngine.PostEvent("deadMenu", transform.gameObject);
+        }
     }
     void pause()
     {

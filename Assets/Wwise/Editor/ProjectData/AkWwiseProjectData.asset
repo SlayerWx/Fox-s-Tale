@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: bb18130e7f719b489c1ab9b0107b0873
     GuidInternal: 
-    m_lastTime: -8585953171043150369
+    m_lastTime: -8585952646123080461
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -90,7 +90,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c95081c6be30ca43b805886e442d4bc7
     GuidInternal: 
-    m_lastTime: -8585953210153431710
+    m_lastTime: -8585952646123220493
     List:
     - name: arrowShot
       guid: 2b8da8102b915b48b21dc328e2648363
@@ -101,7 +101,7 @@ MonoBehaviour:
       - ElementName: arrowShot
         ObjectType: 3
       Path: Default Work Unit\arrowShot
-      maxAttenuation: 0
+      maxAttenuation: 100000000
       maxDuration: 2772800
       minDuration: 2374420
     - name: brokenFloor
@@ -113,7 +113,7 @@ MonoBehaviour:
       - ElementName: brokenFloor
         ObjectType: 3
       Path: Default Work Unit\brokenFloor
-      maxAttenuation: 0
+      maxAttenuation: 100000000
       maxDuration: 3098155
       minDuration: 2775562
     - name: clockIn
@@ -257,7 +257,7 @@ MonoBehaviour:
       - ElementName: desague
         ObjectType: 3
       Path: Default Work Unit\desague
-      maxAttenuation: 0
+      maxAttenuation: 100000000
       maxDuration: -1
       minDuration: -1
     - name: fishJump
@@ -269,7 +269,7 @@ MonoBehaviour:
       - ElementName: fishJump
         ObjectType: 3
       Path: Default Work Unit\fishJump
-      maxAttenuation: 0
+      maxAttenuation: 100000000
       maxDuration: 5417914
       minDuration: 4054980
     - name: gameStart
@@ -294,8 +294,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\matchStart
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: menuStart
       guid: 2d0b50bd1906a74da89df90a7ff438fb
       id: 1447920996
@@ -320,6 +320,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 516322
       minDuration: 486780
+    - name: New_Event
+      guid: f62c61e106526f4ca8889a76fc7407e8
+      id: 3050945240
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: New_Event
+        ObjectType: 3
+      Path: Default Work Unit\New_Event
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: pauseIn
       guid: a4c2213067fea147b4183b0d32d911bb
       id: 181417420
@@ -437,7 +449,7 @@ MonoBehaviour:
       - ElementName: spawnWisps
         ObjectType: 3
       Path: Default Work Unit\spawnWisps
-      maxAttenuation: 0
+      maxAttenuation: 100000000
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
@@ -448,26 +460,35 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: d32a62430e0f6144a5a4e84aa9820dca
     GuidInternal: 
-    m_lastTime: -8585953189590620828
+    m_lastTime: -8585952814653450732
     List:
-    - name: SHADOW_DISTANCE
+    - name: musicVolume
+      guid: 3b2b87d13399584f9f590bdb14a8cb38
+      id: 2346531308
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: musicVolume
+        ObjectType: 13
+      Path: Default Work Unit\musicVolume
+    - name: sfxVolume
+      guid: 754eb0a576cea94d916d39c333d6b662
+      id: 988953028
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: sfxVolume
+        ObjectType: 13
+      Path: Default Work Unit\sfxVolume
+    - name: shadowDistance
       guid: 5e721d54c63aed40ab76551ad597bb27
-      id: 3397146065
+      id: 915746400
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: SHADOW_DISTANCE
+      - ElementName: shadowDistance
         ObjectType: 13
-      Path: Default Work Unit\SHADOW_DISTANCE
-    - name: VOLUMEN
-      guid: d4d58ff07145d54caa55968881b82e59
-      id: 4043670295
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: VOLUMEN
-        ObjectType: 13
-      Path: Default Work Unit\VOLUMEN
+      Path: Default Work Unit\shadowDistance
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -476,7 +497,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 6f99fe1677318f45b7375ee31daf795f
     GuidInternal: 
-    m_lastTime: -8585953323829277056
+    m_lastTime: -8585952665174775808
     List:
     - name: GAME_MODES
       guid: f8e8becef49cc64b8804e4298f9eaccb
@@ -488,6 +509,12 @@ MonoBehaviour:
         ObjectType: 9
       Path: Default Work Unit\GAME_MODES
       values:
+      - name: clock_in
+        guid: 9caf202c61e7f84cad6006c59f34dce5
+        id: 2907590929
+        PathAndIcons:
+        - ElementName: clock_in
+          ObjectType: 8
       - name: game_start
         guid: 7a70301188d1a34b80cee70ab9b99694
         id: 733168346
@@ -500,11 +527,11 @@ MonoBehaviour:
         PathAndIcons:
         - ElementName: in_dead_menu
           ObjectType: 8
-      - name: in_game
+      - name: in_match
         guid: b34e7fbee91716419cfbb625036d8563
-        id: 2967546505
+        id: 1686036574
         PathAndIcons:
-        - ElementName: in_game
+        - ElementName: in_match
           ObjectType: 8
       - name: in_menu
         guid: ab2ce4437319f94dafbb55c6e8df5585

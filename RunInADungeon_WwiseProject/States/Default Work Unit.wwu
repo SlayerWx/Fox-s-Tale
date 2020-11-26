@@ -8,9 +8,10 @@
 						<State Name="None" ID="{946BA68A-2E3A-478F-BDA2-2618D39CE895}"/>
 						<State Name="game_start" ID="{1130707A-D188-4BA3-80CE-E70AB9B99694}"/>
 						<State Name="in_menu" ID="{43E42CAB-1973-4DF9-AFBB-55C6E8DF5585}"/>
-						<State Name="in_game" ID="{BE7F4EB3-17E9-4116-9CFB-B625036D8563}"/>
+						<State Name="in_match" ID="{BE7F4EB3-17E9-4116-9CFB-B625036D8563}"/>
 						<State Name="in_dead_menu" ID="{28143B44-31F0-4858-B48E-C4180353DADC}"/>
 						<State Name="in_pause" ID="{3410B556-2D0B-4363-9C40-39910B7F758F}"/>
+						<State Name="clock_in" ID="{2C20AF9C-E761-4CF8-AD60-06C59F34DCE5}"/>
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="SCORES" ID="{BB5AA675-2FB8-4525-933A-CA13FCEAFB41}">

@@ -11,12 +11,14 @@ State	ID	Name	State Group			Notes
 	733168346	game_start	GAME_MODES			
 	748895195	None	GAME_MODES			
 	1631528850	in_menu	GAME_MODES			
+	1686036574	in_match	GAME_MODES			
 	2182592203	in_pause	GAME_MODES			
-	2967546505	in_game	GAME_MODES			
+	2907590929	clock_in	GAME_MODES			
 	4063988593	in_dead_menu	GAME_MODES			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	4043670295	VOLUMEN			\Default Work Unit\VOLUMEN	
+	988953028	sfxVolume			\Default Work Unit\sfxVolume	
+	2346531308	musicVolume			\Default Work Unit\musicVolume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	

@@ -206,10 +206,21 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 819958163}
+        m_MethodName: ChangeVolumeSfx
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &62673264
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,6 +681,8 @@ MonoBehaviour:
   - {fileID: 3021298681881679895, guid: 8a9e2994918031e478f7759614aef875, type: 3}
   - {fileID: 2001330533648423042, guid: 611dbcefe4a26d34b894f32b421167b6, type: 3}
   - {fileID: 2931026803897674355, guid: 0245d34f01f15a04782c2f1633e66f85, type: 3}
+  - {fileID: 7841748026860619544, guid: 8ac175e8f54ba0c47a1db324ea70b30e, type: 3}
+  - {fileID: 3903022200361608318, guid: 11fd1e63c28f8a6408a2f6ee99144e79, type: 3}
   maxMapGenerated: 7
 --- !u!1 &354984820
 GameObject:
@@ -1286,6 +1299,7 @@ GameObject:
   - component: {fileID: 819958161}
   - component: {fileID: 819958160}
   - component: {fileID: 819958159}
+  - component: {fileID: 819958163}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1375,6 +1389,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &819958163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819958158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 134747501d59f4e4280f8d6ad05575db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mySound: {fileID: 1844378180}
+  mySfx: {fileID: 32683098}
 --- !u!1 &844986460
 GameObject:
   m_ObjectHideFlags: 0
@@ -2554,10 +2582,21 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 819958163}
+        m_MethodName: ChangeVolumeMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1922854496
 GameObject:
   m_ObjectHideFlags: 0
@@ -3095,11 +3134,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Destroyer
-      objectReference: {fileID: 0}
-    - target: {fileID: 3101021863492249456, guid: 52e10a3a753f1c041a2999477ac40c34,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3101021863492249461, guid: 52e10a3a753f1c041a2999477ac40c34,
         type: 3}

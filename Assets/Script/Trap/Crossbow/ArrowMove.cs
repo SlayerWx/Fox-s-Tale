@@ -36,4 +36,11 @@ public class ArrowMove : MonoBehaviour
             myRigid.velocity = Vector2.zero;
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "player")
+        {
+            AkSoundEngine.PostEvent("deadByArrow", transform.gameObject);
+        }
+    }
 }

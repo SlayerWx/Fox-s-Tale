@@ -1,30 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Matías\Documents\GitHub\Fox-s-Tale-Audio_Team\RunInADungeon_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Matías\Documents\GitHub\Fox-s-Tale-Audio_Team\RunInADungeon_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Matías\Documents\GitHub\Fox-s-Tale-Audio_Team\RunInADungeon_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\maxi_\Desktop\Programacion\segundo_anio\desarrollo3\RunInADungeon\RunInADungeon_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\maxi_\Desktop\Programacion\segundo_anio\desarrollo3\RunInADungeon\RunInADungeon_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\maxi_\Desktop\Programacion\segundo_anio\desarrollo3\RunInADungeon\RunInADungeon_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Matías\Documents\GitHub\Fox-s-Tale-Audio_Team\RunInADungeon_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\maxi_\Desktop\Programacion\segundo_anio\desarrollo3\RunInADungeon\RunInADungeon_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3411756697">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2192211052">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<GameParameters>
-				<GameParameter Id="4043670295" Name="VOLUMEN" ObjectPath="\Game Parameters\Default Work Unit\VOLUMEN"/>
+				<GameParameter Id="988953028" Name="sfxVolume" ObjectPath="\Game Parameters\Default Work Unit\sfxVolume"/>
+				<GameParameter Id="2346531308" Name="musicVolume" ObjectPath="\Game Parameters\Default Work Unit\musicVolume"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2891432982" Name="GAME_MODES" ObjectPath="\States\Default Work Unit\GAME_MODES">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\GAME_MODES\None"/>
+						<State Id="733168346" Name="game_start" ObjectPath="\States\Default Work Unit\GAME_MODES\game_start"/>
+						<State Id="1631528850" Name="in_menu" ObjectPath="\States\Default Work Unit\GAME_MODES\in_menu"/>
+						<State Id="1686036574" Name="in_match" ObjectPath="\States\Default Work Unit\GAME_MODES\in_match"/>
+						<State Id="4063988593" Name="in_dead_menu" ObjectPath="\States\Default Work Unit\GAME_MODES\in_dead_menu"/>
+						<State Id="2182592203" Name="in_pause" ObjectPath="\States\Default Work Unit\GAME_MODES\in_pause"/>
+						<State Id="2907590929" Name="clock_in" ObjectPath="\States\Default Work Unit\GAME_MODES\clock_in"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3870112859">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1461467328">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="845452308" Name="arrowShot" ObjectPath="\Events\Default Work Unit\arrowShot" DurationType="OneShot" DurationMin="2.374420" DurationMax="2.772800">
+				<Event Id="845452308" Name="arrowShot" ObjectPath="\Events\Default Work Unit\arrowShot" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.374420" DurationMax="2.772800">
 					<IncludedMemoryFiles>
 						<File Id="137674193" Language="SFX">
 							<ShortName>BALLESTA\BALLESTA _CARGA_01.wav</ShortName>
@@ -52,7 +66,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2665995544" Name="brokenFloor" ObjectPath="\Events\Default Work Unit\brokenFloor" DurationType="OneShot" DurationMin="2.775562" DurationMax="3.098155">
+				<Event Id="2665995544" Name="brokenFloor" ObjectPath="\Events\Default Work Unit\brokenFloor" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.775562" DurationMax="3.098155">
 					<IncludedMemoryFiles>
 						<File Id="25029383" Language="SFX">
 							<ShortName>BROKEN_FLOOR_1.wav</ShortName>
@@ -426,15 +440,27 @@
 						<ActionSetStateEntry Id="4063988593" Name="in_dead_menu" ObjectPath="\States\Default Work Unit\GAME_MODES\in_dead_menu"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="2020903617" Name="desague" ObjectPath="\Events\Default Work Unit\desague" DurationType="Infinite">
+				<Event Id="2020903617" Name="desague" ObjectPath="\Events\Default Work Unit\desague" MaxAttenuation="100.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="13867540" Language="SFX">
+							<ShortName>DESAGUE_2.wav</ShortName>
+							<Path>SFX\DESAGUE_2_D5CCE214.wem</Path>
+						</File>
 						<File Id="900525283" Language="SFX">
 							<ShortName>DESAGUE_2.wav</ShortName>
-							<Path>SFX\DESAGUE_2_10C4C929.wem</Path>
+							<Path>SFX\DESAGUE_2_C76C0D10.wem</Path>
+						</File>
+						<File Id="913620649" Language="SFX">
+							<ShortName>DESAGUE_2.wav</ShortName>
+							<Path>SFX\DESAGUE_2_04B545A9.wem</Path>
+						</File>
+						<File Id="1033284519" Language="SFX">
+							<ShortName>DESAGUE_2.wav</ShortName>
+							<Path>SFX\DESAGUE_2_0C0528A4.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1578009071" Name="fishJump" ObjectPath="\Events\Default Work Unit\fishJump" DurationType="OneShot" DurationMin="4.054980" DurationMax="5.417914">
+				<Event Id="1578009071" Name="fishJump" ObjectPath="\Events\Default Work Unit\fishJump" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="4.054980" DurationMax="5.417914">
 					<IncludedMemoryFiles>
 						<File Id="136862767" Language="SFX">
 							<ShortName>FISH\FISH_LAND_02.wav</ShortName>
@@ -458,12 +484,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4058101365" Name="gameStart" ObjectPath="\Events\Default Work Unit\gameStart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="733168346" Name="game_start" ObjectPath="\States\Default Work Unit\GAME_MODES\game_start"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="4152065628" Name="matchStart" ObjectPath="\Events\Default Work Unit\matchStart" DurationType="Infinite">
+				<Event Id="4058101365" Name="gameStart" ObjectPath="\Events\Default Work Unit\gameStart" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="23077692" Language="SFX">
 							<ShortName>Gameplay A stem 3.wav</ShortName>
@@ -476,6 +497,10 @@
 						<File Id="120000595" Language="SFX">
 							<ShortName>Gameplay A stem 4.wav</ShortName>
 							<Path>SFX\Gameplay A stem 4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="353657114" Language="SFX">
+							<ShortName>Menu A.wav</ShortName>
+							<Path>SFX\Menu A_D79FB2B7.wem</Path>
 						</File>
 						<File Id="398690319" Language="SFX">
 							<ShortName>Gameplay B stem 1.wav</ShortName>
@@ -498,21 +523,37 @@
 							<Path>SFX\Gameplay B stem 3_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{BE7F4EB3-17E9-4116-9CFB-B625036D8563}">
+							<Media>
+								<File Id="52198081"/>
+								<File Id="760224464"/>
+								<File Id="23077692"/>
+								<File Id="120000595"/>
+								<File Id="398690319"/>
+								<File Id="678572888"/>
+								<File Id="823510307"/>
+								<File Id="721076073"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{43E42CAB-1973-4DF9-AFBB-55C6E8DF5585}">
+							<Media>
+								<File Id="353657114"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 					<ActionSetState>
+						<ActionSetStateEntry Id="733168346" Name="game_start" ObjectPath="\States\Default Work Unit\GAME_MODES\game_start"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="4152065628" Name="matchStart" ObjectPath="\Events\Default Work Unit\matchStart" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1686036574" Name="in_match" ObjectPath="\States\Default Work Unit\GAME_MODES\in_match"/>
 						<ActionSetStateEntry Id="2283883555" Name="score0" ObjectPath="\States\Default Work Unit\SCORES\score0"/>
-						<ActionSetStateEntry Id="2967546505" Name="in_game" ObjectPath="\States\Default Work Unit\GAME_MODES\in_game"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="1447920996" Name="menuStart" ObjectPath="\Events\Default Work Unit\menuStart" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="10833723" Language="SFX">
-							<ShortName>RIVER_AMB.wav</ShortName>
-							<Path>SFX\RIVER_AMB_7A1626D2.wem</Path>
-						</File>
-						<File Id="121353557" Language="SFX">
-							<ShortName>RIVER_AMB.wav</ShortName>
-							<Path>SFX\RIVER_AMB_97079D80.wem</Path>
-						</File>
 						<File Id="180841446" Language="SFX">
 							<ShortName>PETALS_AMB.wav</ShortName>
 							<Path>SFX\PETALS_AMB_76DFE35D.wem</Path>
@@ -529,10 +570,6 @@
 							<ShortName>WIND_AMB.wav</ShortName>
 							<Path>SFX\WIND_AMB_93174F4B.wem</Path>
 						</File>
-						<File Id="588948257" Language="SFX">
-							<ShortName>RIVER_AMB.wav</ShortName>
-							<Path>SFX\RIVER_AMB_38293384.wem</Path>
-						</File>
 						<File Id="592087630" Language="SFX">
 							<ShortName>PETALS_AMB.wav</ShortName>
 							<Path>SFX\PETALS_AMB_FABD0CAB.wem</Path>
@@ -544,10 +581,6 @@
 						<File Id="889243385" Language="SFX">
 							<ShortName>WIND_AMB.wav</ShortName>
 							<Path>SFX\WIND_AMB_739BBBC5.wem</Path>
-						</File>
-						<File Id="898981675" Language="SFX">
-							<ShortName>RIVER_AMB.wav</ShortName>
-							<Path>SFX\RIVER_AMB_ED6E9C1C.wem</Path>
 						</File>
 						<File Id="1052993168" Language="SFX">
 							<ShortName>WIND_AMB.wav</ShortName>
@@ -566,6 +599,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3050945240" Name="New_Event" ObjectPath="\Events\Default Work Unit\New_Event" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="181417420" Name="pauseIn" ObjectPath="\Events\Default Work Unit\pauseIn" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="2182592203" Name="in_pause" ObjectPath="\States\Default Work Unit\GAME_MODES\in_pause"/>
@@ -573,7 +607,7 @@
 				</Event>
 				<Event Id="3635785963" Name="pauseOut" ObjectPath="\Events\Default Work Unit\pauseOut" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="2967546505" Name="in_game" ObjectPath="\States\Default Work Unit\GAME_MODES\in_game"/>
+						<ActionSetStateEntry Id="1686036574" Name="in_match" ObjectPath="\States\Default Work Unit\GAME_MODES\in_match"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="1712852617" Name="playFootstep" ObjectPath="\Events\Default Work Unit\playFootstep" DurationType="OneShot" DurationMin="0.402208" DurationMax="0.954018">
@@ -649,7 +683,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="280766994" Name="spawnWisps" ObjectPath="\Events\Default Work Unit\spawnWisps" DurationType="Infinite">
+				<Event Id="280766994" Name="spawnWisps" ObjectPath="\Events\Default Work Unit\spawnWisps" MaxAttenuation="100.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="540369" Language="SFX">
 							<ShortName>SPAWN_SWIPS_FIRE_2.wav</ShortName>
@@ -683,6 +717,9 @@
 				<StateGroup Id="1631528850" Name="in_menu" ObjectPath="\States\Default Work Unit\GAME_MODES\in_menu">
 					<States/>
 				</StateGroup>
+				<StateGroup Id="1686036574" Name="in_match" ObjectPath="\States\Default Work Unit\GAME_MODES\in_match">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="2182592203" Name="in_pause" ObjectPath="\States\Default Work Unit\GAME_MODES\in_pause">
 					<States/>
 				</StateGroup>
@@ -692,8 +729,16 @@
 				<StateGroup Id="2285156786" Name="score100" ObjectPath="\States\Default Work Unit\SCORES\score100">
 					<States/>
 				</StateGroup>
-				<StateGroup Id="2967546505" Name="in_game" ObjectPath="\States\Default Work Unit\GAME_MODES\in_game">
-					<States/>
+				<StateGroup Id="2891432982" Name="GAME_MODES" ObjectPath="\States\Default Work Unit\GAME_MODES">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\GAME_MODES\None"/>
+						<State Id="733168346" Name="game_start" ObjectPath="\States\Default Work Unit\GAME_MODES\game_start"/>
+						<State Id="1631528850" Name="in_menu" ObjectPath="\States\Default Work Unit\GAME_MODES\in_menu"/>
+						<State Id="1686036574" Name="in_match" ObjectPath="\States\Default Work Unit\GAME_MODES\in_match"/>
+						<State Id="4063988593" Name="in_dead_menu" ObjectPath="\States\Default Work Unit\GAME_MODES\in_dead_menu"/>
+						<State Id="2182592203" Name="in_pause" ObjectPath="\States\Default Work Unit\GAME_MODES\in_pause"/>
+						<State Id="2907590929" Name="clock_in" ObjectPath="\States\Default Work Unit\GAME_MODES\clock_in"/>
+					</States>
 				</StateGroup>
 				<StateGroup Id="4063988593" Name="in_dead_menu" ObjectPath="\States\Default Work Unit\GAME_MODES\in_dead_menu">
 					<States/>

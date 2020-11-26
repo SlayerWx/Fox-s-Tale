@@ -10,6 +10,10 @@ public class Parallax : MonoBehaviour
     const int two = 2;
     const int lessTwo = -2;
     const float heightCorrectionLastPos = 1.5f;
+    private void Start()
+    {
+        Time.timeScale = 1.0f;
+    }
     void FixedUpdate()
     {
 
@@ -17,8 +21,8 @@ public class Parallax : MonoBehaviour
         {
             layers[i].anchoredPosition = new Vector2(layers[i].anchoredPosition.x + (speed[(int)(i / two)] * Time.deltaTime) * direction.normalized.x,
                 layers[i].anchoredPosition.y + (speed[(int)(i / two)] * Time.deltaTime) * direction.normalized.y);
-            if(layers[i].anchoredPosition.x - layers[i].rect.width/two  > layers[i].rect.width/two ||
-                layers[i].anchoredPosition.y - layers[i].rect.height / two < -layers[i].rect.height * heightCorrectionLastPos)
+            if((layers[i].anchoredPosition.x - layers[i].rect.width/two  > layers[i].rect.width/two && direction.normalized.x != 0) ||
+                (layers[i].anchoredPosition.y - layers[i].rect.height / two < -layers[i].rect.height * heightCorrectionLastPos && direction.normalized.y != 0))
             {
                 layers[i].anchoredPosition = new Vector2(layers[i].anchoredPosition.x - (layers[i].rect.width * two) * direction.normalized.x,
                     layers[i].anchoredPosition.y - (layers[i].rect.height * two) * direction.normalized.y);

@@ -3,13 +3,22 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{43622AD3-0F0E-4461-A5A4-E84AA9820DCA}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="SHADOW_DISTANCE" ID="{541D725E-3AC6-40ED-AB76-551AD597BB27}">
+				<GameParameter Name="shadowDistance" ID="{541D725E-3AC6-40ED-AB76-551AD597BB27}">
 					<PropertyList>
 						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="VOLUMEN" ID="{F08FD5D4-4571-4CD5-AA55-968881B82E59}"/>
+				<GameParameter Name="sfxVolume" ID="{A5B04E75-CE76-4DA9-916D-39C333D6B662}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="musicVolume" ID="{D1872B3B-9933-4F58-9F59-0BDB14A8CB38}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

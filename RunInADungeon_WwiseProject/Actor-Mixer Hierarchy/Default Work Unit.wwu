@@ -299,10 +299,29 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="BALLESTA" ID="{8F7FF234-7EFA-42FE-B1E2-9E8E90B9C15D}" ShortID="45133198">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="curva_atenuacion_ballesta" ID="{028758DD-3651-43E6-9520-3535D0BD51D3}" WorkUnitID="{49E2E1F2-61C4-4199-AAE1-8470FC0B5046}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
 						</Reference>
@@ -547,6 +566,18 @@
 					</Playlist>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="DASH_SELECT" ID="{680886CF-9A0E-4692-9481-7D8F9E0AC1A2}" ShortID="725420414">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
@@ -603,6 +634,18 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="DASH_AVAILABLE" ID="{FDC067AD-7C71-476A-9D65-33062707FD41}" ShortID="217857848">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
@@ -660,10 +703,24 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="FISH" ID="{5DBE55E6-7760-44D8-8066-9B926030B1E4}" ShortID="522687536">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="curva_atenuacion_fish" ID="{214F631F-2C79-4327-AD44-27A8E0CEC4E2}" WorkUnitID="{49E2E1F2-61C4-4199-AAE1-8470FC0B5046}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
 						</Reference>
@@ -2369,8 +2426,18 @@
 				</Folder>
 				<RandomSequenceContainer Name="CLOCK" ID="{08C0BABE-FB6D-4CA9-8738-425262D1568D}" ShortID="62935805">
 					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -2585,6 +2652,11 @@
 				<BlendContainer Name="MENU_AMB" ID="{70DEBD07-990E-458E-A86B-D4456FC74E71}" ShortID="186620765">
 					<PropertyList>
 						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -2603,7 +2675,7 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>1</Value>
+										<Value>6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2738,6 +2810,11 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="RIVER_AMB" ID="{AD85BFDE-1C1A-4EF2-922E-E75B244A3731}" ShortID="696416650">
 							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
@@ -3075,10 +3152,29 @@
 				</Sound>
 				<RandomSequenceContainer Name="BROKEN_FLOOR" ID="{7E47B984-189F-451E-AB52-973BAFE96A22}" ShortID="640712245">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="curva_atenuacion_ballesta" ID="{028758DD-3651-43E6-9520-3535D0BD51D3}" WorkUnitID="{49E2E1F2-61C4-4199-AAE1-8470FC0B5046}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
 						</Reference>
@@ -3324,7 +3420,18 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<BlendContainer Name="SPAWN_SWIPS" ID="{757027FB-7FEB-414B-8D99-EC07A64D4793}" ShortID="380722259">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="curva_atenuacion_swips" ID="{FB7610E6-0EC2-49F9-B720-31C67558F226}" WorkUnitID="{49E2E1F2-61C4-4199-AAE1-8470FC0B5046}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
 						</Reference>
@@ -3710,12 +3817,44 @@
 				</BlendContainer>
 				<RandomSequenceContainer Name="DESAGUE" ID="{1EE0C5B7-318A-4AF9-BCEB-BDCE7B5BE6BB}" ShortID="497697626">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{F3D94200-658C-4DBC-B555-A0EB387932D2}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="531"/>
+											<Property Name="Min" Type="Real64" Value="-657"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="curva_atenuacion_desagues" ID="{F10FFF2C-0AC1-4982-B7DA-E5F8CB2B148C}" WorkUnitID="{49E2E1F2-61C4-4199-AAE1-8470FC0B5046}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
 						</Reference>
@@ -3736,13 +3875,17 @@
 							<ChildrenList>
 								<AudioFileSource Name="DESAGUE_2" ID="{80630892-8F01-4268-BCEB-C571321F9941}">
 									<PropertyList>
-										<Property Name="LoopEnd" Type="Real64" Value="4.48544520547945"/>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="367.105"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0796232876712328"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.636986301369863"/>
+										<Property Name="LoopEnd" Type="Real64" Value="3.1583904109589"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.60958904109589"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>DESAGUE_2.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="900525283"/>
+										<MediaID ID="913620649"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -3751,6 +3894,20 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="DESAGUE_02" ID="{EB5E6D12-62D1-4D52-A12A-9300DB02F3E1}" ShortID="995377274">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{92A80EC0-CB4F-4ED1-9AE1-F2747AC27B79}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="556"/>
+													<Property Name="Min" Type="Real64" Value="-1238"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
@@ -3762,14 +3919,17 @@
 							<ChildrenList>
 								<AudioFileSource Name="DESAGUE_2" ID="{EB2BC2E2-45AD-40C6-BA6A-5D470EF11CA3}">
 									<PropertyList>
-										<Property Name="LoopBegin" Type="Real64" Value="5.14897260273973"/>
-										<Property Name="LoopEnd" Type="Real64" Value="8.54623287671233"/>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="407.895"/>
+										<Property Name="LoopBegin" Type="Real64" Value="5.65325342465754"/>
+										<Property Name="LoopEnd" Type="Real64" Value="8.09503424657534"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.12243150684931"/>
+										<Property Name="TrimEnd" Type="Real64" Value="8.59931506849314"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>DESAGUE_2.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="900525283"/>
+										<MediaID ID="13867540"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -3789,14 +3949,17 @@
 							<ChildrenList>
 								<AudioFileSource Name="DESAGUE_2" ID="{9E85F185-C7DD-4C92-8554-B7DF0CEEB374}">
 									<PropertyList>
-										<Property Name="LoopBegin" Type="Real64" Value="8.81164383561644"/>
-										<Property Name="LoopEnd" Type="Real64" Value="12.1027397260274"/>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="244.737"/>
+										<Property Name="LoopBegin" Type="Real64" Value="9.28938356164384"/>
+										<Property Name="LoopEnd" Type="Real64" Value="11.6515410958904"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="8.75856164383561"/>
+										<Property Name="TrimEnd" Type="Real64" Value="12.1558219178082"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>DESAGUE_2.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="900525283"/>
+										<MediaID ID="1033284519"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -3816,8 +3979,11 @@
 							<ChildrenList>
 								<AudioFileSource Name="DESAGUE_2" ID="{6E139F2E-C4F0-4E93-B43E-758B4C10223E}">
 									<PropertyList>
-										<Property Name="LoopBegin" Type="Real64" Value="12.4212328767123"/>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="244.737"/>
+										<Property Name="LoopBegin" Type="Real64" Value="12.8193493150685"/>
+										<Property Name="LoopEnd" Type="Real64" Value="15.1815068493151"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="12.3681506849315"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>DESAGUE_2.wav</AudioFile>

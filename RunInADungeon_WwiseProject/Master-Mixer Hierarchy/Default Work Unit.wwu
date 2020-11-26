@@ -4,36 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
-					<PropertyList>
-						<Property Name="BusVolume" Type="Real64">
-							<RTPCList>
-								<RTPC Name="" ID="{A3413CAA-784F-4014-A45D-11677591E7F4}" ShortID="1044715548">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="VOLUMEN" ID="{F08FD5D4-4571-4CD5-AA55-968881B82E59}" WorkUnitID="{43622AD3-0F0E-4461-A5A4-E84AA9820DCA}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{2FC72276-7A7B-430D-B415-7AEADC79BD70}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-200</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>0</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{CA633ACE-F8AD-4050-8173-1204191DCA6C}" WorkUnitID="{692F554D-6BCA-4198-8068-38C69FD39C7E}"/>
@@ -47,7 +17,7 @@
 										<RTPC Name="" ID="{CC53FE6B-7851-49EF-9E95-27ED7F65F72F}" ShortID="508137374">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="VOLUMEN" ID="{F08FD5D4-4571-4CD5-AA55-968881B82E59}" WorkUnitID="{43622AD3-0F0E-4461-A5A4-E84AA9820DCA}"/>
+													<ObjectRef Name="sfxVolume" ID="{A5B04E75-CE76-4DA9-916D-39C333D6B662}" WorkUnitID="{43622AD3-0F0E-4461-A5A4-E84AA9820DCA}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{37C3922D-2AAE-4F5A-A1BF-BBCECF3C5877}">
@@ -75,11 +45,16 @@
 						<Bus Name="MUSICA" ID="{CCA52BE9-F033-4C04-98D3-DC7DE9F4B104}">
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
 									<RTPCList>
 										<RTPC Name="" ID="{A1F5B5C3-E787-4C87-A295-C7A4FE19174D}" ShortID="709936608">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="VOLUMEN" ID="{F08FD5D4-4571-4CD5-AA55-968881B82E59}" WorkUnitID="{43622AD3-0F0E-4461-A5A4-E84AA9820DCA}"/>
+													<ObjectRef Name="musicVolume" ID="{D1872B3B-9933-4F58-9F59-0BDB14A8CB38}" WorkUnitID="{43622AD3-0F0E-4461-A5A4-E84AA9820DCA}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{FD886556-A364-4D02-869D-80504F125324}">
@@ -105,6 +80,39 @@
 							</PropertyList>
 						</Bus>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="GAME_MODES" ID="{CEBEE8F8-9CF4-4BC6-8804-E4298F9EACCB}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="in_match" ID="{BE7F4EB3-17E9-4116-9CFB-B625036D8563}"/>
+								<CustomState Name="" ID="{C0AFD197-00F8-4D05-9915-D763262DD9E3}" ShortID="995558745"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="in_pause" ID="{3410B556-2D0B-4363-9C40-39910B7F758F}"/>
+								<CustomState Name="" ID="{C19BF33A-EB93-49D9-A995-050864F106EB}" ShortID="1072981018"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="in_dead_menu" ID="{28143B44-31F0-4858-B48E-C4180353DADC}"/>
+								<CustomState Name="" ID="{31605215-4045-42BC-91DD-F87D07780221}" ShortID="373807935"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="game_start" ID="{1130707A-D188-4BA3-80CE-E70AB9B99694}"/>
+								<CustomState Name="" ID="{71102A78-9668-4CBF-ABEC-4BF52DE300A6}" ShortID="246974521"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="clock_in" ID="{2C20AF9C-E761-4CF8-AD60-06C59F34DCE5}"/>
+								<CustomState Name="" ID="{DB4AC246-B8E8-4323-AECC-7110CEFD09E8}" ShortID="366642959"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="in_menu" ID="{43E42CAB-1973-4DF9-AFBB-55C6E8DF5585}"/>
+								<CustomState Name="" ID="{8655C45C-54D3-4B5A-99CE-87DD641E38BB}" ShortID="416973386"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

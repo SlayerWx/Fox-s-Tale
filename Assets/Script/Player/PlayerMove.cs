@@ -145,24 +145,32 @@ public class PlayerMove : MonoBehaviour
                     direction.y = -one;
                     PlayerAnimationRequestDir?.Invoke(Animation.Direction.Down);
                     PlayerAnimationRequestState?.Invoke(Animation.State.Walk);
+                    if(modifDistanceToDash == two)
+                    AkSoundEngine.PostEvent("dashAction", transform.gameObject);
                 }
                 else if (Input.GetKey(KeyCode.UpArrow)&& dirBool.Up)
                 {
                     direction.y = one;
                     PlayerAnimationRequestDir?.Invoke(Animation.Direction.Up);
                     PlayerAnimationRequestState?.Invoke(Animation.State.Walk);
+                    if (modifDistanceToDash == two)
+                        AkSoundEngine.PostEvent("dashAction", transform.gameObject);
                 }
                 else if (Input.GetKey(KeyCode.LeftArrow)&& dirBool.Left)
                 {
                     direction.x = -one;
                     PlayerAnimationRequestDir?.Invoke(Animation.Direction.Left);
                     PlayerAnimationRequestState?.Invoke(Animation.State.Walk);
+                    if (modifDistanceToDash == two)
+                        AkSoundEngine.PostEvent("dashAction", transform.gameObject);
                 }
                 else if (Input.GetKey(KeyCode.RightArrow)&& dirBool.Right)
                 {
                     direction.x = one;
                     PlayerAnimationRequestDir?.Invoke(Animation.Direction.Right);
                     PlayerAnimationRequestState?.Invoke(Animation.State.Walk);
+                    if (modifDistanceToDash == two)
+                        AkSoundEngine.PostEvent("dashAction", transform.gameObject);
                 }
             }
 
@@ -170,6 +178,7 @@ public class PlayerMove : MonoBehaviour
             {
                 modifDistanceToDash = two;
                 canDash = false;
+                AkSoundEngine.PostEvent("dashSelect", transform.gameObject);
 
             }
         }
@@ -186,11 +195,14 @@ public class PlayerMove : MonoBehaviour
         {
             Vector2 ux = new Vector2((modifDistanceToDash * distance.x) * direction.x,
                                       (modifDistanceToDash * distance.y) * direction.y);
-            if(modifDistanceToDash == two)PlayerAnimationRequestState?.Invoke(Animation.State.Dash);
+            if (modifDistanceToDash == two)
+            {
+                PlayerAnimationRequestState?.Invoke(Animation.State.Dash);
+            }
             ux = Vector2.Lerp(startPosition, startPosition + ux, timer);
             myRigid.MovePosition(ux);
             timer += Time.deltaTime * speed;
-            if (canDash && !isSlippingOut)
+            if ((inCoolDownDash|| canDash) && !isSlippingOut)
             {
                 AkSoundEngine.PostEvent("playFootstep", transform.gameObject);
             }
@@ -224,6 +236,10 @@ public class PlayerMove : MonoBehaviour
         {
             alive = false;
             AkSoundEngine.PostEvent("playFootstep", transform.gameObject);
+            if (!inFloor)
+            {
+                AkSoundEngine.PostEvent("deadByFall", transform.gameObject);
+            }
             PlayerIsDead?.Invoke();
         }
         else
@@ -240,6 +256,7 @@ public class PlayerMove : MonoBehaviour
         yield return new WaitForSeconds(waitToUseDashAgain);
         canDash = true;
         inCoolDownDash = false;
+        AkSoundEngine.PostEvent("dashAvailable", transform.gameObject);
         DashStateInfo?.Invoke();
     }
     IEnumerator TimingInStopTime()
