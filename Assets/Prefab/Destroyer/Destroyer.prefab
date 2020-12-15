@@ -558,8 +558,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 1}
-  speed: 32
+  speed: 40
   myRender: {fileID: 3101021863146883874}
+  timeToWaitAndContinous: 1.7
 --- !u!114 &3101021863492249461
 MonoBehaviour:
   m_ObjectHideFlags: 0

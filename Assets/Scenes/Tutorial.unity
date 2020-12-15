@@ -2702,6 +2702,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3101021863492249460, guid: 52e10a3a753f1c041a2999477ac40c34,
+        type: 3}
+      propertyPath: timeToWaitAndContinous
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101021863492249460, guid: 52e10a3a753f1c041a2999477ac40c34,
+        type: 3}
+      propertyPath: speed
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3101021863492249461, guid: 52e10a3a753f1c041a2999477ac40c34,
         type: 3}
       propertyPath: player
