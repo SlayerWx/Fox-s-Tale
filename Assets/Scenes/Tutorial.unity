@@ -415,8 +415,8 @@ MonoBehaviour:
   - {fileID: -3489574982990885776, guid: b81200ad87837aa46856378ad80c92ac, type: 3}
   actualDashImage: {fileID: 546504165}
   mySpriteTimeStop:
-  - {fileID: -7383684783556711738, guid: fda6db7b7c3fa8f44a86f1dc8e5d00ce, type: 3}
-  - {fileID: 5987578097974952355, guid: fda6db7b7c3fa8f44a86f1dc8e5d00ce, type: 3}
+  - {fileID: -6552286712830343434, guid: cb14a1a382debcf4eb70577b0add6e8a, type: 3}
+  - {fileID: 2712823300665877332, guid: cb14a1a382debcf4eb70577b0add6e8a, type: 3}
   actualTimeStopImage: {fileID: 968238834}
 --- !u!114 &135852044
 MonoBehaviour:
@@ -430,7 +430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 997dcc3ffd7d24f4ea4ba8dd016c6752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeToDeadMenu: 1
+  TimeToDeadMenu: 1.3
   deadLayer: {fileID: 1558722665}
   pauseLayer: {fileID: 6999489}
   inGamePlayer: {fileID: 522414462}
@@ -1512,8 +1512,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 129.88, y: 118.51}
-  m_SizeDelta: {x: 195.7572, y: 185.02396}
+  m_AnchoredPosition: {x: 129.88, y: 148.4}
+  m_SizeDelta: {x: 195.7572, y: 221.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &968238834
 MonoBehaviour:
@@ -1534,7 +1534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7383684783556711738, guid: fda6db7b7c3fa8f44a86f1dc8e5d00ce,
+  m_Sprite: {fileID: -6552286712830343434, guid: cb14a1a382debcf4eb70577b0add6e8a,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0

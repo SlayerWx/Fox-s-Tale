@@ -400,8 +400,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 129.88, y: 118.51}
-  m_SizeDelta: {x: 195.7572, y: 185.02396}
+  m_AnchoredPosition: {x: 129.88, y: 146.2}
+  m_SizeDelta: {x: 195.7572, y: 206.71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &92948683
 MonoBehaviour:
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7383684783556711738, guid: fda6db7b7c3fa8f44a86f1dc8e5d00ce,
+  m_Sprite: {fileID: -6552286712830343434, guid: cb14a1a382debcf4eb70577b0add6e8a,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -782,8 +782,8 @@ MonoBehaviour:
   - {fileID: -3489574982990885776, guid: b81200ad87837aa46856378ad80c92ac, type: 3}
   actualDashImage: {fileID: 582989775}
   mySpriteTimeStop:
-  - {fileID: -7383684783556711738, guid: fda6db7b7c3fa8f44a86f1dc8e5d00ce, type: 3}
-  - {fileID: 5987578097974952355, guid: fda6db7b7c3fa8f44a86f1dc8e5d00ce, type: 3}
+  - {fileID: -6552286712830343434, guid: cb14a1a382debcf4eb70577b0add6e8a, type: 3}
+  - {fileID: 2712823300665877332, guid: cb14a1a382debcf4eb70577b0add6e8a, type: 3}
   actualTimeStopImage: {fileID: 92948683}
 --- !u!1 &384368967
 GameObject:
