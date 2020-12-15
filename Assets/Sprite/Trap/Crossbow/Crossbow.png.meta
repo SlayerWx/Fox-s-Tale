@@ -3364,11 +3364,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1024
-        width: 700
+        y: 1023
+        width: 702
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3384,12 +3384,12 @@ TextureImporter:
       name: Crossbow_1
       rect:
         serializedVersion: 2
-        x: 700
+        x: 703
         y: 1024
-        width: 700
+        width: 702
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3405,12 +3405,12 @@ TextureImporter:
       name: Crossbow_2
       rect:
         serializedVersion: 2
-        x: 1400
+        x: 1408
         y: 1024
-        width: 700
+        width: 702
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3426,12 +3426,12 @@ TextureImporter:
       name: Crossbow_3
       rect:
         serializedVersion: 2
-        x: 2100
+        x: 2111
         y: 1024
-        width: 700
+        width: 702
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3447,12 +3447,12 @@ TextureImporter:
       name: Crossbow_4
       rect:
         serializedVersion: 2
-        x: 2800
+        x: 2816
         y: 1024
-        width: 700
+        width: 702
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3470,10 +3470,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 512
-        width: 700
+        width: 702
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3489,12 +3489,12 @@ TextureImporter:
       name: Crossbow_6
       rect:
         serializedVersion: 2
-        x: 700
+        x: 703
         y: 512
-        width: 700
+        width: 702
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3510,12 +3510,12 @@ TextureImporter:
       name: Crossbow_7
       rect:
         serializedVersion: 2
-        x: 1400
+        x: 1408
         y: 512
-        width: 700
+        width: 702
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3531,12 +3531,12 @@ TextureImporter:
       name: Crossbow_8
       rect:
         serializedVersion: 2
-        x: 2100
+        x: 2111
         y: 512
-        width: 700
+        width: 702
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3552,12 +3552,12 @@ TextureImporter:
       name: Crossbow_9
       rect:
         serializedVersion: 2
-        x: 2800
+        x: 2816
         y: 512
-        width: 700
+        width: 702
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3575,10 +3575,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 700
+        width: 702
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3594,12 +3594,12 @@ TextureImporter:
       name: Crossbow_11
       rect:
         serializedVersion: 2
-        x: 700
+        x: 703
         y: 0
-        width: 700
+        width: 702
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3615,12 +3615,12 @@ TextureImporter:
       name: Crossbow_12
       rect:
         serializedVersion: 2
-        x: 1400
+        x: 1408
         y: 0
-        width: 700
+        width: 702
         height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3641,7 +3641,7 @@ TextureImporter:
         width: 374
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

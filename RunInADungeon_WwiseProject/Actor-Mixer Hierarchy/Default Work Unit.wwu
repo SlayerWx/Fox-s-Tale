@@ -7,6 +7,11 @@
 					<PropertyList>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -314,7 +319,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -577,6 +582,11 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -643,6 +653,11 @@
 						<Property Name="UseMaxSoundPerInstance" Type="bool">
 							<ValueList>
 								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -714,6 +729,11 @@
 						<Property Name="UseMaxSoundPerInstance" Type="bool">
 							<ValueList>
 								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -919,6 +939,13 @@
 					</Playlist>
 				</RandomSequenceContainer>
 				<SwitchContainer Name="DEADS" ID="{A419F35B-7EE0-4E85-94EC-A59F777AF96B}" ShortID="184621242">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
@@ -1143,6 +1170,106 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="byPINCHES" ID="{8F27155E-497A-40CF-ABF7-85B12BD0D7AE}" ShortID="591653315">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="DEAD_BY_PINCHES_01" ID="{C0CCEF58-D911-49AE-9FA2-99AFFB65A0A9}" ShortID="912406218">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DEAD_BY_PINCHES_01" ID="{7293DDD2-9B9E-4D5F-B51B-7F6A142A293A}">
+											<Language>SFX</Language>
+											<AudioFile>DEAD_BY_PINCHES_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="810344809"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="DEAD_BY_PINCHES_01" ID="{7293DDD2-9B9E-4D5F-B51B-7F6A142A293A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="DEAD_BY_PINCHES_02" ID="{B66CE638-68E6-479F-8084-71FC3C32F992}" ShortID="932519387">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DEAD_BY_PINCHES_02" ID="{EA8CE61D-589C-4AB5-A58C-A408C56A86FF}">
+											<Language>SFX</Language>
+											<AudioFile>DEAD_BY_PINCHES_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="643269858"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="DEAD_BY_PINCHES_02" ID="{EA8CE61D-589C-4AB5-A58C-A408C56A86FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="DEAD_BY_PINCHES_03" ID="{E3605F68-B8A6-4131-9F02-ED28E8B92587}" ShortID="194464922">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DEAD_BY_PINCHES_03" ID="{FF4CC736-C063-4A3B-ACC0-08948A498B12}">
+											<Language>SFX</Language>
+											<AudioFile>DEAD_BY_PINCHES_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="446442409"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="DEAD_BY_PINCHES_03" ID="{FF4CC736-C063-4A3B-ACC0-08948A498B12}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="DEAD_BY_PINCHES_04" ID="{BA785E02-0732-48FB-8046-2413D3FF390A}" ShortID="458915370">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DEAD_BY_PINCHES_04" ID="{374A845A-475F-4371-B194-D5115813E038}">
+											<Language>SFX</Language>
+											<AudioFile>DEAD_BY_PINCHES_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="962561163"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="DEAD_BY_PINCHES_04" ID="{374A845A-475F-4371-B194-D5115813E038}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
@@ -1151,6 +1278,9 @@
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="byARROWS" ID="{BB1F7F50-0D7E-43AC-B962-6405A0CD21E9}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="byPINCHES" ID="{8F27155E-497A-40CF-ABF7-85B12BD0D7AE}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="byFISH" ID="{62B575BA-69EE-4663-983F-7AB23B5A9357}"/>
@@ -1173,6 +1303,12 @@
 								<SwitchRef Name="fall" ID="{D4FDFAD7-36E2-4E28-A60B-69D081FBAC58}"/>
 								<ItemList>
 									<ItemRef Name="byFALL" ID="{1DD32A2D-821F-4FA9-992D-B9CCDAF4E9D6}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="pinches" ID="{3817A0DF-3FB7-46D9-8B48-3FFE12F26A9B}"/>
+								<ItemList>
+									<ItemRef Name="byPINCHES" ID="{8F27155E-497A-40CF-ABF7-85B12BD0D7AE}"/>
 								</ItemList>
 							</Grouping>
 						</GroupingList>
@@ -1280,927 +1416,14 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="WALKING_VOICES" ID="{D0B923F3-1E4B-4330-8625-18B828D5283C}" ShortID="774319">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="INTRIGUED" ID="{9ADBDE8C-CE37-4283-B7F8-EF3973DF74B6}" ShortID="355829033">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="WALLAS_INTRIGUED_01" ID="{9F1A836F-F8CC-4808-B3EA-7E9D8211A3C9}" ShortID="101039938">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_INTRIGUED_01" ID="{16B5C774-A20D-4F67-B08D-1756811D082C}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="836345784"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_INTRIGUED_01" ID="{16B5C774-A20D-4F67-B08D-1756811D082C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_INTRIGUED_02" ID="{31686FDB-13D1-4649-8CE4-22D5E436774D}" ShortID="721931791">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_INTRIGUED_02" ID="{1BCD8072-20F4-4EDE-B966-9A65BCBA644C}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="795704598"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_INTRIGUED_02" ID="{1BCD8072-20F4-4EDE-B966-9A65BCBA644C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_INTRIGUED_03" ID="{A4B18555-8C05-4D6D-8A1F-5ECAC7627EFC}" ShortID="594850430">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_INTRIGUED_03" ID="{07B76AF3-7E98-4C47-9B12-A99A7A92224B}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1775940"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_INTRIGUED_03" ID="{07B76AF3-7E98-4C47-9B12-A99A7A92224B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_INTRIGUED_04" ID="{D0C64F25-797B-44A9-B54A-F79EB388ED0F}" ShortID="274281564">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_INTRIGUED_04" ID="{6D9CA1BE-1610-4566-AF16-A27F761FC1A4}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="674682875"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_INTRIGUED_04" ID="{6D9CA1BE-1610-4566-AF16-A27F761FC1A4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_INTRIGUED_05" ID="{D742039D-0362-4DD3-9E38-43084A8952E6}" ShortID="470418099">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_INTRIGUED_05" ID="{8932B3DA-C146-4784-BD9D-057701284521}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_05.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="612841725"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_INTRIGUED_05" ID="{8932B3DA-C146-4784-BD9D-057701284521}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_INTRIGUED_06" ID="{93919541-02BF-49E2-87F4-F9013680E2AB}" ShortID="856098758">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_INTRIGUED_06" ID="{ECF45AC4-B178-40D0-B1BB-A3082A57776C}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_06.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="910104856"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_INTRIGUED_06" ID="{ECF45AC4-B178-40D0-B1BB-A3082A57776C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_INTRIGUED_07" ID="{F371DCAD-55B3-4887-9E52-F0FD453E007C}" ShortID="557517910">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_INTRIGUED_07" ID="{5EE636BF-92F3-4677-AE52-1B0481896D90}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_07.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="591387852"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_INTRIGUED_07" ID="{5EE636BF-92F3-4677-AE52-1B0481896D90}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="PROUD" ID="{D0721C04-B546-4E72-A5FB-60E7B77AB336}" ShortID="1033213696">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="WALLAS_PROUD_01" ID="{1458E132-1A65-4451-8081-64224F7987DC}" ShortID="431026317">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_PROUD_01" ID="{DFC317E4-7069-4390-AD04-6ACC4E9195E5}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="484964794"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_PROUD_01" ID="{DFC317E4-7069-4390-AD04-6ACC4E9195E5}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_PROUD_02" ID="{78FBDC14-F3A8-44A3-A8D7-5AC426AC33DE}" ShortID="641000713">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_PROUD_02" ID="{3203967A-3D9E-46D4-9D39-84B7F9B505EB}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="424951828"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_PROUD_02" ID="{3203967A-3D9E-46D4-9D39-84B7F9B505EB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_PROUD_03" ID="{2EEAAB84-CBB5-41E1-8869-C6C38F8FAB64}" ShortID="615254715">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_PROUD_03" ID="{03CFE444-838D-49B9-AC07-0F5ABB834F28}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="862247452"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_PROUD_03" ID="{03CFE444-838D-49B9-AC07-0F5ABB834F28}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_PROUD_04" ID="{3F4DC82A-56DF-45B8-BD3D-44AE69AD13A2}" ShortID="138828252">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_PROUD_04" ID="{AE17F492-3F47-4565-88DA-16A06D528F4A}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="792200593"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_PROUD_04" ID="{AE17F492-3F47-4565-88DA-16A06D528F4A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_PROUD_05" ID="{C47CD7FC-3E88-4124-81EF-D5890E1C8A43}" ShortID="398951919">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_PROUD_05" ID="{2CD40CD4-EF78-4433-B27B-3C6E8996464D}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_05.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="498012500"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_PROUD_05" ID="{2CD40CD4-EF78-4433-B27B-3C6E8996464D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_PROUD_06" ID="{78A93FD7-3E95-4E2E-A22B-64C5764E6415}" ShortID="892876869">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_PROUD_06" ID="{B4E7771E-2357-426C-A1CC-BB894E2FAC73}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_06.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="608016361"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_PROUD_06" ID="{B4E7771E-2357-426C-A1CC-BB894E2FAC73}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="SCARED" ID="{6234E8C3-D0CC-4555-8207-184C7E155FCC}" ShortID="796227128">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="WALLAS_SCARED_01" ID="{995349DC-6CC8-4D16-AD5C-46FFF45235D3}" ShortID="1022332239">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_SCARED_01" ID="{B39CB5E6-FC26-4A69-A1EA-7952827896FF}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\SCARED\WALLAS_SCARED_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="207471079"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_SCARED_01" ID="{B39CB5E6-FC26-4A69-A1EA-7952827896FF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_SCARED_02" ID="{A7960CE8-8568-4D2C-9FCC-B9994D65F859}" ShortID="824768338">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_SCARED_02" ID="{BF37A02E-ACEC-4400-98AD-087A1C4A09BF}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\SCARED\WALLAS_SCARED_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="238141654"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_SCARED_02" ID="{BF37A02E-ACEC-4400-98AD-087A1C4A09BF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_SCARED_03" ID="{4644DBEA-578F-4007-A3D1-E0FE0EE5BA79}" ShortID="681736444">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_SCARED_03" ID="{639F7551-FBD8-4DD5-9F11-285839676D33}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\SCARED\WALLAS_SCARED_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="157819654"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_SCARED_03" ID="{639F7551-FBD8-4DD5-9F11-285839676D33}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="SIGHS" ID="{78009F59-8961-4840-BDB4-026547B0F05D}" ShortID="812961190">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="WALLAS_SIGHS_01" ID="{048F2714-72FB-4EDA-86BC-AF2AE496CA72}" ShortID="979651043">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_SIGHS_01" ID="{665C0754-ACCC-4751-B49F-4E0C93AF98A3}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="684501687"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_SIGHS_01" ID="{665C0754-ACCC-4751-B49F-4E0C93AF98A3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_SIGHS_02" ID="{86B431B6-5C59-41CD-BF41-FFF4823CDDDB}" ShortID="1044912692">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_SIGHS_02" ID="{F9E10A58-2A68-4740-8B64-6FFBCA154E91}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="420191421"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_SIGHS_02" ID="{F9E10A58-2A68-4740-8B64-6FFBCA154E91}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_SIGHS_03" ID="{28D7039B-CF46-41EC-9299-DF07A6231C8C}" ShortID="972078815">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_SIGHS_03" ID="{D4DEF5CC-9043-42D5-8030-757D69D906A1}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="812004205"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_SIGHS_03" ID="{D4DEF5CC-9043-42D5-8030-757D69D906A1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_SIGHS_04" ID="{274596F0-2EA5-47FC-9791-1ECD15E055AE}" ShortID="916470779">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_SIGHS_04" ID="{25261444-32F8-42DD-87B1-7892BD424B48}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="463330844"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_SIGHS_04" ID="{25261444-32F8-42DD-87B1-7892BD424B48}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_SIGHS_05" ID="{2124F60D-D12C-4115-AADD-AD3A87423EE7}" ShortID="91480801">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_SIGHS_05" ID="{BDBFDBCD-3820-48DF-85D4-D09C72D80C38}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_05.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="743321128"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_SIGHS_05" ID="{BDBFDBCD-3820-48DF-85D4-D09C72D80C38}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_SIGHS_06" ID="{B9DBB1C2-7A7D-4248-A167-6F0A294298BF}" ShortID="686322333">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_SIGHS_06" ID="{1F4E4DD8-FDBB-447E-84CF-7FE73BF10D5A}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_06.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="483197628"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_SIGHS_06" ID="{1F4E4DD8-FDBB-447E-84CF-7FE73BF10D5A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_SIGHS_07" ID="{6E0344AF-D1E8-4FC9-8CD0-19684EBD3403}" ShortID="847973550">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_SIGHS_07" ID="{F58A2197-EE30-44D6-9FF9-9DD5A62CEC3E}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_07.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="906084343"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_SIGHS_07" ID="{F58A2197-EE30-44D6-9FF9-9DD5A62CEC3E}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_SIGHS_08" ID="{F8ECEF75-6C04-4B2F-9498-2E60F2E129AB}" ShortID="564010093">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_SIGHS_08" ID="{F24CCFC5-B58B-4BB4-8E8A-5A342595A46D}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_08.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="97568829"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_SIGHS_08" ID="{F24CCFC5-B58B-4BB4-8E8A-5A342595A46D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="TREMBLING" ID="{ED0176FA-A470-4EB5-B1A2-1A7A5A95A229}" ShortID="758824147">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="WALLAS_TREMBLING_01" ID="{B88459BE-607E-47BB-A510-C4A64FCF3DCF}" ShortID="77469322">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_TREMBLING_01" ID="{8BC62D3B-DF41-47A6-BD3B-651A3F890CBA}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="381474556"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_TREMBLING_01" ID="{8BC62D3B-DF41-47A6-BD3B-651A3F890CBA}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_TREMBLING_02" ID="{D38F08BA-062E-4FD5-8C13-F98EB09D5951}" ShortID="386526868">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_TREMBLING_02" ID="{39ADBCCA-BBC7-40EC-92EE-53802FC481F4}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="13733013"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_TREMBLING_02" ID="{39ADBCCA-BBC7-40EC-92EE-53802FC481F4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_TREMBLING_03" ID="{0BB99FCE-04A4-47F6-85E5-5CF65131AA5E}" ShortID="777078014">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_TREMBLING_03" ID="{6710578D-1C1A-426B-914F-915DADAA7B40}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="231106468"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_TREMBLING_03" ID="{6710578D-1C1A-426B-914F-915DADAA7B40}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_TREMBLING_04" ID="{A0ECE23A-38F4-47E0-A14B-F4C2A2404FF4}" ShortID="441006794">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_TREMBLING_04" ID="{219FA600-DE68-4AA0-88B1-8310DDC5FDF1}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="893417090"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_TREMBLING_04" ID="{219FA600-DE68-4AA0-88B1-8310DDC5FDF1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_TREMBLING_05" ID="{FBE43D20-AAC8-496D-B765-A1E8CF6FE09D}" ShortID="206834108">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_TREMBLING_05" ID="{238C3C6F-6BBC-48DB-8FB4-0E1044290103}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_05.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="470912227"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_TREMBLING_05" ID="{238C3C6F-6BBC-48DB-8FB4-0E1044290103}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_TREMBLING_06" ID="{CFDE306D-B36F-47AD-A1C8-43EE62366924}" ShortID="199259142">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_TREMBLING_06" ID="{EC84AB17-158F-4E86-86B8-4576C5CFDAD9}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_06.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="769032738"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_TREMBLING_06" ID="{EC84AB17-158F-4E86-86B8-4576C5CFDAD9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_TREMBLING_07" ID="{20CE320D-2428-4AC3-8F18-00A1F09B9D22}" ShortID="42288787">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_TREMBLING_07" ID="{40BEA67D-EFD5-48CB-A44B-906C84C78DD7}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_07.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="161056409"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_TREMBLING_07" ID="{40BEA67D-EFD5-48CB-A44B-906C84C78DD7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_TREMBLING_08" ID="{C8D52FC6-CD05-4892-9B2E-AAB8D429FE8E}" ShortID="38693752">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_TREMBLING_08" ID="{B07F7ABF-4494-4904-A438-A714AC74EA1B}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_08.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="424036652"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_TREMBLING_08" ID="{B07F7ABF-4494-4904-A438-A714AC74EA1B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="WORRIED" ID="{165DD98D-9073-4623-ADD1-5E3418C3A8E0}" ShortID="944149921">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="WALLAS_WORRIED_01" ID="{D0BB7216-D13E-4B58-98E6-8CAEF7A92962}" ShortID="984271275">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_WORRIED_01" ID="{13AB22E1-19D8-4971-A94A-EC3E96191636}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="697061196"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_WORRIED_01" ID="{13AB22E1-19D8-4971-A94A-EC3E96191636}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_WORRIED_02" ID="{12842467-4DC3-4683-BAC2-A775390C24E1}" ShortID="25746927">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_WORRIED_02" ID="{CBEE3C27-6C54-4C5B-B4D5-4F0ADA60C50C}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_02.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="547316857"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_WORRIED_02" ID="{CBEE3C27-6C54-4C5B-B4D5-4F0ADA60C50C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_WORRIED_03" ID="{05886FFB-67E1-4D04-A0E3-098E32A73AC2}" ShortID="641827595">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_WORRIED_03" ID="{C1020565-D052-4498-8913-F4401E5B467D}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_03.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="454734106"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_WORRIED_03" ID="{C1020565-D052-4498-8913-F4401E5B467D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_WORRIED_04" ID="{CE491036-2019-408C-A9E0-3411E58BF91D}" ShortID="407380142">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_WORRIED_04" ID="{74F8EED6-41E0-46C1-A2FB-E733A9FE3BBD}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_04.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="216138379"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_WORRIED_04" ID="{74F8EED6-41E0-46C1-A2FB-E733A9FE3BBD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_WORRIED_05" ID="{BF57A5DA-98B9-4029-932E-918FB65A85E8}" ShortID="352607822">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_WORRIED_05" ID="{B39F3E1A-AEB4-40BB-AF46-78A1FEEA838D}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_05.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="697733551"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_WORRIED_05" ID="{B39F3E1A-AEB4-40BB-AF46-78A1FEEA838D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="WALLAS_WORRIED_06" ID="{3F07ADDD-3556-4D5A-9585-1AD4F04C7BB6}" ShortID="617892908">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="WALLAS_WORRIED_06" ID="{666444AE-055D-4058-8365-172854A16906}">
-													<Language>SFX</Language>
-													<AudioFile>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_06.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="786380440"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="WALLAS_WORRIED_06" ID="{666444AE-055D-4058-8365-172854A16906}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="DEATH_VOICE_GRAL" ID="{81A1C4DE-2369-4C51-8F26-22826792F1EF}" ShortID="514721560">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
@@ -2421,6 +1644,1083 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="WALKING_VOICES" ID="{6DCA5CE2-B640-45C1-A908-ED3DA81A6137}" ShortID="192428732">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="VOICES" ID="{9D17FECE-8CD4-4084-8337-EF61A48042EE}" ShortID="683373877">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="INTRIGUED" ID="{9ADBDE8C-CE37-4283-B7F8-EF3973DF74B6}" ShortID="355829033">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="WALLAS_INTRIGUED_01" ID="{9F1A836F-F8CC-4808-B3EA-7E9D8211A3C9}" ShortID="101039938">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_INTRIGUED_01" ID="{16B5C774-A20D-4F67-B08D-1756811D082C}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="836345784"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_INTRIGUED_01" ID="{16B5C774-A20D-4F67-B08D-1756811D082C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_INTRIGUED_02" ID="{31686FDB-13D1-4649-8CE4-22D5E436774D}" ShortID="721931791">
+													<PropertyList>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_INTRIGUED_02" ID="{1BCD8072-20F4-4EDE-B966-9A65BCBA644C}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="795704598"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_INTRIGUED_02" ID="{1BCD8072-20F4-4EDE-B966-9A65BCBA644C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_INTRIGUED_03" ID="{A4B18555-8C05-4D6D-8A1F-5ECAC7627EFC}" ShortID="594850430">
+													<PropertyList>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_INTRIGUED_03" ID="{07B76AF3-7E98-4C47-9B12-A99A7A92224B}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1775940"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_INTRIGUED_03" ID="{07B76AF3-7E98-4C47-9B12-A99A7A92224B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_INTRIGUED_04" ID="{D0C64F25-797B-44A9-B54A-F79EB388ED0F}" ShortID="274281564">
+													<PropertyList>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_INTRIGUED_04" ID="{6D9CA1BE-1610-4566-AF16-A27F761FC1A4}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="674682875"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_INTRIGUED_04" ID="{6D9CA1BE-1610-4566-AF16-A27F761FC1A4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_INTRIGUED_05" ID="{D742039D-0362-4DD3-9E38-43084A8952E6}" ShortID="470418099">
+													<PropertyList>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_INTRIGUED_05" ID="{8932B3DA-C146-4784-BD9D-057701284521}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="612841725"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_INTRIGUED_05" ID="{8932B3DA-C146-4784-BD9D-057701284521}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_INTRIGUED_06" ID="{93919541-02BF-49E2-87F4-F9013680E2AB}" ShortID="856098758">
+													<PropertyList>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_INTRIGUED_06" ID="{ECF45AC4-B178-40D0-B1BB-A3082A57776C}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="910104856"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_INTRIGUED_06" ID="{ECF45AC4-B178-40D0-B1BB-A3082A57776C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_INTRIGUED_07" ID="{F371DCAD-55B3-4887-9E52-F0FD453E007C}" ShortID="557517910">
+													<PropertyList>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_INTRIGUED_07" ID="{5EE636BF-92F3-4677-AE52-1B0481896D90}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_07.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="591387852"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_INTRIGUED_07" ID="{5EE636BF-92F3-4677-AE52-1B0481896D90}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="PROUD" ID="{D0721C04-B546-4E72-A5FB-60E7B77AB336}" ShortID="1033213696">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="WALLAS_PROUD_01" ID="{1458E132-1A65-4451-8081-64224F7987DC}" ShortID="431026317">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_PROUD_01" ID="{DFC317E4-7069-4390-AD04-6ACC4E9195E5}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="484964794"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_PROUD_01" ID="{DFC317E4-7069-4390-AD04-6ACC4E9195E5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_PROUD_02" ID="{78FBDC14-F3A8-44A3-A8D7-5AC426AC33DE}" ShortID="641000713">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_PROUD_02" ID="{3203967A-3D9E-46D4-9D39-84B7F9B505EB}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="424951828"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_PROUD_02" ID="{3203967A-3D9E-46D4-9D39-84B7F9B505EB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_PROUD_03" ID="{2EEAAB84-CBB5-41E1-8869-C6C38F8FAB64}" ShortID="615254715">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_PROUD_03" ID="{03CFE444-838D-49B9-AC07-0F5ABB834F28}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="862247452"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_PROUD_03" ID="{03CFE444-838D-49B9-AC07-0F5ABB834F28}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_PROUD_04" ID="{3F4DC82A-56DF-45B8-BD3D-44AE69AD13A2}" ShortID="138828252">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_PROUD_04" ID="{AE17F492-3F47-4565-88DA-16A06D528F4A}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="792200593"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_PROUD_04" ID="{AE17F492-3F47-4565-88DA-16A06D528F4A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_PROUD_05" ID="{C47CD7FC-3E88-4124-81EF-D5890E1C8A43}" ShortID="398951919">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_PROUD_05" ID="{2CD40CD4-EF78-4433-B27B-3C6E8996464D}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="498012500"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_PROUD_05" ID="{2CD40CD4-EF78-4433-B27B-3C6E8996464D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_PROUD_06" ID="{78A93FD7-3E95-4E2E-A22B-64C5764E6415}" ShortID="892876869">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_PROUD_06" ID="{B4E7771E-2357-426C-A1CC-BB894E2FAC73}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="608016361"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_PROUD_06" ID="{B4E7771E-2357-426C-A1CC-BB894E2FAC73}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="SCARED" ID="{6234E8C3-D0CC-4555-8207-184C7E155FCC}" ShortID="796227128">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="WALLAS_SCARED_01" ID="{995349DC-6CC8-4D16-AD5C-46FFF45235D3}" ShortID="1022332239">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_SCARED_01" ID="{B39CB5E6-FC26-4A69-A1EA-7952827896FF}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\SCARED\WALLAS_SCARED_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="207471079"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_SCARED_01" ID="{B39CB5E6-FC26-4A69-A1EA-7952827896FF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_SCARED_02" ID="{A7960CE8-8568-4D2C-9FCC-B9994D65F859}" ShortID="824768338">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_SCARED_02" ID="{BF37A02E-ACEC-4400-98AD-087A1C4A09BF}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\SCARED\WALLAS_SCARED_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="238141654"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_SCARED_02" ID="{BF37A02E-ACEC-4400-98AD-087A1C4A09BF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_SCARED_03" ID="{4644DBEA-578F-4007-A3D1-E0FE0EE5BA79}" ShortID="681736444">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_SCARED_03" ID="{639F7551-FBD8-4DD5-9F11-285839676D33}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\SCARED\WALLAS_SCARED_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="157819654"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_SCARED_03" ID="{639F7551-FBD8-4DD5-9F11-285839676D33}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="SIGHS" ID="{78009F59-8961-4840-BDB4-026547B0F05D}" ShortID="812961190">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="WALLAS_SIGHS_01" ID="{048F2714-72FB-4EDA-86BC-AF2AE496CA72}" ShortID="979651043">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_SIGHS_01" ID="{665C0754-ACCC-4751-B49F-4E0C93AF98A3}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="684501687"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_SIGHS_01" ID="{665C0754-ACCC-4751-B49F-4E0C93AF98A3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_SIGHS_02" ID="{86B431B6-5C59-41CD-BF41-FFF4823CDDDB}" ShortID="1044912692">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_SIGHS_02" ID="{F9E10A58-2A68-4740-8B64-6FFBCA154E91}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="420191421"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_SIGHS_02" ID="{F9E10A58-2A68-4740-8B64-6FFBCA154E91}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_SIGHS_03" ID="{28D7039B-CF46-41EC-9299-DF07A6231C8C}" ShortID="972078815">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_SIGHS_03" ID="{D4DEF5CC-9043-42D5-8030-757D69D906A1}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="812004205"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_SIGHS_03" ID="{D4DEF5CC-9043-42D5-8030-757D69D906A1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_SIGHS_04" ID="{274596F0-2EA5-47FC-9791-1ECD15E055AE}" ShortID="916470779">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_SIGHS_04" ID="{25261444-32F8-42DD-87B1-7892BD424B48}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="463330844"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_SIGHS_04" ID="{25261444-32F8-42DD-87B1-7892BD424B48}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_SIGHS_05" ID="{2124F60D-D12C-4115-AADD-AD3A87423EE7}" ShortID="91480801">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_SIGHS_05" ID="{BDBFDBCD-3820-48DF-85D4-D09C72D80C38}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="743321128"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_SIGHS_05" ID="{BDBFDBCD-3820-48DF-85D4-D09C72D80C38}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_SIGHS_06" ID="{B9DBB1C2-7A7D-4248-A167-6F0A294298BF}" ShortID="686322333">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_SIGHS_06" ID="{1F4E4DD8-FDBB-447E-84CF-7FE73BF10D5A}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="483197628"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_SIGHS_06" ID="{1F4E4DD8-FDBB-447E-84CF-7FE73BF10D5A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_SIGHS_07" ID="{6E0344AF-D1E8-4FC9-8CD0-19684EBD3403}" ShortID="847973550">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_SIGHS_07" ID="{F58A2197-EE30-44D6-9FF9-9DD5A62CEC3E}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_07.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="906084343"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_SIGHS_07" ID="{F58A2197-EE30-44D6-9FF9-9DD5A62CEC3E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_SIGHS_08" ID="{F8ECEF75-6C04-4B2F-9498-2E60F2E129AB}" ShortID="564010093">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_SIGHS_08" ID="{F24CCFC5-B58B-4BB4-8E8A-5A342595A46D}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_08.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="97568829"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_SIGHS_08" ID="{F24CCFC5-B58B-4BB4-8E8A-5A342595A46D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="TREMBLING" ID="{ED0176FA-A470-4EB5-B1A2-1A7A5A95A229}" ShortID="758824147">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="WALLAS_TREMBLING_01" ID="{B88459BE-607E-47BB-A510-C4A64FCF3DCF}" ShortID="77469322">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_TREMBLING_01" ID="{8BC62D3B-DF41-47A6-BD3B-651A3F890CBA}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="381474556"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_TREMBLING_01" ID="{8BC62D3B-DF41-47A6-BD3B-651A3F890CBA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_TREMBLING_02" ID="{D38F08BA-062E-4FD5-8C13-F98EB09D5951}" ShortID="386526868">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_TREMBLING_02" ID="{39ADBCCA-BBC7-40EC-92EE-53802FC481F4}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="13733013"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_TREMBLING_02" ID="{39ADBCCA-BBC7-40EC-92EE-53802FC481F4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_TREMBLING_03" ID="{0BB99FCE-04A4-47F6-85E5-5CF65131AA5E}" ShortID="777078014">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_TREMBLING_03" ID="{6710578D-1C1A-426B-914F-915DADAA7B40}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="231106468"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_TREMBLING_03" ID="{6710578D-1C1A-426B-914F-915DADAA7B40}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_TREMBLING_04" ID="{A0ECE23A-38F4-47E0-A14B-F4C2A2404FF4}" ShortID="441006794">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_TREMBLING_04" ID="{219FA600-DE68-4AA0-88B1-8310DDC5FDF1}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="893417090"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_TREMBLING_04" ID="{219FA600-DE68-4AA0-88B1-8310DDC5FDF1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_TREMBLING_05" ID="{FBE43D20-AAC8-496D-B765-A1E8CF6FE09D}" ShortID="206834108">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_TREMBLING_05" ID="{238C3C6F-6BBC-48DB-8FB4-0E1044290103}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="470912227"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_TREMBLING_05" ID="{238C3C6F-6BBC-48DB-8FB4-0E1044290103}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_TREMBLING_06" ID="{CFDE306D-B36F-47AD-A1C8-43EE62366924}" ShortID="199259142">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_TREMBLING_06" ID="{EC84AB17-158F-4E86-86B8-4576C5CFDAD9}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="769032738"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_TREMBLING_06" ID="{EC84AB17-158F-4E86-86B8-4576C5CFDAD9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_TREMBLING_07" ID="{20CE320D-2428-4AC3-8F18-00A1F09B9D22}" ShortID="42288787">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_TREMBLING_07" ID="{40BEA67D-EFD5-48CB-A44B-906C84C78DD7}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_07.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="161056409"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_TREMBLING_07" ID="{40BEA67D-EFD5-48CB-A44B-906C84C78DD7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_TREMBLING_08" ID="{C8D52FC6-CD05-4892-9B2E-AAB8D429FE8E}" ShortID="38693752">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_TREMBLING_08" ID="{B07F7ABF-4494-4904-A438-A714AC74EA1B}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_08.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="424036652"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_TREMBLING_08" ID="{B07F7ABF-4494-4904-A438-A714AC74EA1B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="WORRIED" ID="{165DD98D-9073-4623-ADD1-5E3418C3A8E0}" ShortID="944149921">
+											<PropertyList>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="WALLAS_WORRIED_01" ID="{D0BB7216-D13E-4B58-98E6-8CAEF7A92962}" ShortID="984271275">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_WORRIED_01" ID="{13AB22E1-19D8-4971-A94A-EC3E96191636}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="697061196"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_WORRIED_01" ID="{13AB22E1-19D8-4971-A94A-EC3E96191636}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_WORRIED_02" ID="{12842467-4DC3-4683-BAC2-A775390C24E1}" ShortID="25746927">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_WORRIED_02" ID="{CBEE3C27-6C54-4C5B-B4D5-4F0ADA60C50C}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="547316857"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_WORRIED_02" ID="{CBEE3C27-6C54-4C5B-B4D5-4F0ADA60C50C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_WORRIED_03" ID="{05886FFB-67E1-4D04-A0E3-098E32A73AC2}" ShortID="641827595">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_WORRIED_03" ID="{C1020565-D052-4498-8913-F4401E5B467D}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="454734106"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_WORRIED_03" ID="{C1020565-D052-4498-8913-F4401E5B467D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_WORRIED_04" ID="{CE491036-2019-408C-A9E0-3411E58BF91D}" ShortID="407380142">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_WORRIED_04" ID="{74F8EED6-41E0-46C1-A2FB-E733A9FE3BBD}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="216138379"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_WORRIED_04" ID="{74F8EED6-41E0-46C1-A2FB-E733A9FE3BBD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_WORRIED_05" ID="{BF57A5DA-98B9-4029-932E-918FB65A85E8}" ShortID="352607822">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_WORRIED_05" ID="{B39F3E1A-AEB4-40BB-AF46-78A1FEEA838D}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="697733551"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_WORRIED_05" ID="{B39F3E1A-AEB4-40BB-AF46-78A1FEEA838D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="WALLAS_WORRIED_06" ID="{3F07ADDD-3556-4D5A-9585-1AD4F04C7BB6}" ShortID="617892908">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="WALLAS_WORRIED_06" ID="{666444AE-055D-4058-8365-172854A16906}">
+															<Language>SFX</Language>
+															<AudioFile>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="786380440"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="WALLAS_WORRIED_06" ID="{666444AE-055D-4058-8365-172854A16906}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="SILENCE" ID="{EC7C6402-4FE7-4F32-A4D5-7D2E245F7FAE}" ShortID="132876370">
+									<PropertyList>
+										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+										<Property Name="LoopCount" Type="int32" Value="1">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0B08CE19-8AF1-465E-86FB-6402B9D65DB2}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="60"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SourcePlugin Name="Wwise Silence" ID="{03E42C8D-A4C3-4546-AC26-F916DCB49DBA}" ShortID="989717354" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+											<PropertyList>
+												<Property Name="Length" Type="Real32" Value="5.5"/>
+												<Property Name="LengthMax" Type="Real32" Value="5"/>
+											</PropertyList>
+											<Language>SFX</Language>
+										</SourcePlugin>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Wwise Silence" ID="{03E42C8D-A4C3-4546-AC26-F916DCB49DBA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="VOICES" ID="{9D17FECE-8CD4-4084-8337-EF61A48042EE}"/>
+							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
@@ -2649,465 +2949,6 @@
 						<ItemRef Name="CLOCK_TICTAC" ID="{C1C987C0-433F-4361-8364-509A6209C2AB}"/>
 					</Playlist>
 				</RandomSequenceContainer>
-				<BlendContainer Name="MENU_AMB" ID="{70DEBD07-990E-458E-A86B-D4456FC74E71}" ShortID="186620765">
-					<PropertyList>
-						<Property Name="BlendBehavior" Type="int16" Value="1"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-12</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<RandomSequenceContainer Name="PETALS_AMB" ID="{F67B6098-B5D4-4AE8-AEB4-3D7C027162F5}" ShortID="629421857">
-							<PropertyList>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>6</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="PETALS_AMB_04" ID="{CED8A32D-4A53-431A-B3E3-A8D8495F612D}" ShortID="726814587">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="PETALS_AMB" ID="{F634075E-FF1C-4789-AA17-748A38E43085}">
-											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="9.86827397260274"/>
-												<Property Name="LoopEnd" Type="Real64" Value="15.8988858447489"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>PETALS_AMB.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="180841446"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="PETALS_AMB" ID="{F634075E-FF1C-4789-AA17-748A38E43085}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="PETALS_AMB_01" ID="{4ED5C1FD-3410-487B-9123-CB05D39E5C7D}" ShortID="950075431">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="PETALS_AMB" ID="{DF13E946-3F82-4AC2-BD4C-DED66CAC33D8}">
-											<PropertyList>
-												<Property Name="LoopEnd" Type="Real64" Value="3.94045662100457"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>PETALS_AMB.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="447676862"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="PETALS_AMB" ID="{DF13E946-3F82-4AC2-BD4C-DED66CAC33D8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="PETALS_AMB_02" ID="{B2B428CB-5F28-4E90-B3F3-AF32DBA8E812}" ShortID="581847743">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="PETALS_AMB" ID="{450E7ABF-08FD-446A-A8C2-45EEB732F98F}">
-											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="4.11178082191781"/>
-												<Property Name="LoopEnd" Type="Real64" Value="9.14871232876712"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>PETALS_AMB.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="592087630"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="PETALS_AMB" ID="{450E7ABF-08FD-446A-A8C2-45EEB732F98F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="PETALS_AMB_03" ID="{EE783AE5-4EB0-4C7F-AA4E-82E1DD9C3C42}" ShortID="1050097531">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="PETALS_AMB" ID="{1A2CAAAF-8C5E-453F-897A-D82869BC1B58}">
-											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="16.0016803652968"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>PETALS_AMB.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="225900510"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="PETALS_AMB" ID="{1A2CAAAF-8C5E-453F-897A-D82869BC1B58}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="RIVER_AMB" ID="{AD85BFDE-1C1A-4EF2-922E-E75B244A3731}" ShortID="696416650">
-							<PropertyList>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="RIVER_AMB_04" ID="{2A81D8BA-5C77-43B3-971F-85D618769F0B}" ShortID="215994870">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="RIVER_AMB" ID="{2A357223-5888-4522-BDA5-EB64457E80AC}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="15.3767123287671"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>RIVER_AMB.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="898981675"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="RIVER_AMB" ID="{2A357223-5888-4522-BDA5-EB64457E80AC}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="RIVER_AMB_01" ID="{991B7271-CB3E-473D-B1F0-DD19ED99319D}" ShortID="320487654">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="RIVER_AMB" ID="{00A384E6-BBC5-48C5-8019-7F9B48AB4225}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.0342465753424659"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.171232876712334"/>
-												<Property Name="LoopEnd" Type="Real64" Value="5"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="5.13698630136987"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>RIVER_AMB.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="121353557"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="RIVER_AMB" ID="{00A384E6-BBC5-48C5-8019-7F9B48AB4225}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="RIVER_AMB_02" ID="{A1D25C4C-EA96-41E4-8B15-E8F10B3C7663}" ShortID="1012042164">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="RIVER_AMB" ID="{E83F3428-1C50-4F1D-995B-99E4268827EE}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="10.8219178082192"/>
-												<Property Name="TrimEnd" Type="Real64" Value="14.7945205479452"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>RIVER_AMB.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="10833723"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="RIVER_AMB" ID="{E83F3428-1C50-4F1D-995B-99E4268827EE}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="RIVER_AMB_03" ID="{5418F8A4-4921-46C7-A089-1DB6286D588B}" ShortID="338511878">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="RIVER_AMB" ID="{A28E6A04-0A9B-4D13-B3E7-F2EABE72DAB0}">
-											<PropertyList>
-												<Property Name="LoopEnd" Type="Real64" Value="11.0616438356164"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="6.74657534246575"/>
-												<Property Name="TrimEnd" Type="Real64" Value="11.1301369863014"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>RIVER_AMB.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="588948257"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="RIVER_AMB" ID="{A28E6A04-0A9B-4D13-B3E7-F2EABE72DAB0}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="WIND_AMB" ID="{54545843-0581-43BB-B774-7D0951766EE1}" ShortID="674186442">
-							<PropertyList>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>3</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="WIND_AMB_04" ID="{3DD29C86-B3F5-4742-97A4-84AF4BC3E960}" ShortID="197292054">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="WIND_AMB" ID="{47A3C965-5176-4013-ADBC-2ACB58050BD7}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.128584474885845"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.231452054794521"/>
-												<Property Name="LoopBegin" Type="Real64" Value="4.92478538812785"/>
-												<Property Name="LoopEnd" Type="Real64" Value="7.21358904109589"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="4.91192694063927"/>
-												<Property Name="TrimEnd" Type="Real64" Value="7.27788127853881"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>WIND_AMB.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="801162954"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="WIND_AMB" ID="{47A3C965-5176-4013-ADBC-2ACB58050BD7}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="WIND_AMB_01" ID="{CA190D44-80EC-4C6F-BA2D-5EC715104D9B}" ShortID="515517602">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="WIND_AMB" ID="{38129C80-5406-4D2E-82BE-9DD94768FBE6}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.154301369863014"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.205735159817353"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0.784365296803653"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.745789954337899"/>
-												<Property Name="TrimEnd" Type="Real64" Value="2.53311415525114"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>WIND_AMB.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="449341775"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="WIND_AMB" ID="{38129C80-5406-4D2E-82BE-9DD94768FBE6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="WIND_AMB_02" ID="{9F59C872-6CA7-442C-AB57-94BA59BF660E}" ShortID="78412684">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="WIND_AMB" ID="{BE912B10-32BA-4475-95C2-C97E461D6722}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.244310502283105"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.23145205479452"/>
-												<Property Name="LoopBegin" Type="Real64" Value="3.42034703196347"/>
-												<Property Name="LoopEnd" Type="Real64" Value="5.42626484018265"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="3.3946301369863"/>
-												<Property Name="TrimEnd" Type="Real64" Value="5.45198173515982"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>WIND_AMB.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="889243385"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="WIND_AMB" ID="{BE912B10-32BA-4475-95C2-C97E461D6722}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="WIND_AMB_03" ID="{82F4F588-C9E7-470F-9408-197E5A39CF71}" ShortID="180648355">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2FEBD440-21D3-4D56-9F0F-246F69228856}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="WIND_AMB" ID="{17F5B026-3F38-476B-9843-315C5BDC6F13}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.128584474885845"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.1671598173516"/>
-												<Property Name="LoopEnd" Type="Real64" Value="3.78038356164384"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="2.0702100456621"/>
-												<Property Name="TrimEnd" Type="Real64" Value="3.85753424657535"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>WIND_AMB.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1052993168"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="WIND_AMB" ID="{17F5B026-3F38-476B-9843-315C5BDC6F13}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-					</ChildrenList>
-				</BlendContainer>
 				<Sound Name="MOUSE_CLICK" ID="{C94A6448-1E30-490A-A8FF-1CAA3BB8BC4C}" ShortID="150688559">
 					<PropertyList>
 						<Property Name="Pitch" Type="int32">
@@ -3125,7 +2966,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>1</Value>
+								<Value>-6</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -3342,6 +3183,13 @@
 					</Playlist>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="SLIPPERY_FLOOR" ID="{E0C0324D-FEC2-41A7-9DAD-A64A88328DF3}" ShortID="350911407">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>910</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
@@ -3424,7 +3272,7 @@
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-7</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -3442,7 +3290,6 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="SPAWN_SWIPS_FIRE_A" ID="{4357CAA7-4C06-4C5D-9186-E45383C916B4}" ShortID="948503747">
 							<PropertyList>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
@@ -3567,7 +3414,6 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="SPAWN_SWIPS_FIRE_B" ID="{19B20CDE-9840-4876-B108-8EB92A98D569}" ShortID="259460420">
 							<PropertyList>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
@@ -3878,7 +3724,7 @@
 										<Property Name="CrossfadeDuration" Type="Real64" Value="367.105"/>
 										<Property Name="FadeInDuration" Type="Real64" Value="0.0796232876712328"/>
 										<Property Name="LoopBegin" Type="Real64" Value="0.636986301369863"/>
-										<Property Name="LoopEnd" Type="Real64" Value="3.1583904109589"/>
+										<Property Name="LoopEnd" Type="Real64" Value="3.07876712328767"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 										<Property Name="TrimEnd" Type="Real64" Value="3.60958904109589"/>
 									</PropertyList>
@@ -3998,6 +3844,141 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<BlendContainer Name="MENU_AMB" ID="{38FEC196-C5EA-46C9-B1D0-48807D6FF9FA}" ShortID="414423283">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="PETALS_AMB" ID="{82E27482-0CF1-4210-A151-3247C97F8297}" ShortID="547969182">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PETALS_AMB" ID="{540C0CE1-2E68-424F-9CB1-9B46D22B072C}" ShortID="4255403">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PETALS_AMB" ID="{ABE747D7-5CE1-482E-8791-2A42FE5E71D5}">
+											<Language>SFX</Language>
+											<AudioFile>MENU_AMB\PETALS_AMB\PETALS_AMB.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="419801551"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PETALS_AMB" ID="{ABE747D7-5CE1-482E-8791-2A42FE5E71D5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="RIVER_AMB" ID="{2701DF63-9DBF-46C9-9C48-A6F6F24E70D0}" ShortID="691980989">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="RIVER_AMB" ID="{65CBA76F-5590-4B32-9764-5C3B974AD3DD}" ShortID="691984800">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RIVER_AMB" ID="{FBBAD83D-5DBD-4A17-B6DF-A947465639FF}">
+											<Language>SFX</Language>
+											<AudioFile>MENU_AMB\RIVER_AMB\RIVER_AMB.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="938870184"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RIVER_AMB" ID="{FBBAD83D-5DBD-4A17-B6DF-A947465639FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="WIND_AMB" ID="{F843B24F-48A6-4130-896A-625FCC30BF23}" ShortID="794685038">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="WIND_AMB" ID="{A38BBB7E-05F5-4EA8-9EDD-43B6189DBF23}" ShortID="476887917">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2C9DA00E-C80D-4770-87E9-A7E1BAE6AD58}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0E1318BB-717F-489B-9C1A-B9B0107B0873}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WIND_AMB" ID="{91B7C34A-C47E-45FC-AC84-1A5006DF7007}">
+											<Language>SFX</Language>
+											<AudioFile>MENU_AMB\WIND_AMB\WIND_AMB.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1035873368"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="WIND_AMB" ID="{91B7C34A-C47E-45FC-AC84-1A5006DF7007}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

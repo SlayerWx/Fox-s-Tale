@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\maxi_\Desktop\Programacion\segundo_anio\desarrollo3\RunInADungeon\RunInADungeon_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\maxi_\Desktop\Programacion\segundo_anio\desarrollo3\RunInADungeon\RunInADungeon_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\maxi_\Desktop\Programacion\segundo_anio\desarrollo3\RunInADungeon\RunInADungeon_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Matías\Documents\GitHub\Fox-s-Tale-Audio_Team\RunInADungeon_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Matías\Documents\GitHub\Fox-s-Tale-Audio_Team\RunInADungeon_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Matías\Documents\GitHub\Fox-s-Tale-Audio_Team\RunInADungeon_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\maxi_\Desktop\Programacion\segundo_anio\desarrollo3\RunInADungeon\RunInADungeon_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Matías\Documents\GitHub\Fox-s-Tale-Audio_Team\RunInADungeon_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1461467328">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1975867474">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -155,11 +155,16 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2119947522" Name="deadByArrows" ObjectPath="\Events\Default Work Unit\deadByArrows" DurationType="OneShot" DurationMin="0.200000" DurationMax="2.469594">
+				<Event Id="2659975281" Name="dashSelect" ObjectPath="\Events\Default Work Unit\dashSelect" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2119947522" Name="deadByArrows" ObjectPath="\Events\Default Work Unit\deadByArrows" DurationType="OneShot" DurationMin="0.202667" DurationMax="2.469594">
 					<IncludedMemoryFiles>
 						<File Id="177866702" Language="SFX">
 							<ShortName>DEADS\BALLESTA _IMPACT_KILL_01.wav</ShortName>
 							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="193339583" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_05.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_05_10C4C929.wem</Path>
 						</File>
 						<File Id="301668589" Language="SFX">
 							<ShortName>DEAD_BY_FALL.wav</ShortName>
@@ -173,17 +178,49 @@
 							<ShortName>DEADS\FISH_IMPACT_KILL_03.wav</ShortName>
 							<Path>SFX\DEADS\FISH_IMPACT_KILL_03_10C4C929.wem</Path>
 						</File>
+						<File Id="412568606" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_03.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_03_10C4C929.wem</Path>
+						</File>
+						<File Id="446442409" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_03.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_03_10C4C929.wem</Path>
+						</File>
+						<File Id="462982176" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_02.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_02_10C4C929.wem</Path>
+						</File>
 						<File Id="466359606" Language="SFX">
 							<ShortName>DEADS\FISH_IMPACT_KILL_04.wav</ShortName>
 							<Path>SFX\DEADS\FISH_IMPACT_KILL_04_10C4C929.wem</Path>
+						</File>
+						<File Id="627609446" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_04.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_04_10C4C929.wem</Path>
+						</File>
+						<File Id="643269858" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_02.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_02_10C4C929.wem</Path>
+						</File>
+						<File Id="810344809" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_01.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_01_10C4C929.wem</Path>
 						</File>
 						<File Id="920605758" Language="SFX">
 							<ShortName>DEADS\BALLESTA _IMPACT_KILL_02.wav</ShortName>
 							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_02_10C4C929.wem</Path>
 						</File>
+						<File Id="962561163" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_04.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_04_10C4C929.wem</Path>
+						</File>
 						<File Id="1028994639" Language="SFX">
 							<ShortName>DEADS\FISH_IMPACT_KILL_02.wav</ShortName>
 							<Path>SFX\DEADS\FISH_IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1043661875" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_01.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_01_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -204,6 +241,14 @@
 						<SwitchContainer SwitchValue="{D4FDFAD7-36E2-4E28-A60B-69D081FBAC58}">
 							<Media>
 								<File Id="301668589"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3817A0DF-3FB7-46D9-8B48-3FFE12F26A9B}">
+							<Media>
+								<File Id="810344809"/>
+								<File Id="643269858"/>
+								<File Id="446442409"/>
+								<File Id="962561163"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -211,11 +256,19 @@
 						<ActionSetSwitchEntry Id="1257608559" Name="arrows" ObjectPath="\Switches\Default Work Unit\deadBy\arrows"/>
 					</ActionSetSwitch>
 				</Event>
-				<Event Id="3380611355" Name="deadByFall" ObjectPath="\Events\Default Work Unit\deadByFall" DurationType="OneShot" DurationMin="1.765537" DurationMax="2.469594">
+				<Event Id="3380611355" Name="deadByFall" ObjectPath="\Events\Default Work Unit\deadByFall" DurationType="OneShot" DurationMin="0.200000" DurationMax="2.469594">
 					<IncludedMemoryFiles>
+						<File Id="52709772" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_BY_FALL\WALLAS_DEATH_FALL_04.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_BY_FALL\WALLAS_DEATH_FALL_04_10C4C929.wem</Path>
+						</File>
 						<File Id="177866702" Language="SFX">
 							<ShortName>DEADS\BALLESTA _IMPACT_KILL_01.wav</ShortName>
 							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="236475307" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_BY_FALL\WALLAS_DEATH_FALL_0.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_BY_FALL\WALLAS_DEATH_FALL_0_10C4C929.wem</Path>
 						</File>
 						<File Id="301668589" Language="SFX">
 							<ShortName>DEAD_BY_FALL.wav</ShortName>
@@ -229,13 +282,37 @@
 							<ShortName>DEADS\FISH_IMPACT_KILL_03.wav</ShortName>
 							<Path>SFX\DEADS\FISH_IMPACT_KILL_03_10C4C929.wem</Path>
 						</File>
+						<File Id="446442409" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_03.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_03_10C4C929.wem</Path>
+						</File>
+						<File Id="446771896" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_BY_FALL\WALLAS_DEATH_FALL_03.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_BY_FALL\WALLAS_DEATH_FALL_03_10C4C929.wem</Path>
+						</File>
 						<File Id="466359606" Language="SFX">
 							<ShortName>DEADS\FISH_IMPACT_KILL_04.wav</ShortName>
 							<Path>SFX\DEADS\FISH_IMPACT_KILL_04_10C4C929.wem</Path>
 						</File>
+						<File Id="643269858" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_02.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_02_10C4C929.wem</Path>
+						</File>
+						<File Id="810344809" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_01.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_01_10C4C929.wem</Path>
+						</File>
 						<File Id="920605758" Language="SFX">
 							<ShortName>DEADS\BALLESTA _IMPACT_KILL_02.wav</ShortName>
 							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+						<File Id="962561163" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_04.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_04_10C4C929.wem</Path>
+						</File>
+						<File Id="968442704" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_BY_FALL\WALLAS_DEATH_FALL_01.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_BY_FALL\WALLAS_DEATH_FALL_01_10C4C929.wem</Path>
 						</File>
 						<File Id="1028994639" Language="SFX">
 							<ShortName>DEADS\FISH_IMPACT_KILL_02.wav</ShortName>
@@ -260,6 +337,14 @@
 						<SwitchContainer SwitchValue="{D4FDFAD7-36E2-4E28-A60B-69D081FBAC58}">
 							<Media>
 								<File Id="301668589"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3817A0DF-3FB7-46D9-8B48-3FFE12F26A9B}">
+							<Media>
+								<File Id="810344809"/>
+								<File Id="643269858"/>
+								<File Id="446442409"/>
+								<File Id="962561163"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -267,11 +352,15 @@
 						<ActionSetSwitchEntry Id="2512384458" Name="fall" ObjectPath="\Switches\Default Work Unit\deadBy\fall"/>
 					</ActionSetSwitch>
 				</Event>
-				<Event Id="3731661478" Name="deadByFish" ObjectPath="\Events\Default Work Unit\deadByFish" DurationType="OneShot" DurationMin="0.200000" DurationMax="2.469594">
+				<Event Id="3731661478" Name="deadByFish" ObjectPath="\Events\Default Work Unit\deadByFish" DurationType="OneShot" DurationMin="0.202667" DurationMax="2.469594">
 					<IncludedMemoryFiles>
 						<File Id="177866702" Language="SFX">
 							<ShortName>DEADS\BALLESTA _IMPACT_KILL_01.wav</ShortName>
 							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="193339583" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_05.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_05_10C4C929.wem</Path>
 						</File>
 						<File Id="301668589" Language="SFX">
 							<ShortName>DEAD_BY_FALL.wav</ShortName>
@@ -285,17 +374,49 @@
 							<ShortName>DEADS\FISH_IMPACT_KILL_03.wav</ShortName>
 							<Path>SFX\DEADS\FISH_IMPACT_KILL_03_10C4C929.wem</Path>
 						</File>
+						<File Id="412568606" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_03.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_03_10C4C929.wem</Path>
+						</File>
+						<File Id="446442409" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_03.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_03_10C4C929.wem</Path>
+						</File>
+						<File Id="462982176" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_02.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_02_10C4C929.wem</Path>
+						</File>
 						<File Id="466359606" Language="SFX">
 							<ShortName>DEADS\FISH_IMPACT_KILL_04.wav</ShortName>
 							<Path>SFX\DEADS\FISH_IMPACT_KILL_04_10C4C929.wem</Path>
+						</File>
+						<File Id="627609446" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_04.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_04_10C4C929.wem</Path>
+						</File>
+						<File Id="643269858" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_02.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_02_10C4C929.wem</Path>
+						</File>
+						<File Id="810344809" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_01.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_01_10C4C929.wem</Path>
 						</File>
 						<File Id="920605758" Language="SFX">
 							<ShortName>DEADS\BALLESTA _IMPACT_KILL_02.wav</ShortName>
 							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_02_10C4C929.wem</Path>
 						</File>
+						<File Id="962561163" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_04.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_04_10C4C929.wem</Path>
+						</File>
 						<File Id="1028994639" Language="SFX">
 							<ShortName>DEADS\FISH_IMPACT_KILL_02.wav</ShortName>
 							<Path>SFX\DEADS\FISH_IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1043661875" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_01.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_01_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -316,6 +437,14 @@
 						<SwitchContainer SwitchValue="{D4FDFAD7-36E2-4E28-A60B-69D081FBAC58}">
 							<Media>
 								<File Id="301668589"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3817A0DF-3FB7-46D9-8B48-3FFE12F26A9B}">
+							<Media>
+								<File Id="810344809"/>
+								<File Id="643269858"/>
+								<File Id="446442409"/>
+								<File Id="962561163"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -323,11 +452,15 @@
 						<ActionSetSwitchEntry Id="2695658327" Name="fish" ObjectPath="\Switches\Default Work Unit\deadBy\fish"/>
 					</ActionSetSwitch>
 				</Event>
-				<Event Id="1874851080" Name="deadByPinches" ObjectPath="\Events\Default Work Unit\deadByPinches" DurationType="OneShot" DurationMin="0.200000" DurationMax="2.469594">
+				<Event Id="1874851080" Name="deadByPinches" ObjectPath="\Events\Default Work Unit\deadByPinches" DurationType="OneShot" DurationMin="0.402667" DurationMax="2.469594">
 					<IncludedMemoryFiles>
 						<File Id="177866702" Language="SFX">
 							<ShortName>DEADS\BALLESTA _IMPACT_KILL_01.wav</ShortName>
 							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="193339583" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_05.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_05_10C4C929.wem</Path>
 						</File>
 						<File Id="301668589" Language="SFX">
 							<ShortName>DEAD_BY_FALL.wav</ShortName>
@@ -341,17 +474,49 @@
 							<ShortName>DEADS\FISH_IMPACT_KILL_03.wav</ShortName>
 							<Path>SFX\DEADS\FISH_IMPACT_KILL_03_10C4C929.wem</Path>
 						</File>
+						<File Id="412568606" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_03.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_03_10C4C929.wem</Path>
+						</File>
+						<File Id="446442409" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_03.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_03_10C4C929.wem</Path>
+						</File>
+						<File Id="462982176" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_02.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_02_10C4C929.wem</Path>
+						</File>
 						<File Id="466359606" Language="SFX">
 							<ShortName>DEADS\FISH_IMPACT_KILL_04.wav</ShortName>
 							<Path>SFX\DEADS\FISH_IMPACT_KILL_04_10C4C929.wem</Path>
+						</File>
+						<File Id="627609446" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_04.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_04_10C4C929.wem</Path>
+						</File>
+						<File Id="643269858" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_02.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_02_10C4C929.wem</Path>
+						</File>
+						<File Id="810344809" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_01.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_01_10C4C929.wem</Path>
 						</File>
 						<File Id="920605758" Language="SFX">
 							<ShortName>DEADS\BALLESTA _IMPACT_KILL_02.wav</ShortName>
 							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_02_10C4C929.wem</Path>
 						</File>
+						<File Id="962561163" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_04.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_04_10C4C929.wem</Path>
+						</File>
 						<File Id="1028994639" Language="SFX">
 							<ShortName>DEADS\FISH_IMPACT_KILL_02.wav</ShortName>
 							<Path>SFX\DEADS\FISH_IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1043661875" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_01.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_01_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -372,6 +537,14 @@
 						<SwitchContainer SwitchValue="{D4FDFAD7-36E2-4E28-A60B-69D081FBAC58}">
 							<Media>
 								<File Id="301668589"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3817A0DF-3FB7-46D9-8B48-3FFE12F26A9B}">
+							<Media>
+								<File Id="810344809"/>
+								<File Id="643269858"/>
+								<File Id="446442409"/>
+								<File Id="962561163"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -379,11 +552,15 @@
 						<ActionSetSwitchEntry Id="548708371" Name="pinches" ObjectPath="\Switches\Default Work Unit\deadBy\pinches"/>
 					</ActionSetSwitch>
 				</Event>
-				<Event Id="3511500052" Name="deadByShadow" ObjectPath="\Events\Default Work Unit\deadByShadow" DurationType="OneShot" DurationMin="0.200000" DurationMax="2.469594">
+				<Event Id="3511500052" Name="deadByShadow" ObjectPath="\Events\Default Work Unit\deadByShadow" DurationType="OneShot" DurationMin="0.202667" DurationMax="2.469594">
 					<IncludedMemoryFiles>
 						<File Id="177866702" Language="SFX">
 							<ShortName>DEADS\BALLESTA _IMPACT_KILL_01.wav</ShortName>
 							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_01_10C4C929.wem</Path>
+						</File>
+						<File Id="193339583" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_05.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_05_10C4C929.wem</Path>
 						</File>
 						<File Id="301668589" Language="SFX">
 							<ShortName>DEAD_BY_FALL.wav</ShortName>
@@ -397,17 +574,49 @@
 							<ShortName>DEADS\FISH_IMPACT_KILL_03.wav</ShortName>
 							<Path>SFX\DEADS\FISH_IMPACT_KILL_03_10C4C929.wem</Path>
 						</File>
+						<File Id="412568606" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_03.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_03_10C4C929.wem</Path>
+						</File>
+						<File Id="446442409" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_03.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_03_10C4C929.wem</Path>
+						</File>
+						<File Id="462982176" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_02.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_02_10C4C929.wem</Path>
+						</File>
 						<File Id="466359606" Language="SFX">
 							<ShortName>DEADS\FISH_IMPACT_KILL_04.wav</ShortName>
 							<Path>SFX\DEADS\FISH_IMPACT_KILL_04_10C4C929.wem</Path>
+						</File>
+						<File Id="627609446" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_04.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_04_10C4C929.wem</Path>
+						</File>
+						<File Id="643269858" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_02.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_02_10C4C929.wem</Path>
+						</File>
+						<File Id="810344809" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_01.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_01_10C4C929.wem</Path>
 						</File>
 						<File Id="920605758" Language="SFX">
 							<ShortName>DEADS\BALLESTA _IMPACT_KILL_02.wav</ShortName>
 							<Path>SFX\DEADS\BALLESTA _IMPACT_KILL_02_10C4C929.wem</Path>
 						</File>
+						<File Id="962561163" Language="SFX">
+							<ShortName>DEAD_BY_PINCHES_04.wav</ShortName>
+							<Path>SFX\DEAD_BY_PINCHES_04_10C4C929.wem</Path>
+						</File>
 						<File Id="1028994639" Language="SFX">
 							<ShortName>DEADS\FISH_IMPACT_KILL_02.wav</ShortName>
 							<Path>SFX\DEADS\FISH_IMPACT_KILL_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1043661875" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_01.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_01_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -428,6 +637,14 @@
 						<SwitchContainer SwitchValue="{D4FDFAD7-36E2-4E28-A60B-69D081FBAC58}">
 							<Media>
 								<File Id="301668589"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3817A0DF-3FB7-46D9-8B48-3FFE12F26A9B}">
+							<Media>
+								<File Id="810344809"/>
+								<File Id="643269858"/>
+								<File Id="446442409"/>
+								<File Id="962561163"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -440,7 +657,8 @@
 						<ActionSetStateEntry Id="4063988593" Name="in_dead_menu" ObjectPath="\States\Default Work Unit\GAME_MODES\in_dead_menu"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="2020903617" Name="desague" ObjectPath="\Events\Default Work Unit\desague" MaxAttenuation="100.000000" DurationType="Infinite">
+				<Event Id="2020903617" Name="desague" ObjectPath="\Events\Default Work Unit\desague" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3404679355" Name="desagueStart" ObjectPath="\Events\Default Work Unit\desagueStart" MaxAttenuation="100.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="13867540" Language="SFX">
 							<ShortName>DESAGUE_2.wav</ShortName>
@@ -460,6 +678,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2640052505" Name="desagueStop" ObjectPath="\Events\Default Work Unit\desagueStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1578009071" Name="fishJump" ObjectPath="\Events\Default Work Unit\fishJump" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="4.054980" DurationMax="5.417914">
 					<IncludedMemoryFiles>
 						<File Id="136862767" Language="SFX">
@@ -541,6 +760,14 @@
 								<File Id="353657114"/>
 							</Media>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{28143B44-31F0-4858-B48E-C4180353DADC}">
+							<Media>
+								<File Id="52198081"/>
+								<File Id="760224464"/>
+								<File Id="23077692"/>
+								<File Id="120000595"/>
+							</Media>
+						</SwitchContainer>
 					</SwitchContainers>
 					<ActionSetState>
 						<ActionSetStateEntry Id="733168346" Name="game_start" ObjectPath="\States\Default Work Unit\GAME_MODES\game_start"/>
@@ -552,39 +779,19 @@
 						<ActionSetStateEntry Id="2283883555" Name="score0" ObjectPath="\States\Default Work Unit\SCORES\score0"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="1447920996" Name="menuStart" ObjectPath="\Events\Default Work Unit\menuStart" DurationType="Infinite">
+				<Event Id="1447920996" Name="menuStart" ObjectPath="\Events\Default Work Unit\menuStart" DurationType="OneShot" DurationMin="20.010666" DurationMax="20.010666">
 					<IncludedMemoryFiles>
-						<File Id="180841446" Language="SFX">
-							<ShortName>PETALS_AMB.wav</ShortName>
-							<Path>SFX\PETALS_AMB_76DFE35D.wem</Path>
+						<File Id="419801551" Language="SFX">
+							<ShortName>MENU_AMB\PETALS_AMB\PETALS_AMB.wav</ShortName>
+							<Path>SFX\MENU_AMB\PETALS_AMB\PETALS_AMB_10C4C929.wem</Path>
 						</File>
-						<File Id="225900510" Language="SFX">
-							<ShortName>PETALS_AMB.wav</ShortName>
-							<Path>SFX\PETALS_AMB_E85842F7.wem</Path>
+						<File Id="938870184" Language="SFX">
+							<ShortName>MENU_AMB\RIVER_AMB\RIVER_AMB.wav</ShortName>
+							<Path>SFX\MENU_AMB\RIVER_AMB\RIVER_AMB_10C4C929.wem</Path>
 						</File>
-						<File Id="447676862" Language="SFX">
-							<ShortName>PETALS_AMB.wav</ShortName>
-							<Path>SFX\PETALS_AMB_0C4D1172.wem</Path>
-						</File>
-						<File Id="449341775" Language="SFX">
-							<ShortName>WIND_AMB.wav</ShortName>
-							<Path>SFX\WIND_AMB_93174F4B.wem</Path>
-						</File>
-						<File Id="592087630" Language="SFX">
-							<ShortName>PETALS_AMB.wav</ShortName>
-							<Path>SFX\PETALS_AMB_FABD0CAB.wem</Path>
-						</File>
-						<File Id="801162954" Language="SFX">
-							<ShortName>WIND_AMB.wav</ShortName>
-							<Path>SFX\WIND_AMB_200AED60.wem</Path>
-						</File>
-						<File Id="889243385" Language="SFX">
-							<ShortName>WIND_AMB.wav</ShortName>
-							<Path>SFX\WIND_AMB_739BBBC5.wem</Path>
-						</File>
-						<File Id="1052993168" Language="SFX">
-							<ShortName>WIND_AMB.wav</ShortName>
-							<Path>SFX\WIND_AMB_310E7930.wem</Path>
+						<File Id="1035873368" Language="SFX">
+							<ShortName>MENU_AMB\WIND_AMB\WIND_AMB.wav</ShortName>
+							<Path>SFX\MENU_AMB\WIND_AMB\WIND_AMB_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<ActionSetState>
@@ -599,7 +806,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3050945240" Name="New_Event" ObjectPath="\Events\Default Work Unit\New_Event" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2122995345" Name="openDoor" ObjectPath="\Events\Default Work Unit\openDoor" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="181417420" Name="pauseIn" ObjectPath="\Events\Default Work Unit\pauseIn" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="2182592203" Name="in_pause" ObjectPath="\States\Default Work Unit\GAME_MODES\in_pause"/>
@@ -610,11 +817,47 @@
 						<ActionSetStateEntry Id="1686036574" Name="in_match" ObjectPath="\States\Default Work Unit\GAME_MODES\in_match"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="1712852617" Name="playFootstep" ObjectPath="\Events\Default Work Unit\playFootstep" DurationType="OneShot" DurationMin="0.402208" DurationMax="0.954018">
+				<Event Id="1712852617" Name="playFootstep" ObjectPath="\Events\Default Work Unit\playFootstep" DurationType="OneShot" DurationMin="0.402208" DurationMax="1.701333">
 					<IncludedMemoryFiles>
+						<File Id="1775940" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_03.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_03_10C4C929.wem</Path>
+						</File>
+						<File Id="13733013" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_02.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_02_10C4C929.wem</Path>
+						</File>
 						<File Id="15832022" Language="SFX">
 							<ShortName>FOOTSTEPS\FS_CONCRETE_04.wav</ShortName>
 							<Path>SFX\FOOTSTEPS\FS_CONCRETE_04_5162CB3B.wem</Path>
+						</File>
+						<File Id="97568829" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_08.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_08_10C4C929.wem</Path>
+						</File>
+						<File Id="157819654" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\SCARED\WALLAS_SCARED_03.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\SCARED\WALLAS_SCARED_03_10C4C929.wem</Path>
+						</File>
+						<File Id="161056409" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_07.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_07_10C4C929.wem</Path>
+						</File>
+						<File Id="207471079" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\SCARED\WALLAS_SCARED_01.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\SCARED\WALLAS_SCARED_01_10C4C929.wem</Path>
+						</File>
+						<File Id="216138379" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_04.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_04_10C4C929.wem</Path>
+						</File>
+						<File Id="231106468" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_03.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_03_10C4C929.wem</Path>
+						</File>
+						<File Id="238141654" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\SCARED\WALLAS_SCARED_02.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\SCARED\WALLAS_SCARED_02_10C4C929.wem</Path>
 						</File>
 						<File Id="273405237" Language="SFX">
 							<ShortName>FOOTSTEPS\FS_CONCRETE_03.wav</ShortName>
@@ -624,21 +867,137 @@
 							<ShortName>FOOTSTEPS\FS_CONCRETE_02.wav</ShortName>
 							<Path>SFX\FOOTSTEPS\FS_CONCRETE_02_94FE58B3.wem</Path>
 						</File>
+						<File Id="381474556" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_01.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_01_10C4C929.wem</Path>
+						</File>
 						<File Id="403408763" Language="SFX">
 							<ShortName>FOOTSTEPS\FS_CONCRETE_01.wav</ShortName>
 							<Path>SFX\FOOTSTEPS\FS_CONCRETE_01_EA848793.wem</Path>
+						</File>
+						<File Id="420191421" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_02.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_02_10C4C929.wem</Path>
+						</File>
+						<File Id="424036652" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_08.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_08_10C4C929.wem</Path>
+						</File>
+						<File Id="424951828" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_02.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_02_10C4C929.wem</Path>
+						</File>
+						<File Id="454734106" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_03.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_03_10C4C929.wem</Path>
+						</File>
+						<File Id="463330844" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_04.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_04_10C4C929.wem</Path>
+						</File>
+						<File Id="470912227" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_05.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_05_10C4C929.wem</Path>
+						</File>
+						<File Id="483197628" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_06.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_06_10C4C929.wem</Path>
+						</File>
+						<File Id="484964794" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_01.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_01_10C4C929.wem</Path>
+						</File>
+						<File Id="498012500" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_05.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_05_10C4C929.wem</Path>
+						</File>
+						<File Id="547316857" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_02.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_02_10C4C929.wem</Path>
 						</File>
 						<File Id="552755692" Language="SFX">
 							<ShortName>FOOTSTEPS\FS_CONCRETE_02.wav</ShortName>
 							<Path>SFX\FOOTSTEPS\FS_CONCRETE_02_FED1683E.wem</Path>
 						</File>
+						<File Id="591387852" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_07.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_07_10C4C929.wem</Path>
+						</File>
+						<File Id="608016361" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_06.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_06_10C4C929.wem</Path>
+						</File>
+						<File Id="612841725" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_05.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_05_10C4C929.wem</Path>
+						</File>
+						<File Id="674682875" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_04.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_04_10C4C929.wem</Path>
+						</File>
+						<File Id="684501687" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_01.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_01_10C4C929.wem</Path>
+						</File>
+						<File Id="697061196" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_01.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_01_10C4C929.wem</Path>
+						</File>
+						<File Id="697733551" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_05.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_05_10C4C929.wem</Path>
+						</File>
+						<File Id="743321128" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_05.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_05_10C4C929.wem</Path>
+						</File>
+						<File Id="769032738" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_06.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_06_10C4C929.wem</Path>
+						</File>
+						<File Id="786380440" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_06.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\WORRIED\WALLAS_WORRIED_06_10C4C929.wem</Path>
+						</File>
+						<File Id="792200593" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_04.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_04_10C4C929.wem</Path>
+						</File>
+						<File Id="795704598" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_02.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_02_10C4C929.wem</Path>
+						</File>
+						<File Id="812004205" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_03.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_03_10C4C929.wem</Path>
+						</File>
 						<File Id="814903189" Language="SFX">
 							<ShortName>FOOTSTEPS\FS_CONCRETE_01.wav</ShortName>
 							<Path>SFX\FOOTSTEPS\FS_CONCRETE_01_29652D84.wem</Path>
 						</File>
+						<File Id="836345784" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_01.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_01_10C4C929.wem</Path>
+						</File>
 						<File Id="848342822" Language="SFX">
 							<ShortName>FOOTSTEPS\FS_CONCRETE_03.wav</ShortName>
 							<Path>SFX\FOOTSTEPS\FS_CONCRETE_03_ABC1E5C4.wem</Path>
+						</File>
+						<File Id="862247452" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_03.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\PROUD\WALLAS_PROUD_03_10C4C929.wem</Path>
+						</File>
+						<File Id="893417090" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_04.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\TREMBLING\WALLAS_TREMBLING_04_10C4C929.wem</Path>
+						</File>
+						<File Id="906084343" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_07.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\SIGHS\WALLAS_SIGHS_07_10C4C929.wem</Path>
+						</File>
+						<File Id="910104856" Language="SFX">
+							<ShortName>WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_06.wav</ShortName>
+							<Path>SFX\WALLAS\WALKING_VOICES\INTRIGUED\WALLAS_INTRIGUED_06_10C4C929.wem</Path>
 						</File>
 						<File Id="943174428" Language="SFX">
 							<ShortName>FOOTSTEPS\FS_CONCRETE_04.wav</ShortName>
@@ -646,44 +1005,62 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2283883555" Name="score0" ObjectPath="\Events\Default Work Unit\score0" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="2283883555" Name="score0" ObjectPath="\States\Default Work Unit\SCORES\score0"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="2285156786" Name="score100" ObjectPath="\Events\Default Work Unit\score100" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="2285156786" Name="score100" ObjectPath="\States\Default Work Unit\SCORES\score100"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="87141506" Name="score250" ObjectPath="\Events\Default Work Unit\score250" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="2643197085" Name="pressurePlateIn" ObjectPath="\Events\Default Work Unit\pressurePlateIn" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2238548804" Name="pressurePlateOut" ObjectPath="\Events\Default Work Unit\pressurePlateOut" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2218046214" Name="score140" ObjectPath="\Events\Default Work Unit\score140" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="87141506" Name="score250" ObjectPath="\States\Default Work Unit\SCORES\score250"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="104904959" Name="score400" ObjectPath="\Events\Default Work Unit\score400" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="36808649" Name="score200" ObjectPath="\Events\Default Work Unit\score200" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="104904959" Name="score400" ObjectPath="\States\Default Work Unit\SCORES\score400"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="3140781661" Name="shadow" ObjectPath="\Events\Default Work Unit\shadow" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2952340197" Name="slipperyFloor" ObjectPath="\Events\Default Work Unit\slipperyFloor" DurationType="OneShot" DurationMin="1.021678" DurationMax="1.509297">
+				<Event Id="1886051484" Name="score70" ObjectPath="\Events\Default Work Unit\score70" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2285156786" Name="score100" ObjectPath="\States\Default Work Unit\SCORES\score100"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1380770404" Name="shadowIn" ObjectPath="\Events\Default Work Unit\shadowIn" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="167345507" Name="shadowOut" ObjectPath="\Events\Default Work Unit\shadowOut" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2952340197" Name="slipperyFloor" ObjectPath="\Events\Default Work Unit\slipperyFloor" DurationType="OneShot" DurationMin="0.603994" DurationMax="0.892265">
 					<IncludedMemoryFiles>
 						<File Id="24531831" Language="SFX">
 							<ShortName>SLIPPERY_FLOOR_3.wav</ShortName>
 							<Path>SFX\SLIPPERY_FLOOR_3_10C4C929.wem</Path>
 						</File>
+						<File Id="193339583" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_05.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_05_10C4C929.wem</Path>
+						</File>
 						<File Id="298812681" Language="SFX">
 							<ShortName>SLIPPERY_FLOOR_1.wav</ShortName>
 							<Path>SFX\SLIPPERY_FLOOR_1_10C4C929.wem</Path>
+						</File>
+						<File Id="412568606" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_03.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_03_10C4C929.wem</Path>
+						</File>
+						<File Id="462982176" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_02.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_02_10C4C929.wem</Path>
+						</File>
+						<File Id="627609446" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_04.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_04_10C4C929.wem</Path>
 						</File>
 						<File Id="794214575" Language="SFX">
 							<ShortName>SLIPPERY_FLOOR_2.wav</ShortName>
 							<Path>SFX\SLIPPERY_FLOOR_2_10C4C929.wem</Path>
 						</File>
+						<File Id="1043661875" Language="SFX">
+							<ShortName>WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_01.wav</ShortName>
+							<Path>SFX\WALLAS\DEATH_VOICES\VOX_DEATH_GRAL\WALLAS_DEATH_01_10C4C929.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="280766994" Name="spawnWisps" ObjectPath="\Events\Default Work Unit\spawnWisps" MaxAttenuation="100.000000" DurationType="Infinite">
+				<Event Id="280766994" Name="spawnWisps" ObjectPath="\Events\Default Work Unit\spawnWisps" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="64.123779" DurationMax="64.123779">
 					<IncludedMemoryFiles>
 						<File Id="540369" Language="SFX">
 							<ShortName>SPAWN_SWIPS_FIRE_2.wav</ShortName>

@@ -145,32 +145,24 @@ public class PlayerMove : MonoBehaviour
                     direction.y = -one;
                     PlayerAnimationRequestDir?.Invoke(Animation.Direction.Down);
                     PlayerAnimationRequestState?.Invoke(Animation.State.Walk);
-                    if(modifDistanceToDash == two)
-                    AkSoundEngine.PostEvent("dashAction", transform.gameObject);
                 }
                 else if (Input.GetKey(KeyCode.UpArrow)&& dirBool.Up)
                 {
                     direction.y = one;
                     PlayerAnimationRequestDir?.Invoke(Animation.Direction.Up);
                     PlayerAnimationRequestState?.Invoke(Animation.State.Walk);
-                    if (modifDistanceToDash == two)
-                        AkSoundEngine.PostEvent("dashAction", transform.gameObject);
                 }
                 else if (Input.GetKey(KeyCode.LeftArrow)&& dirBool.Left)
                 {
                     direction.x = -one;
                     PlayerAnimationRequestDir?.Invoke(Animation.Direction.Left);
                     PlayerAnimationRequestState?.Invoke(Animation.State.Walk);
-                    if (modifDistanceToDash == two)
-                        AkSoundEngine.PostEvent("dashAction", transform.gameObject);
                 }
                 else if (Input.GetKey(KeyCode.RightArrow)&& dirBool.Right)
                 {
                     direction.x = one;
                     PlayerAnimationRequestDir?.Invoke(Animation.Direction.Right);
                     PlayerAnimationRequestState?.Invoke(Animation.State.Walk);
-                    if (modifDistanceToDash == two)
-                        AkSoundEngine.PostEvent("dashAction", transform.gameObject);
                 }
             }
 
