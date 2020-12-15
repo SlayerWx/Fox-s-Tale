@@ -5,6 +5,7 @@ using UnityEngine;
 public class DoorActivator : MonoBehaviour
 {
     [SerializeField] GifLoop[] doors = null;
+    [SerializeField] BoxCollider2D doorCollider;
     int count;
     private void Start()
     {
@@ -18,6 +19,7 @@ public class DoorActivator : MonoBehaviour
             for (int i = 0; i < doors.Length; i++)
             {
                 doors[i].StartAnim();
+                if(i == doors.Length-1) doorCollider.enabled = false;
             }
         }
     }
