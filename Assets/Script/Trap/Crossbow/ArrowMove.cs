@@ -9,14 +9,12 @@ public class ArrowMove : MonoBehaviour
     [SerializeField] float distanceMaxToDead = 0.0f;
     [SerializeField] float speed = 0.0f;
     Rigidbody2D myRigid;
-    bool toDead;
     Vector2 mySartPosition;
     // asAS
     void Start()
     {
         myRigid = GetComponent<Rigidbody2D>();
         readyToMove = true;
-        toDead = false;
         mySartPosition = transform.position;
     }
 

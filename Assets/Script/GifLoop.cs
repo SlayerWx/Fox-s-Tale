@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GifLoop : MonoBehaviour
 {
-    [SerializeField] SpriteRenderer mySprite;
-    [SerializeField] float timeXFrame;
-    [SerializeField] Sprite[] steps;
+    [SerializeField] SpriteRenderer mySprite = null;
+    [SerializeField] float timeXFrame = 0.0f;
+    [SerializeField] Sprite[] steps = null;
     const int zero = 0;
-    [SerializeField] bool isLoop;
+    [SerializeField] bool isLoop = true;
     bool whileControl;
     void OnEnable()
     {

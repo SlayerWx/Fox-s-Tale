@@ -13,10 +13,10 @@ public class JumpingFish : MonoBehaviour
         public SpriteBoxCollider(Sprite mySprite, Vector2 offset, Vector2 size)
         { this.mySprite = mySprite; this.offset = offset; this.size = size; }
     }
-    [SerializeField] SpriteRenderer mySprite;
-    [SerializeField] BoxCollider2D myCollider;
-    [SerializeField] float timeXFrame;
-    [SerializeField] float coldown;
+    [SerializeField] SpriteRenderer mySprite = null;
+    [SerializeField] BoxCollider2D myCollider = null;
+    [SerializeField] float timeXFrame = 0.0f;
+    [SerializeField] float coldown = 0.0f;
     [SerializeField] SpriteBoxCollider[] spriteAndColliderPoints = null;
     const int zero = 0;
     const int one = 1;

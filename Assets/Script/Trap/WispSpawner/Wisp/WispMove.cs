@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class WispMove : MonoBehaviour
 {
-    [SerializeField] float intervalXMove = 0;
+    [SerializeField] float intervalXMove = 0.0f;
     Vector3 newPos;
-    [SerializeField] float minDistance;
-    [SerializeField] float stopDistance;
-    [SerializeField] float mySpeed;
+    [SerializeField] float minDistance = 0.0f;
+    [SerializeField] float stopDistance = 0.0f;
+    [SerializeField] float mySpeed = 0.0f;
     Vector3 randomDir;
     Vector3 dir;
     const int zero = 0;

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PippeSound : MonoBehaviour
 {
     public static bool isPlaying;
-    [SerializeField] SpriteRenderer myRender;
+    [SerializeField] SpriteRenderer myRender = null;
     [SerializeField] float soundLenght = 4.0f;
     void Start()
     {

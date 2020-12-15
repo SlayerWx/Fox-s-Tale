@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PauseVolume : MonoBehaviour
 {
-    [SerializeField]Slider mySound;
-    [SerializeField]Slider mySfx;
+    [SerializeField]Slider mySound = null;
+    [SerializeField]Slider mySfx = null;
     public void ChangeVolumeSfx()
     {
         AkSoundEngine.SetRTPCValue("sfxVolume", mySfx.value * 100);

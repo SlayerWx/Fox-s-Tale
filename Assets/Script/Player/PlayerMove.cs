@@ -8,7 +8,7 @@ public class PlayerMove : MonoBehaviour
     {
         Left,Right,Up,Down
     };
-    Direction myDirection;
+    Direction myDirection;//se usa para CollisionDetector
     struct DirectionsBool
     {
         public bool Left, Right, Up, Down;

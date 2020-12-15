@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class OnPresurePlate : MonoBehaviour
 {
-    [SerializeField] GifLoop myGif;
-    [SerializeField] DoorActivator door;
+    [SerializeField] GifLoop myGif = null;
+    [SerializeField] DoorActivator door = null;
     bool pressed;
     void OnEnable()
     {

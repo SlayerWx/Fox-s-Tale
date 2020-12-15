@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TriggerSound : MonoBehaviour
 {
-    [SerializeField] string eventName;
-    [SerializeField] string targetTag;
+    [SerializeField] string eventName = null;
+    [SerializeField] string targetTag = null;
 
     void OnTriggerEnter2D(Collider2D collision)
     {

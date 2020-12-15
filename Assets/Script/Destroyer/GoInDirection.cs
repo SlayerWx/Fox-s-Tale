@@ -6,7 +6,7 @@ public class GoInDirection : MonoBehaviour
 {
     [SerializeField] Vector2 direction = new Vector2();
     [SerializeField] float speed = 0;
-    [SerializeField] SpriteRenderer myRender;
+    [SerializeField] SpriteRenderer myRender = null;
     Rigidbody2D myRigid;
     bool inVisible;
     void Start()

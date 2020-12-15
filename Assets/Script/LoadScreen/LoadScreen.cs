@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadScreen : MonoBehaviour
 {
-    [SerializeField] string loadSceneName;
+    [SerializeField] string loadSceneName = null;
     public void LoadScene()
     {
         StartCoroutine(LoadAsync());

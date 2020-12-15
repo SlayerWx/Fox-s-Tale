@@ -5,7 +5,7 @@ using UnityEditor;
 public class Animation : MonoBehaviour
 {
     [SerializeField] float timeXFrame = 0.0f;
-    [SerializeField] SpriteRenderer mySprite;
+    [SerializeField] SpriteRenderer mySprite = null;
     int index = 0;
     #region StructToInspector
     [System.Serializable]
@@ -25,7 +25,7 @@ public class Animation : MonoBehaviour
         public MyAnimation[] side;
     };
     #endregion
-    [SerializeField] Side[] animations;
+    [SerializeField] Side[] animations = null;
     public enum State
     {
         Idle,Walk,Dash

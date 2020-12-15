@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoorActivator : MonoBehaviour
 {
-    [SerializeField] GifLoop[] doors;
+    [SerializeField] GifLoop[] doors = null;
     int count;
     private void Start()
     {

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SpawnWisp : MonoBehaviour
 {
-    [SerializeField] GameObject Prefab;
-    [SerializeField] float Interval;
+    [SerializeField] GameObject Prefab = null;
+    [SerializeField] float Interval = 0;
     public static int count = 0;
     const int countMax = 10;
     SpriteRenderer myRender;

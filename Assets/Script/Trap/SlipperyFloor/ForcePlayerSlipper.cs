@@ -6,7 +6,7 @@ public class ForcePlayerSlipper : MonoBehaviour
 {
     public delegate void Slipper(bool inn);
     public static event Slipper PlayerSlipper;
-    [SerializeField] GifLoop myGif;
+    [SerializeField] GifLoop myGif = null;
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
