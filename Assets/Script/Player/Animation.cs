@@ -28,7 +28,7 @@ public class Animation : MonoBehaviour
     [SerializeField] Side[] animations = null;
     public enum State
     {
-        Idle,Walk,Dash
+        Idle,Walk,Dash,Dead
     };
     private State state;
     public enum Direction
@@ -73,7 +73,7 @@ public class Animation : MonoBehaviour
             mySprite.sprite = animations[(int)state].side[(int)direction].animation[index];
             yield return new WaitForSeconds(timeXFrame);
             index++;
-            if (index >= animations[(int)state].side[(int)direction].animation.Length) index = 0;
+            if (index >= animations[(int)state].side[(int)direction].animation.Length && state != State.Dead) index = 0;
         }
     }
 }

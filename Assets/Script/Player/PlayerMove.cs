@@ -232,6 +232,8 @@ public class PlayerMove : MonoBehaviour
             {
                 AkSoundEngine.PostEvent("deadByFall", transform.gameObject);
             }
+            PlayerAnimationRequestDir?.Invoke(Animation.Direction.Left);
+            PlayerAnimationRequestState?.Invoke(Animation.State.Dead);
             PlayerIsDead?.Invoke();
         }
         else
@@ -270,6 +272,8 @@ public class PlayerMove : MonoBehaviour
     {
         if (!w)
         {
+            PlayerAnimationRequestDir?.Invoke(Animation.Direction.Left);
+            PlayerAnimationRequestState?.Invoke(Animation.State.Dead);
             PlayerIsDead?.Invoke();
         }
         alive = w;

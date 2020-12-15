@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af654941682e88b4fa7e281bc4389712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0.4
+  time: 0.2
   mySprite:
   - {fileID: -6663699629372292066, guid: 715dc20d640d4474f93232e92e200174, type: 3}
   - {fileID: -8813052127514834365, guid: 715dc20d640d4474f93232e92e200174, type: 3}

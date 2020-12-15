@@ -23,7 +23,7 @@ public class GoInDirection : MonoBehaviour
     }
     private void Move()
     {
-        if (!StopTime.GetTimeStatus() && waiting)
+        if (!StopTime.GetTimeStatus() && !waiting)
         {
             myRigid.velocity = direction.normalized * speed * Time.deltaTime;
         }
