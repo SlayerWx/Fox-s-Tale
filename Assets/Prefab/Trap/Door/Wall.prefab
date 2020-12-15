@@ -858,6 +858,11 @@ PrefabInstance:
       propertyPath: doors.Array.data[1]
       value: 
       objectReference: {fileID: 4678805107867667886}
+    - target: {fileID: 2685639700323570215, guid: fe0f07b0e3a41c64b92b2fe13c5e7b51,
+        type: 3}
+      propertyPath: doorCollider
+      value: 
+      objectReference: {fileID: 1752166969554278033}
     - target: {fileID: 2960431140089283255, guid: fe0f07b0e3a41c64b92b2fe13c5e7b51,
         type: 3}
       propertyPath: m_SortingOrder
@@ -1009,6 +1014,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e114cfe1f41bb6e4095576ede3d11211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1752166969554278033 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2688929453397807391, guid: fe0f07b0e3a41c64b92b2fe13c5e7b51,
+    type: 3}
+  m_PrefabInstance: {fileID: 4395528097179895694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4678805108414389308 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9074324375141522354, guid: fe0f07b0e3a41c64b92b2fe13c5e7b51,
