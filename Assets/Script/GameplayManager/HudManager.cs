@@ -23,6 +23,9 @@ public class HudManager : MonoBehaviour //asAS
         if(pos.y > maxMeters)
         {
             maxMeters = (int)pos.y;
+            if (maxMeters == 70) AkSoundEngine.PostEvent("score70", transform.gameObject);
+            if (maxMeters == 140) AkSoundEngine.PostEvent("score140", transform.gameObject);
+            if (maxMeters == 200) AkSoundEngine.PostEvent("score200", transform.gameObject);
         }
         meters.text = maxMeters + "m";
         deadMeters.text = meters.text;
