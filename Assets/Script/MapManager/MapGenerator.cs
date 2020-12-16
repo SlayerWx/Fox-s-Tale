@@ -13,6 +13,7 @@ public class MapGenerator : MonoBehaviour // asAS
     GameObject lastInst = null;
     MapData lastData = null;
     float difX;
+    float distanceToUnlockMoreMap = 90.0f;
     void Start()
     {
         lastInst = null;
@@ -29,7 +30,7 @@ public class MapGenerator : MonoBehaviour // asAS
                 aux = new Vector3(transform.position.x, lastData.GetCoordsEnd().y, transform.position.z);
                 difX = lastData.GetCoordsEnd().x;
             }
-            lastInst = Instantiate(mapPrefab[Random.Range(zero, mapPrefab.Length)], aux, Quaternion.identity, transform);
+            lastInst = Instantiate(mapPrefab[Random.Range(zero, (mapPrefab.Length /2))], aux, Quaternion.identity, transform);
             lastData = lastInst.GetComponent<MapData>();
             if (i != zero)
             {
@@ -63,7 +64,10 @@ public class MapGenerator : MonoBehaviour // asAS
         {
             Vector3 aux = new Vector3(transform.position.x, lastData.GetCoordsEnd().y, transform.position.z);
             difX = lastData.GetCoordsEnd().x;
-            lastInst = Instantiate(mapPrefab[Random.Range(zero, mapPrefab.Length)], aux, Quaternion.identity, transform);
+            if(pos.y > distanceToUnlockMoreMap)
+                lastInst = Instantiate(mapPrefab[Random.Range(zero, mapPrefab.Length)], aux, Quaternion.identity, transform);
+            else
+                lastInst = Instantiate(mapPrefab[Random.Range(zero, mapPrefab.Length/2)], aux, Quaternion.identity, transform);
             lastData = lastInst.GetComponent<MapData>();
             difX -= lastData.GetCoordsStart().x;
             lastInst.transform.position = new Vector3(lastInst.transform.position.x + difX,
