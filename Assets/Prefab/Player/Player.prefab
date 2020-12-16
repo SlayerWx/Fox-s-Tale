@@ -415,6 +415,14 @@ MonoBehaviour:
       - {fileID: -3143313346959949002, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
       - {fileID: -989265057923647305, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
       - {fileID: 56482364200931817, guid: aca8ded19e18bec4a826e64f08be8458, type: 3}
+  - side:
+    - animation:
+      - {fileID: -4161423333665551401, guid: 77c8f0929e60f82448ed4a1103168876, type: 3}
+      - {fileID: -9094446966425189919, guid: 77c8f0929e60f82448ed4a1103168876, type: 3}
+      - {fileID: -8634817258305274489, guid: 77c8f0929e60f82448ed4a1103168876, type: 3}
+      - {fileID: 5805810039719933408, guid: 77c8f0929e60f82448ed4a1103168876, type: 3}
+      - {fileID: -3199607114007322206, guid: 77c8f0929e60f82448ed4a1103168876, type: 3}
+      - {fileID: 3289894119915736295, guid: 77c8f0929e60f82448ed4a1103168876, type: 3}
 --- !u!114 &1323338208167773892
 MonoBehaviour:
   m_ObjectHideFlags: 0

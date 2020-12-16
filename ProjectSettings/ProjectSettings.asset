@@ -44,7 +44,7 @@ PlayerSettings:
     duration: 2
   - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
     duration: 2
-  - logo: {fileID: 21300000, guid: aa271a1809609714eadf88d99b69b06a, type: 3}
+  - logo: {fileID: 21300000, guid: 389c00a08d296a84fad499b8281c01c8, type: 3}
     duration: 2
   m_VirtualRealitySplashScreen: {fileID: 2800000, guid: aa271a1809609714eadf88d99b69b06a,
     type: 3}
@@ -98,7 +98,7 @@ PlayerSettings:
   xboxEnableFitness: 0
   visibleInBackground: 1
   allowFullscreenSwitch: 1
-  fullscreenMode: 3
+  fullscreenMode: 2
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
   xboxEnableGuest: 0
@@ -276,6 +276,48 @@ PlayerSettings:
       m_Icon: {fileID: 2800000, guid: aa271a1809609714eadf88d99b69b06a, type: 3}
       m_Width: 128
       m_Height: 128
+      m_Kind: 0
+  - m_BuildTarget: Standalone
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 51685b51d6c86a046869d05065cfcc43, type: 3}
+      m_Width: 1024
+      m_Height: 1024
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 18c3f273b1b4b0844af632c801f79e91, type: 3}
+      m_Width: 512
+      m_Height: 512
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: d838b4aa19d3c5b48a90b5862b41f9cb, type: 3}
+      m_Width: 256
+      m_Height: 256
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 73f59631ee9139041a84f5ca9e3ab9a9, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 910edbdc59acb90439429b3e16b32b28, type: 3}
+      m_Width: 64
+      m_Height: 64
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: d553917f5b7a63440a34ca0039c6c264, type: 3}
+      m_Width: 48
+      m_Height: 48
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 24dba9207f5425c4fadf888b32685f96, type: 3}
+      m_Width: 32
+      m_Height: 32
+      m_Kind: 0
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 682512e7a4f3361478ac394367da33f8, type: 3}
+      m_Width: 16
+      m_Height: 16
       m_Kind: 0
   m_BuildTargetPlatformIcons: []
   m_BuildTargetBatching: []
