@@ -11,7 +11,7 @@ public class Life : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Trap" && !move.GetDashing())
+        if(col.gameObject.tag == "Trap" && !PlayerMove.GetDashing())
         {
             move.SetAlive(false);
             
@@ -19,7 +19,7 @@ public class Life : MonoBehaviour
     }
     void OnTriggerStay2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Trap" && !move.GetDashing())
+        if (col.gameObject.tag == "Trap" && !PlayerMove.GetDashing())
         {
             move.SetAlive(false);
 

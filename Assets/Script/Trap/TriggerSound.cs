@@ -9,7 +9,7 @@ public class TriggerSound : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == targetTag)
+        if (collision.gameObject.tag == targetTag && !PlayerMove.GetDashing())
         {
             AkSoundEngine.PostEvent(eventName, transform.gameObject);
         }

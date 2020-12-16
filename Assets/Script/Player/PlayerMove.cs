@@ -54,7 +54,7 @@ public class PlayerMove : MonoBehaviour
     bool canStopTime = true;
     [SerializeField] float waitToUseDashAgain = 0.0f;
     bool canDash;
-    bool dashReady;
+    static bool dashReady;
     bool inCoolDownDash;
     bool inFloor;
     bool isSlippingOut;
@@ -108,7 +108,7 @@ public class PlayerMove : MonoBehaviour
     }
     void InputMove()
     {
-        if(Input.GetKeyDown(pauseButton) && alive)
+        if((Input.GetKeyDown(pauseButton) || Input.GetKeyDown(KeyCode.Escape)) && alive)
         {
             PlayerPauseRequest?.Invoke();
         }
@@ -286,7 +286,7 @@ public class PlayerMove : MonoBehaviour
     {
         inFloor = status;
     }
-    public bool GetDashing()
+    public static bool GetDashing()
     {
         return dashReady;
     }

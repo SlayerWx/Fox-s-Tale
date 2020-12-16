@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorActivator : MonoBehaviour
 {
     [SerializeField] GifLoop[] doors = null;
-    [SerializeField] BoxCollider2D doorCollider;
+    [SerializeField] BoxCollider2D doorCollider = null;
     int count;
     private void Start()
     {
